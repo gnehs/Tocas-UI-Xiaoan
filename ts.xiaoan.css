@@ -1,0 +1,140 @@
+/* 
+	預設 
+*/
+.ts.xiaoan {
+	background-image: url(xiaoan.svg);
+	width: 100px;
+	height: 100px;
+	background-position: center;
+	background-size: 100px 100px;
+	display: inline-block;
+}
+
+.ts.xiaoan.instead {
+	background-image: url(xiaoan.instead.svg);
+}
+/* 
+	大小 
+*/
+.ts.xiaoan.mini {
+	width: 25px;
+	height: 25px;
+	background-size: 25px 25px;
+}
+
+.ts.xiaoan.tiny {
+	width: 50px;
+	height: 50px;
+	background-size: 50px 50px;
+}
+
+.ts.xiaoan.small {
+	width: 75px;
+	height: 75px;
+	background-size: 75px 75px;
+}
+
+.ts.xiaoan.large {
+	width: 125px;
+	height: 125px;
+	background-size: 125px 125px;
+}
+
+.ts.xiaoan.big {
+	width: 150px;
+	height: 150px;
+	background-size: 150px 150px;
+}
+
+.ts.xiaoan.huge {
+	width: 200px;
+	height: 200px;
+	background-size: 200px 200px;
+}
+
+.ts.xiaoan.massive {
+	width: 250px;
+	height: 250px;
+	background-size: 250px 250px;
+}
+/* 
+	從 .ts.image 搬運過來的一些功能 
+*/
+.ts.xiaoan.rounded {
+	border-radius: .3125em;
+}
+
+.ts.xiaoan.circular {
+	border-radius: 500em;
+}
+
+.ts.xiaoan.circular {
+	border-radius: 500em;
+}
+
+.ts.xiaoan.centered {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+/* 
+	Icon Font 
+*/
+@font-face {
+	font-family: 'xiaoan';
+	src:
+		url('fonts/xiaoan.ttf?nhl6td') format('truetype'),
+		url('fonts/xiaoan.woff?nhl6td') format('woff'),
+		url('fonts/xiaoan.svg?nhl6td#xiaoan') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+i.xiaoan:before {
+	font-family: 'xiaoan' !important;
+	content: "\e901";
+}
+
+i.xiaoan.instead:before {
+	font-family: 'xiaoan' !important;
+	content: "\e900";
+	color: #a8a8a8;
+}
+/*
+	動畫
+*/
+.ts.shake{
+  display: inline-block;
+  transform-origin: center center; 
+  animation-name: shake;
+  animation-duration: 10ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+	0%, 100% {
+		transform: translate(0, 0) rotate(0); 
+	}
+	25% {
+		transform: translate(-0.5px, -0.5px) rotate(0.5deg); 
+	}
+	75% {
+		transform: translate(2.5px, -2.5px) rotate(0.5deg); 
+	}
+}
+/* 
+	卷軸樣式 
+*/
+::-webkit-scrollbar-track {
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar {
+	width: 20px;
+	height: 20px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+	background-image: url(xiaoan.svg);
+	background-position: center;
+	background-size: 25px;
+}
