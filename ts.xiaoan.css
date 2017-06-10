@@ -98,7 +98,6 @@ i.xiaoan:before {
 i.xiaoan.instead:before {
 	font-family: 'xiaoan' !important;
 	content: "\e900";
-	color: #a8a8a8;
 }
 /*
 	動畫
