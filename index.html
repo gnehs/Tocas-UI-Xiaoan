@@ -1,285 +1,547 @@
-﻿<!DOCTYPE HTML>
-<html data-ts-native>
+<!DOCTYPE html>
+<html>
 
-<head>
-	<title>.ts.xiaoan</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Tocas UI：CSS 與元件 -->
-	<link rel="stylesheet" href="//cdn.rawgit.com/TeaMeow/TocasUI/2.3.2/dist/tocas.css">
-	<!-- Tocas JS：模塊與 JavaScript 函式 -->
-	<script src="//cdn.rawgit.com/TeaMeow/TocasUI/2.3.2/dist/tocas.js"></script>
-	<link rel="stylesheet" href="ts.xiaoan.css">
-	<!-- SEO -->
-	<meta name="keywords" content="洨洨安">
-	<meta name="author" content="棒棒勝">
-	<meta name="description" content="洨洨安 CSS!">
-	<meta name="URL" content="https://cdn.gnehs.com.tw/ts.xiaoan/">
-	<!-- open graph data -->
-	<meta property="og:title" content="洨洨安" />
-	<meta property="og:type" content="website" />
-	<meta property="og:image" content="https://cdn.gnehs.com.tw/ts.xiaoan/og.jpg" />
-	<meta property="og:description" content="洨洨安 CSS!" />
-	<meta property="article:author" content="https://www.facebook.com/gnehsouo/">
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Tocas UI：CSS 與元件 -->
+		<link rel="stylesheet" href="//cdn.rawgit.com/TeaMeow/TocasUI/2.3.2/dist/tocas.css">
+		<!-- Tocas JS：模塊與 JavaScript 函式 -->
+		<script src="//cdn.rawgit.com/TeaMeow/TocasUI/2.3.2/dist/tocas.js"></script>
+		<link href="ts.xiaoan.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+		<title>.ts.xiaoan</title>
+		<style>
+			code,
+			.code,
+			.code mark {
+				font-family: 'Ubuntu Mono', monospace;
+				word-break: break-all
+			}
+		</style>
+		<script>
+			ts('#first.tabbed.menu .item').tab({
+				onSwitch: (tabName, groupName) => {
+					alert("你切換到了「" + tabName + "」分頁，而群組是「" + groupName + "」。");
+				}
+			});
+		</script>
+	</head>
 
-<body>
-	<div class="ts slate">
-		<i class="xiaoan symbol icon"></i>
-
-		<div class="icons">
-			<i class="icon xiaoan"></i>
-			<i class="icon vertically flipped xiaoan"></i>
-			<i class="icon xiaoan"></i>
-		</div>
-		<span class="header">.ts.xiaoan</span>
-		<span class="description">洨洨安 CSS</span>
-		<span class="description">因為這個人很懶🙈，所以想看原始碼自己按右鍵</span>
-		<div class="action">
-			<a class="ts labeled icon primary button" onclick="downloadxiaoan()">
-					<i class="download icon"></i>
-					下載
-				</a>
-		</div>
-	</div>
-	<br>
-	<div class="ts narrow container">
-		<h3 class="ts center aligned icon header">
-			<i class="icon xiaoan"></i>開始試用
-			<div class="sub header">下載後，保持資料夾結構，並將 CSS 加到您的網頁中即可</div>
-		</h3>
-
-		<div class="ts section divider"></div>
-
-		<img class="ts large centered image" src="StepByStep.png">
-
-		<div class="ts section divider"></div>
-
-		<h3 class="ts center aligned icon header">
-			<i class="icon xiaoan"></i>八種尺寸
-			<div class="sub header">是的，您可以同時擁有8種尺寸的洨安。<br>而且這是向量圖片，您可以放大到跟地球一樣大都不會失真!</div>
-		</h3>
-		<div class="ts mini xiaoan"></div>
-		<div class="ts tiny xiaoan"></div>
-		<div class="ts small xiaoan"></div>
-		<div class="ts medium xiaoan"></div>
-		<div class="ts large xiaoan"></div>
-		<div class="ts big xiaoan"></div>
-		<div class="ts huge xiaoan"></div>
-		<div class="ts massive xiaoan"></div>
-
-		<div class="ts section divider"></div>
-
-		<h3 class="ts center aligned icon header">
-			<i class="icon xiaoan"></i>完整相容 Tocas UI Icon
-			<div class="sub header">讓洨安為您的網站添上點歡樂吧。</div>
-		</h3>
-		<div class="ts left icon label">
-			<i class="icon xiaoan"></i>洨安數量
-			<div class="detail">87</div>
-		</div>
-		<div class="ts left icon label">
-			<i class="icon xiaoan"></i>2016始春
-			<div class="detail">還有(null)天</div>
-		</div>
-		<div class="ts icon input">
-			<input type="text" placeholder="搜尋...">
-			<i class="icon xiaoan"></i>
-		</div>
-
-		<div class="ts section divider"></div>
-
-		<h3 class="ts center aligned icon header">
-			<i class="icon xiaoan"></i>各種樣式
-			<div class="sub header">洨安的各種品種</div>
-		</h3>
-		<br>
-		<div class="ts stackable grid">
-			<div class="four wide column">
-				<div class="ts segments">
-					<div class="ts segment">
-						加上一點圓角
-					</div>
-					<div class="ts segment">
-						<div class="ts rounded xiaoan"></div>
+	<body>
+		<header class="ts heading vertically padded fluid slate">
+			<div class="ts center aligned container">
+				<div class="ts shake huge circular xiaoan"></div>
+				<h1 class="ts center aligned header">
+					.ts.xiaoan
+					<div class="sub header">洨洨安 CSS by <a href="http://gnehs.com.tw">棒棒勝</a></div>
+				</h1>
+				<a class="ts labeled icon primary large button" href="https://github.com/gnehs/Tocas-UI-Xiaoan/releases/tag/0.3" target="_blank"><i class="xiaoan icon"></i>下載</a>
+			</div>
+			<div class="ts narrow container relaxed grid">
+				<div class="large device only four wide column"></div>
+				<div class="sixteen wide mobile twelve wide computer column">
+					<div id="first" class="ts bottom attached three item tabbed menu">
+						<a class="active item" data-tab="基本用法">基本用法</a>
+						<a class="item" data-tab="Icon Font">Icon Font</a>
+						<a class="item" data-tab="Tocas UI 範例">Tocas UI 範例</a>
 					</div>
 				</div>
 			</div>
-			<div class="four wide column">
-				<div class="ts segments">
-					<div class="ts segment">
-						乾脆變成圓形吧
+		</header>
+		<div class="ts container">
+			<div data-tab="基本用法" class="ts active bottom attached tab"><br><br>
+				<div class="ts relaxed grid">
+					<div class="sixteen wide mobile four wide computer column">
+						<div class="ts borderless secondary vertical large menu">
+							<a class="item" href="#開始使用">開始使用</a>
+							<div class="ts primary header">種類</div>
+							<a class="item" href="#基本">基本</a>
+							<a class="item" href="#替身">替身</a>
+							<div class="ts primary header">外觀</div>
+							<a class="item" href="#尺寸">尺寸</a>
+							<a class="item" href="#圓角">圓角</a>
+							<a class="item" href="#圓型">圓型</a>
+							<a class="item" href="#置中">置中</a>
+							<a class="item" href="#震動">震動</a>
+						</div>
 					</div>
-					<div class="ts segment">
-						<div class="ts circular xiaoan"></div>
-					</div>
-				</div>
-			</div>
-			<div class="four wide column">
-				<div class="ts segments">
-					<div class="ts segment">
-						嘿!我也可以左右置中
-					</div>
-					<div class="ts segment">
-						<div class="ts centered xiaoan"></div>
-					</div>
-				</div>
-			</div>
-			<div class="four wide column">
-				<div class="ts segments">
-					<div class="ts segment">
-						洨安可以使用黑色的替身!
-					</div>
-					<div class="ts segment">
+					<div class="sixteen wide mobile column twelve wide computer">
+						<h2 class="ts header" id="開始使用">開始使用</h2>
+						下載並解壓縮後，保持資料夾結構，丟到你的網頁目錄，再將插入到 <code>&lt;head&gt; </code>中。
+						<div class="ts secondary code segment">
+							&lt;link rel="stylesheet" href="ts.xiaoan.css"&gt;
+						</div>
+						<br><br>
+
+
+						<h2 class="ts header" id="基本">基本<span class="sub header">最基本的洨安。</span></h2>
+						<div class="ts xiaoan"></div>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;div class="ts
+							<mark>xiaoan</mark>"&gt;&lt;/div&gt;
+						</div>
+						<br><br>
+						<h2 class="ts header" id="替身">替身<span class="sub header">你可以使用使用黑色的替身。</span></h2>
 						<div class="ts instead xiaoan"></div>
-					</div>
-				</div>
-			</div>
-			<div class="four wide column">
-				<div class="ts segments">
-					<div class="ts segment">
-						洨安也能震動! ( 0.2新功能 )
-					</div>
-					<div class="ts segment">
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;div class="ts
+							<mark>instead</mark> xiaoan"&gt;&lt;/div&gt;
+						</div>
+						<br><br>
+						<h2 class="ts header" id="尺寸">尺寸<span class="sub header">提供了八種尺寸。</span></h2>
+						<div class="ts mini xiaoan"></div>
+						<div class="ts tiny xiaoan"></div>
+						<div class="ts small xiaoan"></div>
+						<div class="ts xiaoan"></div>
+						<div class="ts large xiaoan"></div>
+						<div class="ts big xiaoan"></div>
+						<div class="ts huge xiaoan"></div>
+						<div class="ts massive xiaoan"></div>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;div class="ts
+							<mark>mini</mark> xiaoan"&gt;&lt;/div&gt;<br> &lt;div class="ts
+							<mark>tiny</mark> xiaoan"&gt;&lt;/div&gt;<br> &lt;div class="ts
+							<mark>small</mark> xiaoan"&gt;&lt;/div&gt;<br> &lt;div class="ts xiaoan"&gt;&lt;/div&gt;<br> &lt;div class="ts
+							<mark>large</mark> xiaoan"&gt;&lt;/div&gt;<br> &lt;div class="ts
+							<mark>big</mark> xiaoan"&gt;&lt;/div&gt;<br> &lt;div class="ts
+							<mark>huge</mark> xiaoan"&gt;&lt;/div&gt;<br> &lt;div class="ts
+							<mark>massive</mark> xiaoan"&gt;&lt;/div&gt;
+						</div>
+						<br><br>
+						<h2 class="ts header">流動<span class="sub header">尺寸也可以是流動的，寬度會直接變成容器的 100%。</span></h2>
+						<div class="ts fluid xiaoan"></div>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;div class="ts
+							<mark>fluid</mark> xiaoan"&gt;&lt;/div&gt;
+						</div>
+						<br><br>
+						<h2 class="ts header" id="圓角">圓角<span class="sub header">不如加上一點圓角？</span></h2>
+						<div class="ts rounded xiaoan"></div>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;div class="ts
+							<mark>rounded</mark> xiaoan"&gt;&lt;/div&gt;
+						</div>
+						<br><br>
+						<h2 class="ts header" id="圓型">圓型<span class="sub header">你要圓形的也行。</span></h2>
+						<div class="ts circular xiaoan"></div>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;div class="ts
+							<mark>circular</mark> xiaoan"&gt;&lt;/div&gt;
+						</div>
+						<br><br>
+						<h2 class="ts header" id="置中">置中<span class="sub header">可以左右置中，置右呢？自己寫吧。</span></h2>
+						<div class="ts centered xiaoan"></div>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;div class="ts
+							<mark>centered</mark> xiaoan"&gt;&lt;/div&gt;
+						</div>
+						<br><br>
+						<h2 class="ts header" id="震動">震動
+							<div class="ts circular label">0.2 新功能</div><span class="sub header">洨安也能震動！</span></h2>
 						<div class="ts shake xiaoan"></div>
+						<div class="ts shake instead xiaoan"></div>
+						<div class="ts shake rounded xiaoan"></div>
+						<div class="ts shake circular xiaoan"></div>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;div class="ts
+							<mark>shake</mark> xiaoan"&gt;&lt;/div&gt;<br> &lt;div class="ts
+							<mark>shake</mark> instead xiaoan"&gt;&lt;/div&gt;<br> &lt;div class="ts
+							<mark>shake</mark> rounded xiaoan"&gt;&lt;/div&gt;<br> &lt;div class="ts
+							<mark>shake</mark> circular xiaoan"&gt;&lt;/div&gt;
+						</div>
+						<br><br>
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<div class="ts section divider"></div>
-
-		<h3 class="ts center aligned icon header">
-			<i class="icon xiaoan"></i>Icon Font
-			<div class="sub header">可以配合 Tocas UI 使用的東東，沒錯，目前僅有兩個品種!</div>
-		</h3>
-
-		<div class="ts stackable grid">
-			<div class="eight wide column">
-				<div class="ts segments">
-					<div class="ts center aligned segment">
-						<i class="icon xiaoan" style="font-size:72px"></i>
+			<div data-tab="Icon Font" class="ts bottom attached tab"><br><br>
+				<div class="ts relaxed grid">
+					<div class="sixteen wide mobile four wide computer column">
+						<div class="ts borderless secondary vertical large menu">
+							<div class="ts primary header">種類</div>
+							<a class="item" href="#基本">基本</a>
+							<a class="item" href="#替身">替身</a>
+							<a class="item" href="example.html">Tocas UI 範例 <i class="huge icons"><i class="xiaoan icon"></i><i class="corner xiaoan icon"></i></i></a>
+						</div>
 					</div>
-					<div class="ts center aligned segment">
-						這是預設的洨安
+					<div class="sixteen wide mobile column twelve wide computer">
+						<h2 class="ts header" id="基本">基本<span class="sub header">最基本的洨安，大小預設與同層字級相同。</span></h2>
+						<i class="icon xiaoan"></i> 2016 始春
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;i class="icon
+							<mark>xiaoan</mark>"&gt;&lt;/i&gt; 2016 始春
+						</div>
+						<br><br>
+						<h2 class="ts header" id="替身">替身<span class="sub header">你可以使用他的替身。</span></h2>
+						<i class="icon instead huge xiaoan"></i>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;i class="huge icon
+							<mark>instead</mark> xiaoan"&gt;&lt;/i&gt;
+						</div>
+						<br><br>
 					</div>
 				</div>
 			</div>
-			<div class="eight wide column">
-				<div class="ts segments">
-					<div class="ts center aligned segment">
-						<i class="icon xiaoan instead" style="font-size:72px"></i>
+			<div data-tab="Tocas UI 範例" class="ts bottom attached tab"><br><br>
+				<div class="ts relaxed grid">
+					<div class="sixteen wide mobile four wide computer column">
+						<div class="ts borderless secondary vertical large menu">
+							<div class="ts primary header">基本</div>
+							<a class="item" href="#尺寸">尺寸</a>
+							<a class="item" href="#語意">語意</a>
+							<a class="item" href="#翻轉">翻轉</a>
+							<div class="ts primary header">按鈕</div>
+							<a class="item" href="#圖案按鈕">圖案按鈕</a>
+							<a class="item" href="#標籤圖示按鈕">標籤圖示按鈕</a>
+							<div class="ts primary header">分隔線</div>
+							<a class="item" href="#分隔線">分隔線</a>
+							<a class="item" href="#反色分隔線">反色分隔線</a>
+							<div class="ts primary header">標題</div>
+							<a class="item" href="#標題圖示">標題圖示</a>
+							<a class="item" href="#標題右側圖示">標題右側圖示</a>
+							<div class="ts primary header">圖片</div>
+							<a class="item" href="#圖內圖示">圖內圖示</a>
+							<div class="ts primary header">輸入欄位</div>
+							<a class="item" href="#欄位圖示">欄位圖示</a>
+							<div class="ts primary header">板岩</div>
+							<a class="item" href="#板岩代表性符號">板岩代表性符號</a>
+							<div class="ts primary header">標籤</div>
+							<a class="item" href="#標籤圖示">標籤圖示</a>
+							<div class="ts primary header">清單</div>
+							<a class="item" href="#清單圖示">清單圖示</a>
+							<div class="ts primary header">步驟</div>
+							<a class="item" href="#步驟圖示">步驟圖示</a>
+							<div class="ts primary header">麵包屑</div>
+							<a class="item" href="#分隔圖示">分隔圖示</a>
+						</div>
 					</div>
-					<div class="ts center aligned segment">
-						這是替身洨安
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="ts section divider"></div>
-
-		<h3 class="ts center aligned icon header">
-			<i class="icon xiaoan"></i>Change Log
-			<div class="sub header">這是修改日誌!</div>
-		</h3>
-		<div class="ts divided large list">
-			<div class="item">
-				<i class="icon xiaoan"></i>
-				<div class="content">
-					<div class="header">0.3</div>
-					<div class="description">🗓2017.06.08</div>
-					<div class="description">➕嘿!你有看過洨安卷軸嗎?他現在正式加入了，而且你拿不掉❤️</div>
-				</div>
-			</div>
-			<div class="item">
-				<i class="icon xiaoan"></i>
-				<div class="content">
-					<div class="header">0.2</div>
-					<div class="description">🗓2017.05.27 下午</div>
-					<div class="description">➕嘿!我有提到震動嗎?沒有，不過他現在支援了，相容 Tocas UI ，加入 shake 這個 Class 就能震動了。</div>
-				</div>
-			</div>
-			<div class="item">
-				<i class="icon xiaoan"></i>
-				<div class="content">
-					<div class="header">0.1.1</div>
-					<div class="description">🗓2017.05.27 午夜</div>
-					<div class="description">🔧糟糕，上次的版本沒包進兩張 Svg 圖片導致 .ts.xiaoan 無法正常使用，這個問題於此版本修正。</div>
-				</div>
-			</div>
-			<div class="item">
-				<i class="icon xiaoan"></i>
-				<div class="content">
-					<div class="header">0.1</div>
-					<div class="description">🗓2017.05.21</div>
-					<div class="description">👍這是首次發布，充滿著洨洨安的 CSS ，絕對不是 Tocas UI 2.3 不出來所以做這個靠北的❤️。</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<br>
-	<a name="Download"></a>
-	<div class="ts slate">
-		<i class="download icon"></i>
-		<span class="header">下載</span>
-		<span class="description">多品種洨安，還不快來下載!!</span>
-		<div class="action">
-			<a class="ts labeled icon primary button" onclick="downloadxiaoan()">
-					<i class="download icon"></i>
-					下載
-				</a>
-		</div>
-	</div>
-	<div class="ts modals dimmer">
-		<dialog class="ts mini closable modal" id="download">
-			<div class="header">
-				下載 洨安 CSS
-			</div>
-			<div class="content">
-				<p>
-					當下載此檔案時，表示您已入教，傳播信仰，壯哉我大洨安教<br><br> 檔案資料:
-					<br> 版本 : 0.3<br> 格式 : Jpg -> 7z<br> 更新 : 2017.06.08 下午<br> 大小 : 6.89KB
-				</p>
-			</div>
-			<div class="actions">
-				<div class="ts fluid separated stackable buttons">
-					<button class="ts deny labeled icon button">
-							<i class="remove icon"></i>
-							取消
+					<div class="sixteen wide mobile column twelve wide computer">
+						<h2 class="ts header" id="尺寸">尺寸<span class="sub header">可以特別設定大小。</span></h2>
+						<i class="mini icon xiaoan"></i>
+						<i class="tiny icon xiaoan"></i>
+						<i class="small icon xiaoan"></i>
+						<i class="icon xiaoan"></i>
+						<i class="large icon xiaoan"></i>
+						<i class="big icon xiaoan"></i>
+						<i class="huge icon xiaoan"></i>
+						<i class="massive icon xiaoan"></i>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;i class="
+							<mark>mini icon</mark> xiaoan"&gt;&lt;/i&gt;<br> &lt;i class="
+							<mark>tiny icon</mark> xiaoan"&gt;&lt;/i&gt;<br> &lt;i class="
+							<mark>small icon</mark> xiaoan"&gt;&lt;/i&gt;<br> &lt;i class="
+							<mark>icon</mark> xiaoan"&gt;&lt;/i&gt;<br> &lt;i class="
+							<mark>large</mark> icon xiaoan"&gt;&lt;/i&gt;<br> &lt;i class="
+							<mark>big</mark> icon xiaoan"&gt;&lt;/i&gt;<br> &lt;i class="
+							<mark>huge</mark> icon xiaoan"&gt;&lt;/i&gt;<br> &lt;i class="
+							<mark>massive</mark> icon xiaoan"&gt;&lt;/i&gt;
+						</div>
+						<br><br>
+						<h2 class="ts header" id="語意">語意<span class="sub header">洨安有著不同的語意。</span></h2>
+						<i class="icon big primary xiaoan"></i>
+						<i class="icon big info xiaoan"></i>
+						<i class="icon big warning xiaoan"></i>
+						<i class="icon big positive xiaoan"></i>
+						<i class="icon big negative xiaoan"></i>
+						<i class="icon big instead primary xiaoan"></i>
+						<i class="icon big instead info xiaoan"></i>
+						<i class="icon big instead warning xiaoan"></i>
+						<i class="icon big instead positive xiaoan"></i>
+						<i class="icon big instead negative xiaoan"></i>
+						<i class="icon big rainbow xiaoan"></i>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;i class="icon big
+							<mark>primary</mark> xiaoan"&gt;&lt;/i&gt;<br> &lt;i class="icon big
+							<mark>info</mark> xiaoan"&gt;&lt;/i&gt;<br> &lt;i class="icon big
+							<mark>warning</mark> xiaoan"&gt;&lt;/i&gt;<br> &lt;i class="icon big
+							<mark>positive</mark> xiaoan"&gt;&lt;/i&gt;<br> &lt;i class="icon big
+							<mark>negative</mark> xiaoan"&gt;&lt;/i&gt;<br> &lt;i class="icon big
+							<mark>instead primary</mark> xiaoan"&gt;&lt;/i&gt;<br> &lt;i class="icon big
+							<mark>instead info</mark> xiaoan"&gt;&lt;/i&gt;<br> &lt;i class="icon big
+							<mark>instead warning</mark> xiaoan"&gt;&lt;/i&gt;<br> &lt;i class="icon big
+							<mark>instead positive</mark> xiaoan"&gt;&lt;/i&gt;<br> &lt;i class="icon big
+							<mark>instead negative</mark> xiaoan"&gt;&lt;/i&gt;<br>&lt;i class="icon big
+							<mark>rainbow</mark> xiaoan"&gt;&lt;/i&gt;
+						</div>
+						<br><br>
+						<h2 class="ts header" id="翻轉">翻轉<span class="sub header">你可以把洨安翻轉過來。</span></h2>
+						<i class="horizontally flipped big icon xiaoan"></i>
+						<i class="vertically flipped big icon xiaoan"></i>
+						<i class="clockwise rotated big icon xiaoan"></i>
+						<i class="counterclockwise rotated big icon xiaoan"></i>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;i class="
+							<mark>horizontally flipped</mark> big icon xiaoan"&gt;&lt;/i&gt;<br> &lt;i class="
+							<mark>vertically flipped</mark> big icon xiaoan"&gt;&lt;/i&gt;<br> &lt;i class="
+							<mark>clockwise rotated</mark> big icon xiaoan"&gt;&lt;/i&gt;<br> &lt;i class="
+							<mark>counterclockwise rotated</mark> big icon xiaoan"&gt;&lt;/i&gt;
+						</div>
+						<br><br>
+						<h2 class="ts header" id="圖案按鈕">圖案按鈕<span class="sub header">只顯示洨安的按鈕。</span></h2>
+						<button class="ts icon button">
+							<i class="xiaoan icon"></i>
 						</button>
-					<a class="ts positive labeled icon button" href="https://github.com/gnehs/Tocas-UI-Xiaoan/releases/latest">
-							<i class="download icon"></i>
-							下載
-						</a>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;button class="ts
+							<mark>icon button</mark>"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="xiaoan icon"&gt;&lt;/i&gt;<br> &lt;/button&gt;
+						</div>
+						<br><br>
+						<h2 class="ts header" id="標籤圖示按鈕">標籤圖示按鈕<span class="sub header">帶有標籤和洨安的按鈕。</span></h2>
+						<button class="ts labeled icon button" onclick="ts('.snackbar').snackbar({content: '404 Not Found',actionEmphasis: 'warning'});">
+							點我開啟始春
+							<i class="xiaoan icon"></i>
+						</button>
+						<button class="ts right labeled icon button" onclick="ts('.snackbar').snackbar({content: '404 Not Found',actionEmphasis: 'warning'});">
+							點我開啟始春
+							<i class="xiaoan icon"></i>
+						</button>
+						<div class="ts snackbar">
+							<div class="content">
+								早安！我的朋友！這段話是在我凌晨五點沒睡覺時打的。
+							</div>
+						</div>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;button class="ts
+							<mark>labeled</mark> icon button"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;點我開啟始春
+							<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="xiaoan icon"&gt;&lt;/i&gt;<br> &lt;/button&gt;
+							<br>
+							<br> &lt;button class="ts
+							<mark>right labeled</mark> icon button"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;點我開啟始春
+							<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="xiaoan icon"&gt;&lt;/i&gt;<br> &lt;/button&gt;
+						</div>
+						<br><br>
+						<h2 class="ts header" id="分隔線">分隔線<span class="sub header">可以讓你在分隔線插入很多洨安，要幾個都行。</span></h2>
+						<p>始春始春始春始春始春始春始春</p>
+						<div class="ts horizontal divider">
+							<i class="xiaoan icon"></i><i class="xiaoan instead icon"></i><i class="xiaoan icon"></i>
+						</div>
+						<p>始春始春始春始春</p>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;div class="ts
+							<mark>horizontal divider</mark>"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="xiaoan icon"&gt;&lt;/i&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;i
+							class="xiaoan instead icon"&gt;&lt;/i&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="xiaoan icon"&gt;&lt;/i&gt;<br>							&lt;/div&gt;
+						</div>
+						<br><br>
+						<h2 class="ts header" id="反色分隔線">反色分隔線<span class="sub header">若底色是暗的，也可以使用反色洨安分隔線。</span></h2>
+						<div class="ts inverted segment">
+							<p>始春始春始春始春始春始春始春</p>
+							<div class="ts horizontal inverted divider">
+								<i class="xiaoan icon"></i><i class="xiaoan instead icon"></i><i class="xiaoan icon"></i>
+							</div>
+							<p>始春始春始春始春</p>
+						</div>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;div class="ts
+							<mark>inverted</mark> horizontal divider"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="xiaoan icon"&gt;&lt;/i&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;i
+							class="xiaoan instead icon"&gt;&lt;/i&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="xiaoan icon"&gt;&lt;/i&gt;<br>							&lt;/div&gt;
+						</div>
+						<br><br>
+						<h2 class="ts header" id="標題圖示">標題圖示<span class="sub header">標題可以帶有洨安圖示。</span></h2>
+						<h3 class="ts center aligned icon header">
+							<i class="xiaoan icon"></i> 2016 始春
+							<div class="sub header">404 Not Found.</div>
+						</h3>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;h3 class="ts center aligned
+							<mark>icon</mark> header"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;2016 始春<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="xiaoan icon"&gt;&lt;/i&gt;<br>							&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="sub header"&gt;404 Not Found.&lt;/div&gt;<br> &lt;/h3&gt;
+						</div>
+						<br><br>
+						<h2 class="ts header" id="標題右側圖示">標題右側圖示<span class="sub header">標題右側可以帶有洨安圖示。</span></h2>
+						<h3 class="ts header">
+							<i class="xiaoan icon"></i>
+							<div class="content">2016 始春</div>
+						</h3>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;h3 class="ts header"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="xiaoan icon"&gt;&lt;/i&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;div
+							class="
+							<mark>content</mark>"&gt;2016 始春&lt;/div&gt;<br> &lt;/h3&gt;
+						</div>
+						<br><br>
+						<h2 class="ts header" id="圖內圖示">圖內圖示<span class="sub header">圖片裡面可以擺放洨安，這會令他浮動在圖片的右下角落。</span></h2>
+						<div class="ts secondary info message">
+							<p>如果覺得太怪可以自己對洨安加上<code>text-stroke: 0</code>和<code>-webkit-text-stroke: 0</code>。</p>
+						</div>
+						<div class="ts small image">
+							<img src="http://i.imgur.com/CHEYQJ8.png?1">
+							<i class="xiaoan icon"></i>
+						</div>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;div class="ts small image"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="image.png"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;i
+							class="xiaoan icon"&gt;&lt;/i&gt;<br> &lt;/div&gt;
+						</div>
+						<br><br>
+						<h2 class="ts header" id="欄位圖示">欄位圖示<span class="sub header">你可以將洨安放入輸入欄位中。</span></h2>
+						<div class="ts icon input">
+							<input type="text" placeholder="尋找始春...">
+							<i class="xiaoan icon"></i>
+						</div>
+						<br><br>
+						<div class="ts left icon input">
+							<input type="text" placeholder="尋找始春...">
+							<i class="xiaoan icon"></i>
+						</div>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;div class="ts
+							<mark>icon</mark> input"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" placeholder="尋找始春..."&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;i
+							class="xiaoan icon"&gt;&lt;/i&gt;<br> &lt;/div&gt;
+							<br> &lt;br&gt;&lt;br&gt;
+							<br> &lt;div class="ts
+							<mark>left icon</mark> input"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" placeholder="尋找始春..."&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;i
+							class="xiaoan icon"&gt;&lt;/i&gt;<br> &lt;/div&gt;
+						</div>
+						<br><br>
+						<h2 class="ts header" id="板岩代表性符號">板岩代表性符號<span class="sub header">洨安會擺在板岩的右下角。</span></h2>
+						<div class="ts basic padded slate">
+							<i class="xiaoan symbol icon"></i>
+							<span class="header">2016 始春</span>
+							<span class="description">或者更晚，而且晚很多。</span>
+						</div>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;div class="ts basic padded slate"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="xiaoan
+							<mark>symbol</mark> icon"&gt;&lt;/i&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="header"&gt;2016 始春&lt;/span&gt;<br>							&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="description"&gt;或者更晚，而且晚很多。&lt;/span&gt;<br> &lt;/div&gt;
+						</div>
+						<br><br>
+						<h2 class="ts header" id="標籤圖示">標籤圖示<span class="sub header">在標籤內放置一個洨安。</span></h2>
+						<div class="ts left icon label">
+							<i class="xiaoan icon"></i> 未讀郵件
+							<div class="detail">2016</div>
+						</div>
+						<div class="ts right icon label">
+							始春
+							<i class="xiaoan icon"></i>
+						</div>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;div class="ts
+							<mark>left icon</mark> label"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="xiaoan icon"&gt;&lt;/i&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;未讀郵件
+							<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="detail"&gt;2016&lt;/div&gt;<br> &lt;/div&gt;
+							<br><br> &lt;div class="ts
+							<mark>right icon</mark> label"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="xiaoan icon"&gt;&lt;/i&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;始春
+							<br> &lt;/div&gt;
+							<br>
+						</div>
+						<br><br>
+						<h2 class="ts header" id="清單圖示">清單圖示<span class="sub header">清單內也可以擺放洨安。</span></h2>
+						<div class="ts list">
+							<div class="item">
+								<i class="xiaoan icon"></i>
+								<div class="content">2016 始春</div>
+							</div>
+							<div class="item">
+								<i class="xiaoan icon"></i>
+								<div class="content">∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞</div>
+							</div>
+						</div>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;div class="ts
+							<mark>list</mark>"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="
+							<mark>item</mark>"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="xiaoan icon"&gt;&lt;/i&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div
+							class="content"&gt;2016 始春&lt;/div&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+							<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="
+							<mark>item</mark>"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="xiaoan icon"&gt;&lt;/i&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div
+							class="content"&gt;∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞&lt;/div&gt;
+							<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+							<br> &lt;/div&gt;
+							<br>
+						</div>
+						<br><br>
+						<h2 class="ts header" id="步驟圖示">步驟圖示<span class="sub header">步驟內可以擺放洨安。</span></h2>
+						<div style="width:100%;overflow-x:scroll">
+							<div class="ts fluid steps">
+								<div class="step">
+									<i class="xiaoan icon"></i>
+									<div class="content">
+										<div class="title">官網上線</div>
+										<div class="description">6,509 個訂閱者</div>
+									</div>
+								</div>
+								<div class="active step">
+									<i class="xiaoan icon"></i>
+									<div class="content">
+										<div class="title">2016 始春</div>
+										<div class="description">開發中</div>
+									</div>
+								</div>
+								<div class="disabled step">
+									<i class="xiaoan icon"></i>
+									<div class="content">
+										<div class="title">Alpha 開放</div>
+										<div class="description">20??</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;div class="ts fluid
+							<mark>steps</mark>"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="
+							<mark>step</mark>"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="xiaoan icon"&gt;&lt;/i&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div
+							class="title"&gt;官網上線&lt;/div&gt;
+							<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="description"&gt;6,509 個訂閱者&lt;/div&gt;
+							<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+							<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="
+							<mark>active step</mark>"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="xiaoan icon"&gt;&lt;/i&gt;<br>							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="title"&gt;2016 始春&lt;/div&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div
+							class="description"&gt;開發中&lt;/div&gt;
+							<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+							<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="
+							<mark>disabled step</mark>"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="xiaoan icon"&gt;&lt;/i&gt;<br>							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="title"&gt;Alpha 開放&lt;/div&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div
+							class="description"&gt;20??&lt;/div&gt;
+							<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+							<br> &lt;/div&gt;
+							<br>
+						</div>
+						<br><br>
+
+
+						<h2 class="ts header" id="分隔圖示">分隔圖示<span class="sub header">麵包屑的洨安分隔圖示。</span></h2>
+						<div class="ts breadcrumb">
+							<a class="section">Tocas UI</a>
+							<i class="xiaoan icon divider"></i>
+							<a class="section">.ts.xiaoan</a>
+							<i class="xiaoan icon divider"></i>
+							<div class="active section">Icon Font 範例</div>
+						</div>
+						<div class="ts secondary code segment">
+							<div class="ts top right attached label">原始碼</div>
+							&lt;div class="ts
+							<mark>breadcrumb</mark>"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="
+							<mark>section</mark>"&gt;Tocas UI&lt;/a&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="xiaoan icon"&gt;&lt;/i&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;a
+							class="
+							<mark>section</mark>"&gt;.ts.xiaoan&lt;/a&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="xiaoan icon"&gt;&lt;/i&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;a
+							class="
+							<mark>section</mark>"&gt;Icon Font 範例&lt;/a&gt;<br> &lt;/div&gt;
+						</div>
+						<br><br>
+					</div>
 				</div>
 			</div>
-		</dialog>
-	</div>
-	<!-- Script -->
-	<script src="https://cdn.gnehs.com.tw/cdn/console_log.js" charset="big5"></script>
-	<script>
-		function downloadxiaoan() { ts('#download').modal("show"); }
-	</script>
-	<!-- twemoji -->
-	<script type="text/javascript">
-		window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/gnehs.com.tw\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5" } };
-		!function (a, b, c) { function d(a) { var b, c, d, e, f = String.fromCharCode; if (!k || !k.fillText) return !1; switch (k.clearRect(0, 0, j.width, j.height), k.textBaseline = "top", k.font = "600 32px Arial", a) { case "flag": return k.fillText(f(55356, 56826, 55356, 56819), 0, 0), !(j.toDataURL().length < 3e3) && (k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 65039, 8205, 55356, 57096), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 55356, 57096), 0, 0), c = j.toDataURL(), b !== c); case "emoji4": return k.fillText(f(55357, 56425, 55356, 57341, 8205, 55357, 56507), 0, 0), d = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55357, 56425, 55356, 57341, 55357, 56507), 0, 0), e = j.toDataURL(), d !== e }return !1 } function e(a) { var c = b.createElement("script"); c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c) } var f, g, h, i, j = b.createElement("canvas"), k = j.getContext && j.getContext("2d"); for (i = Array("flag", "emoji4"), c.supports = { everything: !0, everythingExceptFlag: !0 }, h = 0; h < i.length; h++)c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]); c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () { c.DOMReady = !0 }, c.supports.everything || (g = function () { c.readyCallback() }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function () { "complete" === b.readyState && c.readyCallback() })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji))) }(window, document, window._wpemojiSettings);
-	</script>
-	<style type="text/css">
-		img.wp-smiley,
-		img.emoji {
-			display: inline!important;
-			border: none!important;
-			box-shadow: none!important;
-			height: 1em!important;
-			width: 1em!important;
-			margin: 0 .07em!important;
-			vertical-align: -0.1em!important;
-			background: none!important;
-			padding: 0!important;
-		}
-	</style>
-</body>
+		</div>
+		<script>
+			ts('#first.tabbed.menu .item').tab();
+		</script>
+	</body>
 
 </html>

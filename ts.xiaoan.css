@@ -77,6 +77,12 @@
 	margin-right: auto;
 	display: block;
 }
+.ts.xiaoan.fluid {
+	background-size: 100% 100%;
+  	padding-bottom: 100%;
+  	width: 100%;
+  	height: 0;
+}
 /* 
 	Icon Font 
 */
@@ -98,6 +104,12 @@ i.xiaoan:before {
 i.xiaoan.instead:before {
 	font-family: 'xiaoan' !important;
 	content: "\e900";
+}
+/* 語意化 */
+i.xiaoan.rainbow{
+	background: linear-gradient(to bottom, #f00, #f0f 15%, #00f 33%, #0ff 49%, #0f0 67%, #ff0 84%, #f00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 /*
 	動畫
