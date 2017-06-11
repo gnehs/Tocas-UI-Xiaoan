@@ -135,6 +135,9 @@ i.xiaoan.rainbow{
 	50% {
 		transform: translate(2.5px, -3.5px) rotate(-1.75deg); 
 	}
+	60% {
+		transform: translate(0px, 0px) rotate(5deg); 
+	}
 	75% {
 		transform: translate(2.5px, -2.5px) rotate(2.5deg); 
 	}
