@@ -133,6 +133,23 @@ i.xiaoan.rainbow{
 		transform: translate(2.5px, -2.5px) rotate(0.5deg); 
 	}
 }
+
+/*
+	嗑藥版動畫
+*/
+
+i.xiaoan.drug {
+	background: linear-gradient(to bottom, #f00, #f0f 15%, #00f 33%, #0ff 49%, #0f0 67%, #ff0 84%, #f00);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: drug 1s linear infinite, shake 10ms linear infinite, pulse-animation 10ms linear infinite, 2s linear infinite icon-loading;
+	background-size: 700% 700% !important
+}
+@keyframes drug{ 
+	0%{background-position:50% 0%}
+	100%{background-position:50% 100%}
+}
+
 /* 
 	卷軸樣式 
 */
