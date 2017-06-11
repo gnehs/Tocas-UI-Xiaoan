@@ -40,7 +40,7 @@
 					.ts.xiaoan
 					<div class="sub header">洨洨安 CSS by <a href="http://gnehs.com.tw">棒棒勝</a> / Docs by <a href="https://omwu.me">Henry Wu</a></div>
 				</h1>
-				<a class="ts labeled icon primary large button" href="https://github.com/gnehs/Tocas-UI-Xiaoan/releases/latest" target="_blank"><i class="xiaoan icon"></i>下載</a>
+				<a class="ts labeled icon primary large button" href="https://github.com/gnehs/Tocas-UI-Xiaoan/releases/latest" target="_blank"><i class="xiaoan icon"></i>下載</a>&nbsp;&nbsp;
 				<a class="ts labeled icon large button" href="https://github.com/gnehs/Tocas-UI-Xiaoan" target="_blank"><i class="xiaoan icon"></i>GitHub</a>
 			</div>
 			<div class="ts narrow container relaxed grid">
@@ -59,7 +59,9 @@
 				<div class="ts relaxed grid">
 					<div class="sixteen wide mobile four wide computer column">
 						<div class="ts borderless secondary vertical large menu">
-							<a class="item" href="#開始使用">開始使用</a>
+							<div class="ts primary header">開始使用</div>
+							<a class="item" href="#引用">引用</a>
+							<a class="item" href="#外部CDN">外部 CDN</a>
 							<div class="ts primary header">種類</div>
 							<a class="item" href="#基本">基本</a>
 							<a class="item" href="#替身">替身</a>
@@ -73,13 +75,18 @@
 						</div>
 					</div>
 					<div class="sixteen wide mobile column twelve wide computer">
-						<h2 class="ts header" id="開始使用">開始使用</h2>
-						下載並解壓縮後，保持資料夾結構，丟到你的網頁目錄，再將插入到 <code>&lt;head&gt; </code>中。
+						<h2 class="ts header" id="引用">引用</h2>
+						下載並解壓縮後，保持資料夾結構，丟到你的網頁目錄，再將插入到 <code>&lt;head&gt;</code> 中。
 						<div class="ts secondary code segment">
 							&lt;link rel="stylesheet" href="ts.xiaoan.css"&gt;
 						</div>
 						<br><br>
-
+						<h2 class="ts header" id="外部CDN">外部 CDN</h2>
+						或者你也可以使用 RawGit 提供的 CDN，但不保證隨時都處於上線狀態。
+						<div class="ts secondary code segment">
+							&lt;link rel="stylesheet" href="https://cdn.rawgit.com/gnehs/Tocas-UI-Xiaoan/master/ts.xiaoan.js"&gt;
+						</div>
+						<br><br>
 
 						<h2 class="ts header" id="基本">基本<span class="sub header">最基本的洨安。</span></h2>
 						<div class="ts xiaoan"></div>
@@ -89,7 +96,7 @@
 							<mark>xiaoan</mark>"&gt;&lt;/div&gt;
 						</div>
 						<br><br>
-						<h2 class="ts header" id="替身">替身<span class="sub header">你可以使用使用黑色的替身。</span></h2>
+						<h2 class="ts header" id="替身">替身<span class="sub header">你可以使用他的替身。</span></h2>
 						<div class="ts instead xiaoan"></div>
 						<div class="ts secondary code segment">
 							<div class="ts top right attached label">原始碼</div>
