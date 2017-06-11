@@ -127,16 +127,16 @@ i.xiaoan.rainbow{
 		transform: translate(0, 0) rotate(0); 
 	}
 	25% {
-		transform: translate(-2.5px, -0.5px) rotate(0.5deg); 
+		transform: translate(-2.5px, -0.5px) rotate(-1.52deg); 
 	}
 	40% {
-		transform: translate(5px, 2.5px) rotate(-2.5deg); 
+		transform: translate(5px, 2.5px) rotate(2.5deg); 
 	}
 	50% {
-		transform: translate(2.5px, -3.5px) rotate(2.5deg); 
+		transform: translate(2.5px, -3.5px) rotate(-1.75deg); 
 	}
 	75% {
-		transform: translate(2.5px, -2.5px) rotate(-0.5deg); 
+		transform: translate(2.5px, -2.5px) rotate(2.5deg); 
 	}
 }
 
