@@ -145,14 +145,6 @@ i.xiaoan.drug {
 	animation: drug 1s linear infinite, shake 10ms linear infinite, pulse-animation 10ms linear infinite, 2s linear infinite icon-loading;
 	background-size: 700% 700% !important
 }
-@-webkit-keyframes drug {
-	0%{background-position:50% 0%}
-	100%{background-position:50% 100%}
-}
-@-moz-keyframes drug {
-	0%{background-position:50% 0%}
-	100%{background-position:50% 100%}
-}
 @keyframes drug{ 
 	0%{background-position:50% 0%}
 	100%{background-position:50% 100%}
