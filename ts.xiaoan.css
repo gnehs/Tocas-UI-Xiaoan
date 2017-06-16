@@ -1,3 +1,15 @@
+/*
+=============================================
+	洨洨安 CSS
+	https://xiaoan.tocas-ui.com/
+	○洨洨安 CSS by 棒棒勝
+	○文件 by Henry Wu
+=============================================
+
+		沒有到不了的始春，只有不會到的始春
+
+=============================================
+*/
 /* 
 	預設 
 */
@@ -114,6 +126,8 @@ i.xiaoan.rainbow{
 /*
 	動畫
 */
+
+/* 震動 */
 .ts.shake{
   display: inline-block;
   transform-origin: center center; 
@@ -143,10 +157,7 @@ i.xiaoan.rainbow{
 	}
 }
 
-/*
-	嗑藥版動畫
-*/
-
+/* 嗑藥 */
 i.xiaoan.drug {
 	background: linear-gradient(to bottom, #f00, #f0f 15%, #00f 33%, #0ff 49%, #0f0 67%, #ff0 84%, #f00);
 	-webkit-background-clip: text;
