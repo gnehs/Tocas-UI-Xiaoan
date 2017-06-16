@@ -167,11 +167,22 @@ i.xiaoan.drug {
 }
 ::-webkit-scrollbar {
 	width: 20px;
-	height: 20px;
+	height: 10px;
 	background-color: #F5F5F5;
 }
 ::-webkit-scrollbar-thumb {
 	background-image: url(xiaoan.svg);
 	background-position: center;
 	background-size: 25px;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background-image: url(xiaoan.instead.svg);
+	background-position: center;
+	background-size: 25px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+	background-image: url(xiaoan.svg);
+	background-position: center;
+	background-size: 12px;
 }
