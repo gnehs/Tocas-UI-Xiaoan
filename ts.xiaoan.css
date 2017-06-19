@@ -2,8 +2,8 @@
 =============================================
 	洨洨安 CSS
 	https://xiaoan.tocas-ui.com/
-	○洨洨安 CSS by 棒棒勝
-	○文件 by Henry Wu
+	洨洨安 CSS by 棒棒勝
+	文件 by Henry Wu
 =============================================
 
 		沒有到不了的始春，只有不會到的始春
@@ -11,10 +11,10 @@
 =============================================
 */
 /* 
-	預設 
+	品種
 */
 .ts.xiaoan {
-	background-image: url(xiaoan.svg);
+	background-image: url(svg/xiaoan.svg);
 	width: 100px;
 	height: 100px;
 	background-position: center;
@@ -23,7 +23,37 @@
 }
 
 .ts.xiaoan.instead {
-	background-image: url(xiaoan.instead.svg);
+	background-image: url(svg/xiaoan.instead.svg);
+}
+.ts.demon.instead {
+	background-image: url(svg/demon.instead.svg);
+}
+.ts.demon {
+	background-image: url(svg/demon.svg);
+}
+.ts.face.instead {
+	background-image: url(svg/face.instead.svg);
+}
+.ts.face{
+	background-image: url(svg/face.svg);
+}
+.ts.funny.face.instead {
+	background-image: url(svg/funny.face.instead.svg);
+}
+.ts.funny.face {
+	background-image: url(svg/funny.face.svg);
+}
+.ts.horny {
+	background-image: url(svg/horny.svg);
+}
+.ts.horny.instead {
+	background-image: url(svg/horny.instead.svg);
+}
+.ts.kemonomimi {
+	background-image: url(svg/kemonomimi.svg);
+}
+.ts.kemonomimi.instead {
+	background-image: url(svg/kemonomimi.instead.svg);
 }
 /* 
 	大小 
@@ -99,23 +129,61 @@
 	Icon Font 
 */
 @font-face {
-	font-family: 'xiaoan';
-	src:
-		url('fonts/xiaoan.ttf?nhl6td') format('truetype'),
-		url('fonts/xiaoan.woff?nhl6td') format('woff'),
-		url('fonts/xiaoan.svg?nhl6td#xiaoan') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'xiaoan';
+  src:
+    url('fonts/xiaoan.ttf?izxrsk') format('truetype'),
+    url('fonts/xiaoan.woff?izxrsk') format('woff'),
+    url('fonts/xiaoan.svg?izxrsk#xiaoan') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-i.xiaoan:before {
-	font-family: 'xiaoan' !important;
-	content: "\e901";
+i.xiaoan.demon.instead:before {
+  font-family: 'xiaoan' !important;
+  content: "\e900";
 }
-
+i.xiaoan.demon:before {
+  font-family: 'xiaoan' !important;
+  content: "\e901";
+}
+i.xiaoan.face.instead:before {
+  font-family: 'xiaoan' !important;
+  content: "\e902";
+}
+i.xiaoan.face:before {
+  font-family: 'xiaoan' !important;
+  content: "\e903";
+}
+i.xiaoan.funny.face.instead:before {
+  font-family: 'xiaoan' !important;
+  content: "\e904";
+}
+i.xiaoan.funny.face:before {
+  font-family: 'xiaoan' !important;
+  content: "\e905";
+}
+i.xiaoan.horny.instead:before {
+  font-family: 'xiaoan' !important;
+  content: "\e906";
+}
+i.xiaoan.horny:before {
+  content: "\e907";
+}
+i.xiaoan.Kemonomimi-instead:before {
+  font-family: 'xiaoan' !important;
+  content: "\e908";
+}
+i.xiaoan.Kemonomimi:before {
+  font-family: 'xiaoan' !important;
+  content: "\e909";
+}
 i.xiaoan.instead:before {
-	font-family: 'xiaoan' !important;
-	content: "\e900";
+  font-family: 'xiaoan' !important;
+  content: "\e90b";
+}
+i.xiaoan:before {
+  font-family: 'xiaoan' !important;
+  content: "\e90a";
 }
 /* 語意化 */
 i.xiaoan.rainbow{
@@ -182,13 +250,13 @@ i.xiaoan.drug {
 	background-color: #F5F5F5;
 }
 ::-webkit-scrollbar-thumb {
-	background-image: url(xiaoan.svg);
+	background-image: url(svg/xiaoan.svg);
 	background-position: center;
 	background-size: 25px;
 	border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background-image: url(xiaoan.instead.svg);
+	background-image: url(svg/face.svg);
 	background-position: center;
 	background-size: 25px;
 }

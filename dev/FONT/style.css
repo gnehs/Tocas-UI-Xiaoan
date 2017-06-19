@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'xiaoan';
+  src:
+    url('fonts/xiaoan.ttf?izxrsk') format('truetype'),
+    url('fonts/xiaoan.woff?izxrsk') format('woff'),
+    url('fonts/xiaoan.svg?izxrsk#xiaoan') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'xiaoan' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.xiaoan.demon.instead:before {
+  font-family: 'xiaoan' !important;
+  content: "\e900";
+}
+.xiaoan.demon:before {
+  font-family: 'xiaoan' !important;
+  content: "\e901";
+}
+.xiaoan.face.instead:before {
+  font-family: 'xiaoan' !important;
+  content: "\e902";
+}
+.xiaoan.face:before {
+  font-family: 'xiaoan' !important;
+  content: "\e903";
+}
+.xiaoan.funny.face.instead:before {
+  font-family: 'xiaoan' !important;
+  content: "\e904";
+}
+.xiaoan.funny.face:before {
+  font-family: 'xiaoan' !important;
+  content: "\e905";
+}
+.xiaoan.horny.instead:before {
+  font-family: 'xiaoan' !important;
+  content: "\e906";
+}
+.xiaoan.horny:before {
+  content: "\e907";
+}
+.xiaoan.Kemonomimi-instead:before {
+  font-family: 'xiaoan' !important;
+  content: "\e908";
+}
+.xiaoan.Kemonomimi:before {
+  font-family: 'xiaoan' !important;
+  content: "\e909";
+}
+.xiaoan.instead:before {
+  font-family: 'xiaoan' !important;
+  content: "\e90a";
+}
+.xiaoan:before {
+  font-family: 'xiaoan' !important;
+  content: "\e90b";
+}
