@@ -199,11 +199,14 @@ i.xiaoan.rainbow{
 .ts.xiaoan.info{
 	  filter: invert(.5) sepia(1) hue-rotate(220deg);
 }
-.ts.xiaoan.info{
-	  filter: invert(.5) sepia(1) hue-rotate(220deg);
+.ts.xiaoan.warning{
+	  filter: invert(.7) sepia(1) saturate(2.8) brightness(1) hue-rotate(10deg);
 }
 .ts.xiaoan.positive{
 	  filter: invert(.7) sepia(1) brightness(.7) hue-rotate(10deg);
+}
+.ts.xiaoan.negative{
+	  filter: invert(.7) sepia(1) saturate(5) brightness(.5) hue-rotate(300deg);
 }
 /*
 	動畫
