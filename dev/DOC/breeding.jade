@@ -1,0 +1,124 @@
+doctype html
+html
+    head
+        title 洨洨安配種實驗室
+        meta(name='viewport',content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(charset='utf-8')
+        // Tocas UI
+        link(rel='stylesheet', href='https://cdn.rawgit.com/TeaMeow/TocasUI/2.3.2/dist/tocas.css')
+        // Tocas JS
+        script(src='https://cdn.rawgit.com/TeaMeow/TocasUI/2.3.2/dist/tocas.js')
+        // tocas Xiaoan
+        link(href='ts.xiaoan.css', rel='stylesheet')
+        // Tocas Xiaoan JS
+        script(src='ts.xiaoan.js')
+        // JQ https://cdnjs.com/libraries/jquery/
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+        // Font
+        link(href='https://fonts.googleapis.com/css?family=Ubuntu+Mono', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Raleway', rel='stylesheet')
+        // SEO
+        meta(name='keywords', content='洨洨安')
+        meta(name='author', content='棒棒勝')
+        meta(name='description', content='嫌洨洨安 CSS 顏色太少嗎？現在，透過我們實驗室的即時配種，配出美麗顏色的洨安。Powered by 洨洨安實驗室')
+        meta(name='URL', content='https://xiaoan.tocas-ui.com/breeding.html')
+        // open graph data
+        meta(property='og:title', content='洨洨安配種中心')
+        meta(property='og:type', content='website')
+        meta(property='og:image', content='breeding.jpg')
+        meta(property='og:description', content='嫌洨洨安 CSS 顏色太少嗎？現在，透過我們實驗室的即時配種，配出美麗顏色的洨安。Powered by 洨洨安實驗室')
+        meta(property='article:author', content='https://www.facebook.com/gnehsouo/')
+        style.
+            #data{font-family: 'Ubuntu Mono', monospace;word-break: break-all;}
+            *{font-family: 'Raleway',-apple-system, "Source Han Sans TC","Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN","Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;}
+    body
+        .ts.basic.top.attached.menu
+            .ts.narrow.container
+                a.item 洨洨安配種實驗室
+                a.item(href='https://xiaoan.tocas-ui.com/', target='_blank') 洨洨安 CSS
+                a.right.item(href='https://github.com/gnehs', target='_blank') GitHub
+        .ts.fluid.huge.slate
+            i.icon.xiaoan
+            .header 洨洨安配種實驗室
+            .description Powered by 洨洨安實驗室
+        br
+        br
+        .ts.narrow.container
+            h2.ts.header 預覽區
+                .sub.header 給你看實驗室透過您的數據及時配種配出了三小
+            #perview.ts.segment
+                .ts.xiaoan
+                .ts.instead.xiaoan
+                .ts.demon.xiaoan
+                .ts.demon.instead.xiaoan
+                .ts.face.xiaoan
+                .ts.face.instead.xiaoan
+                .ts.funny.face.xiaoan
+                .ts.funny.face.instead.xiaoan
+                .ts.horny.xiaoan
+                .ts.horny.instead.xiaoan
+                .ts.kemonomimi.xiaoan
+                .ts.kemonomimi.instead.xiaoan
+
+            h2.ts.header 配種區
+                .sub.header 調整您的數據，配出美麗的洨安
+            #breeding.ts.grid  
+                .eight.wide.column
+                    h5.ts.header Grayscale
+                        .sub.header 黑白
+                    .ts.slider
+                        .ts.basic.right.pointing.label 0%
+                        input#grayscale(type='range')
+                        .ts.basic.left.pointing.label 100%
+                    h5.ts.header Sepia
+                        .sub.header 懷舊
+                    .ts.slider
+                        .ts.basic.right.pointing.label 0%
+                        input#sepia(type='range')
+                        .ts.basic.left.pointing.label 100%
+                    h5.ts.header Saturate
+                        .sub.header 飽和
+                    .ts.slider
+                        .ts.basic.right.pointing.label 0%
+                        input#saturate(type='range')
+                        .ts.basic.left.pointing.label 100%
+                    h5.ts.header Contrast
+                        .sub.header 對比
+                    .ts.slider
+                        .ts.basic.right.pointing.label 0%
+                        input#contrast(type='range')
+                        .ts.basic.left.pointing.label 200%
+                .eight.wide.column
+                    h5.ts.header Hue-rotate
+                        .sub.header 色相旋轉
+                    .ts.slider
+                        .ts.basic.right.pointing.label 0deg
+                        input#huerotate(type='range')
+                        .ts.basic.left.pointing.label 360deg
+                    h5.ts.header Invert
+                        .sub.header 負片
+                    .ts.slider
+                        .ts.basic.right.pointing.label 0%
+                        input#invert(type='range')
+                        .ts.basic.left.pointing.label 100%
+                    h5.ts.header Brightness
+                        .sub.header 亮度
+                    .ts.slider
+                        .ts.basic.right.pointing.label 0%
+                        input#brightness(type='range')
+                        .ts.basic.left.pointing.label 100%
+                    h5.ts.header Blur
+                        .sub.header 模糊
+                    .ts.slider
+                        .ts.basic.right.pointing.label 0px
+                        input#blur(type='range')
+                        .ts.basic.left.pointing.label 10px
+
+            h2.ts.header 數據
+                .sub.header 您的配種數據，您可以將數據交給開發人員，也許洨洨安 CSS 下一個版本就會加入了呢！
+            #data.ts.primary.segment 調整以上滑桿，配種出您的洨洨安
+            br
+            br
+        
+        // 配種中心專用
+        script(src='breeding.js')
