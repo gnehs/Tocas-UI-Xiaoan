@@ -185,11 +185,25 @@ i.xiaoan:before {
   font-family: 'xiaoan' !important;
   content: "\e90a";
 }
-/* 語意化 */
+/* 
+	語意化 
+*/
 i.xiaoan.rainbow{
-	background: linear-gradient(to bottom, #f00, #f0f 15%, #00f 33%, #0ff 49%, #0f0 67%, #ff0 84%, #f00);
+	  background: linear-gradient(to bottom, #f00, #f0f 15%, #00f 33%, #0ff 49%, #0f0 67%, #ff0 84%, #f00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.ts.xiaoan.primary{
+	  filter: invert(.5) sepia(1) hue-rotate(170deg);
+}
+.ts.xiaoan.info{
+	  filter: invert(.5) sepia(1) hue-rotate(220deg);
+}
+.ts.xiaoan.info{
+	  filter: invert(.5) sepia(1) hue-rotate(220deg);
+}
+.ts.xiaoan.positive{
+	  filter: invert(.7) sepia(1) brightness(.7) hue-rotate(10deg);
 }
 /*
 	動畫
