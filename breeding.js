@@ -1,5 +1,6 @@
+$('input[id="blur"]').val("0");
 ts('.ts.slider').slider();
-$("#breeding >div>div>input").change(function () {
+$("#breeding >div>div>input").on("input", function () {
     var grayscale = document.getElementById("grayscale").value;
     var sepia = document.getElementById("sepia").value;
     var saturate = document.getElementById("saturate").value;
