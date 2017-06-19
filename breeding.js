@@ -2,6 +2,7 @@ $('input[id="blur"]').val("0");
 $('input[id="brightness"]').val("100");
 $('input[id="saturate"]').val("100");
 $('input[id="grayscale"]').val("0");
+$('input[id="invert"]').val("0");
 ts('.ts.slider').slider();
 $("#breeding >div>div>input").on("input", function () {
     var grayscale = document.getElementById("grayscale").value;
