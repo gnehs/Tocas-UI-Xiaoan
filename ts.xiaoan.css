@@ -216,6 +216,9 @@ i.xiaoan.rainbow{
 .ts.xiaoan.negative{
 	  filter: invert(.7) sepia(1) saturate(5) brightness(.5) hue-rotate(300deg);
 }
+.ts.xiaoan.inverted{
+	  filter: invert(0.92);
+}
 /*
 	動畫
 */

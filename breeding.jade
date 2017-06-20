@@ -29,7 +29,7 @@ html
         meta(property='og:description', content='嫌洨洨安 CSS 顏色太少嗎？現在，透過我們實驗室的即時配種，配出美麗顏色的洨安。Powered by 洨洨安實驗室')
         meta(property='article:author', content='https://www.facebook.com/gnehsouo/')
         style.
-            #data{font-family: 'Ubuntu Mono', monospace;word-break: break-all;}
+            #CodeForCSS,#CodeForHtml,#CodeForJade{font-family: 'Ubuntu Mono', monospace;word-break: break-all;}
             *{font-family: 'Raleway',-apple-system, "Source Han Sans TC","Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN","Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;}
     body
         include _nav.jade
@@ -42,18 +42,13 @@ html
         .ts.narrow.container
             h2.ts.header 預覽區
                 .sub.header 給你看實驗室透過您的數據及時配種配出了三小，根據您的螢幕大小，洨安數量會有所增減
-            #perview.ts.segment
-                .ts.xiaoan.large.device.only
+            #perview.ts.center.aligned.segment
                 .ts.instead.xiaoan.large
-                .ts.demon.xiaoan.large.device.only
                 .ts.demon.instead.xiaoan.large
-                .ts.face.xiaoan.large.device.only
+                .ts.tissue.xiaoan.large.device.only
                 .ts.face.instead.xiaoan.large
                 .ts.funny.face.xiaoan.large.device.only
-                .ts.funny.face.instead.xiaoan.large.device.only
-                .ts.horny.xiaoan.large.device.only
                 .ts.horny.instead.xiaoan.large.device.only
-                .ts.kemonomimi.xiaoan.large.device.only
                 .ts.kemonomimi.instead.xiaoan.large.device.only
 
             h2.ts.header 配種區
@@ -111,10 +106,20 @@ html
                         .ts.basic.left.pointing.label.large.device.only 10px
 
             h2.ts.header 數據
-                .sub.header 您的配種數據，您可以將數據交給開發人員，也許洨洨安 CSS 下一個版本就會加入了呢！
-            #data.ts.primary.segment 調整以上滑桿，配種出您的洨洨安
+                .sub.header 您的配種數據，可以馬上搭配洨洨安 CSS 使用，也可以將 CSS 交給開發人員，也許洨洨安 CSS 下一個版本就會加入了呢！
+            .ts.segments
+                .ts.primary.segment CSS
+                #CodeForCSS.ts.segment // 調整以上滑桿，配種出您的洨洨安
             br
+            .ts.segments
+                .ts.primary.segment HTML
+                #CodeForHtml.ts.segment // 建議先調整負片滑桿
             br
+            .ts.segments
+                .ts.primary.segment Pug/Jade
+                #CodeForJade.ts.segment // Powered by 洨洨安實驗室
         
         // 配種中心專用
         script(src='breeding.js')
+        // footer
+        include _footer.jade

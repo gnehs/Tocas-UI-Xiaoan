@@ -15,5 +15,7 @@ $("#breeding >div>div>input").on("input", function () {
     var blur = document.getElementById("blur").value * 0.1;
     var filter = " invert(" + invert + ")" + " contrast(" + contrast + "%)" + " sepia(" + sepia + "%)" + " hue-rotate(" + huerotate + "deg)" + " grayscale(" + grayscale + "%)" + " blur(" + blur + "px)" + " brightness(" + brightness + "%)" + " saturate(" + saturate + "%)";
     $("#perview>div").css("filter", filter);
-    $("#data").html("filter:" + filter + ";");
+    $("#CodeForCSS").html("filter:" + filter + ";");
+    $("#CodeForHtml").html("&lt;div class=\"ts xiaoan\" style=\"filter:" + filter + ";\"&gt;&lt;/div&gt;");
+    $("#CodeForJade").html(".ts.xiaoan(style='filter:" + filter + ";')");
 });
