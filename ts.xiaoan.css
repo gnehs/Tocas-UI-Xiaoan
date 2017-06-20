@@ -55,6 +55,9 @@
 .ts.xiaoan.kemonomimi.instead {
 	background-image: url(svg/kemonomimi.instead.svg);
 }
+.ts.xiaoan.tissue {
+	background-image: url(svg/tissue.svg);
+}
 /* 
 	大小 
 */
@@ -167,6 +170,7 @@ i.xiaoan.horny.instead:before {
   content: "\e906";
 }
 i.xiaoan.horny:before {
+  font-family: 'xiaoan' !important;
   content: "\e907";
 }
 i.xiaoan.kemonomimi.instead:before {
@@ -184,6 +188,10 @@ i.xiaoan.instead:before {
 i.xiaoan:before {
   font-family: 'xiaoan' !important;
   content: "\e90a";
+}
+i.xiaoan.tissue:before {
+  font-family: 'xiaoan' !important;
+  content: "\e90c";
 }
 /* 
 	語意化 
