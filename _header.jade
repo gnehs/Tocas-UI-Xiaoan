@@ -36,10 +36,11 @@ html
         *{
         font-family: 'Raleway',-apple-system, "Source Han Sans TC","Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN","Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
         }
-  body
+  body.ts.scrollbar
+    include _nav.jade
     header.ts.heading.vertically.padded.fluid.slate
       .ts.center.aligned.container
-        .ts.shake.huge.circular.xiaoan
+        .ts.shake.huge.circular.xiaoan(style='background-color: white')
         h1.ts.center.aligned.header
           | .ts.xiaoan
           .sub.header
@@ -51,31 +52,3 @@ html
             a.ts.labeled.icon.primary.large.button(href='https://github.com/gnehs/Tocas-UI-Xiaoan/releases/latest', target='_blank')
                 i.download.icon
                 | 下載
-            a.ts.labeled.icon.primary.large.button(href='https://github.com/gnehs/Tocas-UI-Xiaoan', target='_blank')
-                i.github.icon
-                | GitHub
-            a.ts.labeled.icon.primary.large.button(href='breeding.html')
-                i.xiaoan.icon
-                | 配種中心
-      .ts.narrow.container.relaxed.grid
-        .large.device.only.four.wide.column
-        .sixteen.wide.mobile.twelve.wide.computer.column
-          #first.ts.bottom.attached.three.item.tabbed.menu
-            a.active.item(data-tab='基本用法') 基本用法
-            a.item(data-tab='Icon Font') Icon Font
-            a.item(data-tab='Tocas UI 範例') Tocas UI 範例
-    .ts.container
-      .ts.active.bottom.attached.tab(data-tab='基本用法')
-        br
-        br
-        include _basic.jade
-      .ts.bottom.attached.tab(data-tab='Icon Font')
-        br
-        br
-        include _icon-font.jade
-      .ts.bottom.attached.tab(data-tab='Tocas UI 範例')
-        br
-        br
-        include _tocas-example.jade
-    script.
-      ts('#first.tabbed.menu .item').tab();

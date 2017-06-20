@@ -1,11 +1,16 @@
-.ts.relaxed.grid
+include _header.jade
+br
+br
+.ts.container
+  .ts.relaxed.grid
           div.sixteen.wide.mobile.four.wide.computer.column
             .ts.borderless.secondary.vertical.large.menu
-              .ts.primary.header 開始使用
+              .ts.primary.header 從這開始
               a.item(href='#引用') 引用
               a.item(href='#外部CDN') 外部 CDN
               .ts.primary.header 種類
               a.item(href='#基本') 基本
+              a.item(href='#卷軸') 卷軸
               .ts.primary.header 外觀
               a.item(href='#尺寸') 尺寸
               a.item(href='#流動') 流動
@@ -14,6 +19,7 @@
               a.item(href='#置中') 置中
               a.item(href='#震動') 震動
               a.item(href='#品種') 品種
+              a.item(href='#語意') 語意
           .sixteen.wide.mobile.column.twelve.wide.computer
             h2.ts.header(id='引用') 引用
             | 下載並解壓縮後，保持資料夾結構，丟到你的網頁目錄，即可開始使用！
@@ -22,10 +28,10 @@
             br
             br
             h2.ts.header(id='外部CDN') 外部 CDN
-            | 你也可以使用 RawGit 提供的 CDN，但不保證隨時都處於上線狀態。
+            | RawGit
             .ts.secondary.code.segment
              = '<link rel="stylesheet" href="https://cdn.rawgit.com/gnehs/Tocas-UI-Xiaoan/master/ts.xiaoan.css">'
-            | 或者你也可以使用 GitHub Page 提供的 CDN，但不保證隨時都處於上線狀態。
+            | GitHub Page
             .ts.secondary.code.segment
              = '<link rel="stylesheet" href="https://xiaoan.tocas-ui.com/ts.xiaoan.css">'
             br
@@ -37,6 +43,19 @@
             .ts.secondary.code.segment
               .ts.top.right.attached.label 原始碼
               = '<div class="ts xiaoan"></div>'
+            br
+            br
+            h2.ts.header(id='卷軸')
+              | 卷軸
+              span.sub.header 洨洨安 CSS 支援卷軸功能，在您想替換卷軸的區塊放上 Class 即可。
+            p 這個頁面就是一個示範，您必須使用桌面版 WebKit 核心的瀏覽器，否則不支援此功能(像是 Firefox)。
+            .ts.secondary.code.segment
+              .ts.top.right.attached.label 原始碼
+              = '<body class="ts scrollbar">'
+              br
+              = '...'
+              br
+              = '</body>'
             br
             br
             h2.ts.header(id='尺寸')
@@ -159,3 +178,29 @@
               br
             br
             br
+            h2.ts.header(id='語意')
+              | 語意
+              .ts.circular.label 1.1 新功能
+              span.sub.header 
+                | 洨安也能夠具備語意，您可以在 
+                a(href='breeding.html') 配種中心 
+                |  配出更多的語意並且提交給開發人員。
+            .ts.primary.xiaoan
+            .ts.info.instead.xiaoan
+            .ts.demon.warning.xiaoan
+            .ts.demon.instead.positive.xiaoan
+            .ts.face.negative.xiaoan
+            .ts.secondary.code.segment
+              .ts.top.right.attached.label 原始碼
+              = '<div class="ts primary xiaoan"></div>'
+              br
+              = '<div class="ts instead info xiaoan"></div>'
+              br
+              = '<div class="ts demon warning xiaoan"></div>'
+              br
+              = '<div class="ts demon instead positive xiaoan"></div>'
+              br
+              = '<div class="ts face negative xiaoan"></div>'
+            br
+            br
+include _footer.jade
