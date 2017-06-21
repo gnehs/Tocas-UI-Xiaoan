@@ -8,6 +8,11 @@ br
         .ts.primary.header 分類
         a.item(href='#基本') 基本
         a.item(href='#品種') 品種
+        .ts.primary.header 動畫
+        a.item(href='#嗑藥中') 嗑藥中
+        a.item(href='main-basic.html#震動') 震動
+        a.item(href='main-basic.html#旋轉') 旋轉
+        a.item(href='main-basic.html#動畫速度') 動畫速度
     .sixteen.wide.mobile.column.twelve.wide.computer
       h2.ts.header(id='基本')
         | 基本
@@ -38,6 +43,7 @@ br
       i.icon.huge.kemonomimi.xiaoan
       i.icon.huge.kemonomimi.instead.xiaoan
       i.icon.huge.tissue.xiaoan
+      i.icon.huge.spinner.xiaoan
       .ts.secondary.code.segment
         .ts.top.right.attached.label 原始碼
         = '<i class="huge xiaoan icon"></i>'
@@ -66,5 +72,13 @@ br
         br
         = '<i class="huge tissue xiaoan icon"></i>'
         br
-        
+        = '<i class="huge spinner xiaoan icon"></i>'
+        br
+      h2.ts.header(id='嗑藥中')
+        | 嗑藥中
+        span.sub.header 比上面那個更像在嗑藥。
+      i.massive.drug.icon.xiaoan
+      .ts.secondary.code.segment
+        .ts.top.right.attached.label 原始碼
+        = '<i class="drug massive icon xiaoan"></i>'
 include _footer.jade

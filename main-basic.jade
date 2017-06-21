@@ -17,9 +17,12 @@ br
         a.item(href='#圓角') 圓角
         a.item(href='#圓形') 圓形
         a.item(href='#置中') 置中
-        a.item(href='#震動') 震動
         a.item(href='#品種') 品種
         a.item(href='#語意') 語意
+        .ts.primary.header 動畫
+        a.item(href='#震動') 震動
+        a.item(href='#旋轉') 旋轉
+        a.item(href='#動畫速度') 動畫速度
     .sixteen.wide.mobile.column.twelve.wide.computer
       h2.ts.header(id='引用') 引用
       | 下載並解壓縮後，保持資料夾結構，丟到你的網頁目錄，即可開始使用！
@@ -125,19 +128,10 @@ br
         = '<div class="ts centered xiaoan"></div>'
       br
       br
-      h2.ts.header(id='震動')
-        | 震動
-        span.sub.header 洨安也能震動！
-      .ts.shake.xiaoan
-      .ts.secondary.code.segment
-        .ts.top.right.attached.label 原始碼
-        = '<div class="ts shake xiaoan"></div>'
-      br
-      br
       h2.ts.header(id='品種')
         | 品種
-        .ts.circular.label 1.0 新功能
         .ts.circular.label 1.2 新增抽取式洨安
+        .ts.circular.label 1.3 新增指尖洨安
         span.sub.header 洨安有多個品種！
       .ts.xiaoan
       .ts.instead.xiaoan
@@ -152,6 +146,7 @@ br
       .ts.kemonomimi.xiaoan
       .ts.kemonomimi.instead.xiaoan
       .ts.tissue.xiaoan
+      .ts.spinner.xiaoan
       .ts.secondary.code.segment
         .ts.top.right.attached.label 原始碼
         = '<div class="ts xiaoan"></div>'
@@ -179,6 +174,8 @@ br
         = '<div class="ts kemonomimi instead xiaoan"></div>'
         br
         = '<div class="ts tissue xiaoan"></div>'
+        br
+        = '<div class="ts spinner xiaoan"></div>'
         br
       br
       br
@@ -209,5 +206,40 @@ br
         = '<div class="ts face negative xiaoan"></div>'
         br
         = '<div class="ts inverted xiaoan"></div>'
-        
+      h2.ts.header(id='震動')
+        | 震動
+        span.sub.header 洨安也能震動！
+      .ts.shake.xiaoan
+      .ts.secondary.code.segment
+        .ts.top.right.attached.label 原始碼
+        = '<div class="ts shake xiaoan"></div>'
+      br
+      br
+      h2.ts.header(id='旋轉')
+        | 旋轉
+        .ts.circular.label 1.3 新功能
+        span.sub.header 有看過指尖洨安嗎
+      .ts.spinner.rotate.xiaoan
+      .ts.secondary.code.segment
+        .ts.top.right.attached.label 原始碼
+        = '<div class="ts spinner rotate xiaoan"></div>'
+      br
+      br
+      h2.ts.header(id='動畫速度')
+        | 動畫速度
+        .ts.circular.label 1.3 新功能
+        span.sub.header 您可以指定速度，快(fast)、慢(slow)、始春(early spring)或是預設的速度(不指定)
+      .ts.spinner.fast.rotate.xiaoan
+      .ts.spinner.rotate.xiaoan
+      .ts.spinner.slow.rotate.xiaoan
+      .ts.spinner.early.spring.rotate.xiaoan
+      .ts.secondary.code.segment
+        .ts.top.right.attached.label 原始碼
+        = '<div class="ts spinner fast rotate xiaoan"></div>'
+        br
+        = '<div class="ts spinner rotate xiaoan"></div>'
+        br
+        = '<div class="ts spinner slow rotate xiaoan"></div>'
+        br
+        = '<div class="ts spinner early spring rotate xiaoan"></div>'
 include _footer.jade

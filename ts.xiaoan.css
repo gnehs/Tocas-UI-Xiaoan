@@ -58,6 +58,9 @@
 .ts.xiaoan.tissue {
 	background-image: url(svg/tissue.svg);
 }
+.ts.xiaoan.spinner {
+	background-image: url(svg/spinner.svg);
+}
 /* 
 	大小 
 */
@@ -193,6 +196,10 @@ i.xiaoan.tissue:before {
   font-family: 'xiaoan' !important;
   content: "\e90c";
 }
+i.xiaoan.spinner:before {
+  font-family: 'xiaoan' !important;
+  content: "\e90d";
+}
 /* 
 	語意化 
 */
@@ -221,16 +228,30 @@ i.xiaoan.rainbow{
 }
 /*
 	動畫
+	-----------
+		速度
+	fast 快
+	slow 慢
+	----------
 */
 
 /* 震動 */
-.ts.shake{
+.shake{
   display: inline-block;
   transform-origin: center center; 
   animation-name: shake;
   animation-duration: .01s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+}
+.shake.fast{
+  animation-duration: .005s;
+}
+.shake.slow{
+  animation-duration: .02s;
+}
+.shake.early.spring{
+  animation-duration: 2s;
 }
 @keyframes shake {
 	0%, 100% {
@@ -252,6 +273,41 @@ i.xiaoan.rainbow{
 		transform: translate(2.5px, -2.5px) rotate(2.5deg); 
 	}
 }
+/* 旋轉 */
+.rotate{
+  display: inline-block;
+  transform-origin: center center; 
+  animation-name: rotate;
+  animation-duration: .75s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.rotate.fast{
+  animation-duration: .25s;
+}
+.rotate.slow{
+  animation-duration: 1.5s;
+}
+.rotate.early.spring{
+  animation-duration: 10s;
+}
+@keyframes rotate {
+	0%{
+		transform:rotate(0deg);
+	}
+	25% {
+		transform:rotate(90deg);
+	}
+	50% {
+		transform:rotate(180deg);
+	}
+	75% {
+		transform:rotate(270deg);
+	}
+	100%{
+		transform:rotate(360deg);
+	}
+}
 
 /* 嗑藥 */
 i.xiaoan.drug {
@@ -264,6 +320,15 @@ i.xiaoan.drug {
 @keyframes drug{ 
 	0%{background-position:50% 0%}
 	100%{background-position:50% 100%}
+}
+.ts.drug.fast{
+  animation: drug .5s linear infinite, shake 10ms linear infinite, pulse-animation 10ms linear infinite, 2s linear infinite icon-loading;
+}
+.ts.drug.slow{
+  animation: drug 1.5s linear infinite, shake 10ms linear infinite, pulse-animation 10ms linear infinite, 2s linear infinite icon-loading;
+}
+.ts.drug.early.spring{
+  animation: drug 10s linear infinite, shake 10ms linear infinite, pulse-animation 10ms linear infinite, 2s linear infinite icon-loading;
 }
 
 /* 
@@ -296,7 +361,7 @@ i.xiaoan.drug {
 }
 /* 
 	卷軸品種 
-	*在視窗失焦時，將洨安替換為替身
+	*在視窗失焦時，將洨安替換為替身，或將替身替換為正身
 */
 .ts.scrollbar::-webkit-scrollbar-thumb,
 .ts.instead.scrollbar::-webkit-scrollbar-thumb:window-inactive {

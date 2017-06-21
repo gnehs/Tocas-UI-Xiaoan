@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'xiaoan';
   src:
-    url('fonts/xiaoan.ttf?yjq4ks') format('truetype'),
-    url('fonts/xiaoan.woff?yjq4ks') format('woff'),
-    url('fonts/xiaoan.svg?yjq4ks#xiaoan') format('svg');
+    url('fonts/xiaoan.ttf?emd6ng') format('truetype'),
+    url('fonts/xiaoan.woff?emd6ng') format('woff'),
+    url('fonts/xiaoan.svg?emd6ng#xiaoan') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -61,4 +61,7 @@ i {
 }
 .xiaoan-tissue:before {
   content: "\e90c";
+}
+.xiaoan-spinner:before {
+  content: "\e90d";
 }
