@@ -327,15 +327,6 @@ i.xiaoan.drug {
 	0%{background-position:50% 0%}
 	100%{background-position:50% 100%}
 }
-.ts.drug.fast{
-  animation: drug .5s linear infinite, shake 10ms linear infinite, pulse-animation 10ms linear infinite, 2s linear infinite icon-loading;
-}
-.ts.drug.slow{
-  animation: drug 1.5s linear infinite, shake 10ms linear infinite, pulse-animation 10ms linear infinite, 2s linear infinite icon-loading;
-}
-.ts.drug.early.spring{
-  animation: drug 15s linear infinite, shake 10ms linear infinite, pulse-animation 10ms linear infinite, 2s linear infinite icon-loading;
-}
 
 /* 
 	卷軸樣式 
