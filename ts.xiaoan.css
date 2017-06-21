@@ -243,7 +243,6 @@ i.xiaoan.rainbow{
 
 /* 震動 */
 .shake{
-  display: inline-block;
   transform-origin: center center; 
   animation-name: shake;
   animation-duration: .01s;
@@ -281,7 +280,6 @@ i.xiaoan.rainbow{
 }
 /* 旋轉 */
 .rotate{
-  display: inline-block;
   transform-origin: center center; 
   animation-name: rotate;
   animation-duration: .75s;
