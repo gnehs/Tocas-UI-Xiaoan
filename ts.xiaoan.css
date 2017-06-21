@@ -143,60 +143,49 @@
   font-weight: normal;
   font-style: normal;
 }
-i.xiaoan.demon.instead:before {
+i.xiaoan:before {
   font-family: 'xiaoan' !important;
+}
+i.xiaoan.demon.instead:before {
   content: "\e900";
 }
 i.xiaoan.demon:before {
-  font-family: 'xiaoan' !important;
   content: "\e901";
 }
 i.xiaoan.face.instead:before {
-  font-family: 'xiaoan' !important;
   content: "\e902";
 }
 i.xiaoan.face:before {
-  font-family: 'xiaoan' !important;
   content: "\e903";
 }
 i.xiaoan.funny.face.instead:before {
-  font-family: 'xiaoan' !important;
   content: "\e904";
 }
 i.xiaoan.funny.face:before {
-  font-family: 'xiaoan' !important;
   content: "\e905";
 }
 i.xiaoan.horny.instead:before {
-  font-family: 'xiaoan' !important;
   content: "\e906";
 }
 i.xiaoan.horny:before {
-  font-family: 'xiaoan' !important;
   content: "\e907";
 }
 i.xiaoan.kemonomimi.instead:before {
-  font-family: 'xiaoan' !important;
   content: "\e908";
 }
 i.xiaoan.kemonomimi:before {
-  font-family: 'xiaoan' !important;
   content: "\e909";
 }
 i.xiaoan.instead:before {
-  font-family: 'xiaoan' !important;
   content: "\e90b";
 }
 i.xiaoan:before {
-  font-family: 'xiaoan' !important;
   content: "\e90a";
 }
 i.xiaoan.tissue:before {
-  font-family: 'xiaoan' !important;
   content: "\e90c";
 }
 i.xiaoan.spinner:before {
-  font-family: 'xiaoan' !important;
   content: "\e90d";
 }
 /*
