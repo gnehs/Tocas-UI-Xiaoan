@@ -257,7 +257,7 @@ i.xiaoan.rainbow{
   animation-duration: .02s;
 }
 .shake.early.spring{
-  animation-duration: 4s;
+  animation-duration: 40s;
 }
 @keyframes shake {
 	0%, 100% {
