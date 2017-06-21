@@ -294,6 +294,7 @@ i.xiaoan.rainbow{
 /* 嗑藥 */
 i.xiaoan.drug {
 	background: linear-gradient(to bottom, #f00, #f0f 15%, #00f 33%, #0ff 49%, #0f0 67%, #ff0 84%, #f00);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: drug 1s linear infinite, shake 10ms linear infinite, pulse-animation 10ms linear infinite, 2s linear infinite icon-loading;
