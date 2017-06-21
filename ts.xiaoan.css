@@ -257,7 +257,7 @@ i.xiaoan.rainbow{
   animation-duration: .02s;
 }
 .shake.early.spring{
-  animation-duration: 2s;
+  animation-duration: 4s;
 }
 @keyframes shake {
 	0%, 100% {
@@ -295,7 +295,7 @@ i.xiaoan.rainbow{
   animation-duration: 1.5s;
 }
 .rotate.early.spring{
-  animation-duration: 10s;
+  animation-duration: 100s;
 }
 @keyframes rotate {
 	0%{
@@ -334,7 +334,7 @@ i.xiaoan.drug {
   animation: drug 1.5s linear infinite, shake 10ms linear infinite, pulse-animation 10ms linear infinite, 2s linear infinite icon-loading;
 }
 .ts.drug.early.spring{
-  animation: drug 10s linear infinite, shake 10ms linear infinite, pulse-animation 10ms linear infinite, 2s linear infinite icon-loading;
+  animation: drug 15s linear infinite, shake 10ms linear infinite, pulse-animation 10ms linear infinite, 2s linear infinite icon-loading;
 }
 
 /* 
