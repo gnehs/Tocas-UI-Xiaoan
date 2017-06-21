@@ -143,7 +143,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 i.xiaoan.demon.instead:before {
   font-family: 'xiaoan' !important;
   content: "\e900";
@@ -199,6 +198,13 @@ i.xiaoan.tissue:before {
 i.xiaoan.spinner:before {
   font-family: 'xiaoan' !important;
   content: "\e90d";
+}
+/*
+	修正洨安在 ts image 下吐洨的情形
+*/
+.ts.image:not(.label)>.icon.xiaoan:not(.button) {
+    -webkit-text-stroke: 1px #fff;
+    text-stroke:1px #fff;
 }
 /* 
 	語意化 
