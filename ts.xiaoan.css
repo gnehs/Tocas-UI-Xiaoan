@@ -240,15 +240,14 @@ i.xiaoan.rainbow{
 	slow 				 慢
 	early spring 夭壽慢
 	-----------------
+	簡寫
+	animation: name duration timing-function delay iteration-count direction;
+	-----------------
 */
 
 /* 震動 */
 .shake{
-  transform-origin: center center; 
-  animation-name: shake;
-  animation-duration: .01s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+	animation: shake .01s linear infinite;
 }
 .shake.fast{
   animation-duration: .005s;
@@ -281,11 +280,7 @@ i.xiaoan.rainbow{
 }
 /* 旋轉 */
 .rotate{
-  transform-origin: center center; 
-  animation-name: rotate;
-  animation-duration: .75s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+	animation: rotate .75s linear infinite;
 }
 .rotate.fast{
   animation-duration: .25s;
