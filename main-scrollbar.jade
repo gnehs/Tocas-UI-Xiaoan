@@ -1,0 +1,34 @@
+include _header.jade
+br
+br
+.ts.container
+    .ts.relaxed.grid
+        .sixteen.wide.mobile.four.wide.computer.column
+            .ts.borderless.secondary.vertical.large.menu
+                .ts.primary.header 卷軸
+                  a.item(href='#基本') 基本
+                  a.item(href='#外部CDN') 品種
+        .sixteen.wide.mobile.column.twelve.wide.computer
+            h2.ts.header(id='基本')
+              | 基本
+              span.sub.header 洨洨安 CSS 支援卷軸功能，在您想替換卷軸的區塊放上 Class 即可。
+            p 這個頁面就是一個示範，您必須使用桌面版 WebKit 核心的瀏覽器，否則不支援此功能(像是 Firefox)。
+            .ts.secondary.code.segment
+                .ts.top.right.attached.label 原始碼
+                = '<body class="ts scrollbar">'
+                br
+                = '...'
+                br
+                = '</body>'
+            br
+            br
+            h2.ts.header(id='外部CDN') 外部 CDN
+            | RawGit
+            .ts.secondary.code.segment
+                = '<link rel="stylesheet" href="https://cdn.rawgit.com/gnehs/Tocas-UI-Xiaoan/master/ts.xiaoan.css">'
+            | GitHub Page
+            .ts.secondary.code.segment
+                = '<link rel="stylesheet" href="https://xiaoan.tocas-ui.com/ts.xiaoan.css">'
+            br
+            br
+include _footer.jade
