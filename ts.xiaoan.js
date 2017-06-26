@@ -69,18 +69,14 @@ var variety = [
     'tissue',
     'spinner',
 ];
-var variety = [
+var varietyIcon = [
     'primary',
     'info',
     'warning',
     'positive',
     'negative',
     'inverted',
-    'exceedingly light blue',
-    'gloomy',
-    'NTR',
-    'love ',
-    'EarlySpring',
+    'rainbow ',
 ];
 var xiaoan = function () {
     this.daily = function () {
