@@ -2,263 +2,263 @@ include _header.jade
 br
 br
 .ts.container
-  .ts.relaxed.grid
-    .sixteen.wide.mobile.four.wide.computer.column
-      .ts.borderless.secondary.vertical.large.menu
-        .ts.primary.header 從這開始
-        a.item(href='#引用') 引用
-        a.item(href='#外部CDN') 外部 CDN
-        .ts.primary.header 種類
-        a.item(href='#基本') 基本
-        .ts.primary.header 外觀
-        a.item(href='#尺寸') 尺寸
-        a.item(href='#流動') 流動
-        a.item(href='#圓角') 圓角
-        a.item(href='#圓形') 圓形
-        a.item(href='#置中') 置中
-        a.item(href='#品種') 品種
-        a.item(href='#語意') 語意
-        .ts.primary.header 動畫
-        a.item(href='#震動') 震動
-        a.item(href='#旋轉') 旋轉
-        a.item(href='#動畫速度') 動畫速度
-    .sixteen.wide.mobile.column.twelve.wide.computer
-      h2.ts.header(id='引用') 引用
-      | 下載並解壓縮後，保持資料夾結構，丟到你的網頁目錄，即可開始使用！
-      .ts.secondary.code.segment
-        ='<!-- 洨洨安 CSS -->'
-        br
-        = '<link rel="stylesheet" href="ts.xiaoan.css">'
-        br
-        ='<!-- 洨洨安 JS -->'
-        br
-        = '<script src="ts.xiaoan.js"></script>'
-      br
-      br
-      h2.ts.header(id='外部CDN') 外部 CDN
-      | RawGit
-      .ts.secondary.code.segment
-        ='<!-- 洨洨安 CSS -->'
-        br
-        = '<link rel="stylesheet" href="https://cdn.rawgit.com/gnehs/Tocas-UI-Xiaoan/master/ts.xiaoan.css">'
-        br
-        ='<!-- 洨洨安 JS -->'
-        br
-        = '<script src="https://cdn.rawgit.com/gnehs/Tocas-UI-Xiaoan/master/ts.xiaoan.js"></script>'
-      | GitHub Page
-      .ts.secondary.code.segment
-        ='<!-- 洨洨安 CSS -->'
-        br
-        = '<link rel="stylesheet" href="https://xiaoan.tocas-ui.com/ts.xiaoan.css">'
-        br
-        ='<!-- 洨洨安 JS -->'
-        br
-        = '<script src="https://xiaoan.tocas-ui.com/ts.xiaoan.js"></script>'
-      br
-      br
-      h2.ts.header(id='基本')
-        | 基本
-        span.sub.header 最基本的洨安。
-      .ts.xiaoan
-      .ts.secondary.code.segment
-        .ts.top.right.attached.label 原始碼
-        = '<div class="ts xiaoan"></div>'
-      br
-      br
-      h2.ts.header(id='尺寸')
-        | 尺寸
-        span.sub.header 提供了八種尺寸。
-      .ts.mini.xiaoan
-      .ts.tiny.xiaoan
-      .ts.small.xiaoan
-      .ts.xiaoan
-      .ts.large.xiaoan
-      .ts.big.xiaoan
-      .ts.huge.xiaoan
-      .ts.massive.xiaoan
-      .ts.secondary.code.segment
-        .ts.top.right.attached.label 原始碼
-        = '<div class="ts mini xiaoan"></div>'
-        br
-        = '<div class="ts tiny xiaoan"></div>'
-        br
-        = '<div class="ts small xiaoan"></div>'
-        br
-        = '<div class="ts xiaoan"></div>'
-        br
-        = '<div class="ts large xiaoan"></div>'
-        br
-        = '<div class="ts big xiaoan"></div>'
-        br
-        = '<div class="ts huge xiaoan"></div>'
-        br
-        = '<div class="ts massive xiaoan"></div>'
-        br
-      br
-      br
-      h2.ts.header(id='流動')
-        | 流動
-        span.sub.header 尺寸也可以是流動的，寬度會直接變成容器的 100%。
-      .ts.fluid.xiaoan
-      .ts.secondary.code.segment
-        .ts.top.right.attached.label 原始碼
-        = '<div class="ts fluid xiaoan"></div>'
-      br
-      br
-      h2.ts.header(id='圓角')
-        | 圓角
-        span.sub.header 不如加上一點圓角？
-      .ts.rounded.xiaoan
-      .ts.secondary.code.segment
-        .ts.top.right.attached.label 原始碼
-        = '<div class="ts rounded xiaoan"></div>'
-      br
-      br
-      h2.ts.header(id='圓形')
-        | 圓形
-        span.sub.header 你要圓形的也行。
-      .ts.circular.xiaoan
-      .ts.secondary.code.segment
-        .ts.top.right.attached.label 原始碼
-        = '<div class="ts circular xiaoan"></div>'
-      br
-      br
-      h2.ts.header(id='置中')
-        | 置中
-        span.sub.header 可以左右置中，置右呢？自己寫吧。
-      .ts.centered.xiaoan
-      .ts.secondary.code.segment
-        .ts.top.right.attached.label 原始碼
-        = '<div class="ts centered xiaoan"></div>'
-      br
-      br
-      h2.ts.header(id='品種')
-        | 品種
-        .ts.circular.label 1.2 新增抽取式洨安
-        .ts.circular.label 1.3 新增指尖洨安
-        span.sub.header 洨安有多個品種！
-      .ts.xiaoan
-      .ts.instead.xiaoan
-      .ts.demon.xiaoan
-      .ts.demon.instead.xiaoan
-      .ts.face.xiaoan
-      .ts.face.instead.xiaoan
-      .ts.funny.face.xiaoan
-      .ts.funny.face.instead.xiaoan
-      .ts.horny.xiaoan
-      .ts.horny.instead.xiaoan
-      .ts.kemonomimi.xiaoan
-      .ts.kemonomimi.instead.xiaoan
-      .ts.tissue.xiaoan
-      .ts.spinner.xiaoan
-      .ts.secondary.code.segment
-        .ts.top.right.attached.label 原始碼
-        = '<div class="ts xiaoan"></div>'
-        br
-        = '<div class="ts instead xiaoan"></div>'
-        br
-        = '<div class="ts demon xiaoan"></div>'
-        br
-        = '<div class="ts demon instead xiaoan"></div>'
-        br
-        = '<div class="ts face xiaoan"></div>'
-        br
-        = '<div class="ts face instead xiaoan"></div>'
-        br
-        = '<div class="ts funny face xiaoan"></div>'
-        br
-        = '<div class="ts funny face instead xiaoan"></div>'
-        br
-        = '<div class="ts horny xiaoan"></div>'
-        br
-        = '<div class="ts horny instead xiaoan"></div>'
-        br
-        = '<div class="ts kemonomimi xiaoan"></div>'
-        br
-        = '<div class="ts kemonomimi instead xiaoan"></div>'
-        br
-        = '<div class="ts tissue xiaoan"></div>'
-        br
-        = '<div class="ts spinner xiaoan"></div>'
-        br
-      br
-      br
-      h2.ts.header(id='語意')
-        | 語意
-        .ts.circular.label 1.2 新增反色語意
-        .ts.circular.label 1.4 新增亮藍、陰沉、NTR、戀愛中、始春語意
-        span.sub.header 
-          | 洨安也能夠具備語意，尼可以在 
-          a(href='breeding.html') 配種中心 
-          |  配出更多的語意並且提交給開發人員。
-      .ts.primary.xiaoan
-      .ts.info.instead.xiaoan
-      .ts.demon.warning.xiaoan
-      .ts.demon.instead.positive.xiaoan
-      .ts.face.negative.xiaoan
-      .ts.inverted.xiaoan
-      .ts.exceedingly.light.blue.xiaoan.xiaoan
-      .ts.gloomy.xiaoan
-      .ts.NTR.xiaoan
-      .ts.love.xiaoan
-      .ts.EarlySpring.xiaoan
-      .ts.secondary.code.segment
-        .ts.top.right.attached.label 原始碼
-        = '<div class="ts primary xiaoan"></div>'
-        br
-        = '<div class="ts instead info xiaoan"></div>'
-        br
-        = '<div class="ts demon warning xiaoan"></div>'
-        br
-        = '<div class="ts demon instead positive xiaoan"></div>'
-        br
-        = '<div class="ts face negative xiaoan"></div>'
-        br
-        = '<div class="ts inverted xiaoan"></div>'
-        br
-        = '<div class="ts exceedingly light blue xiaoan xiaoan"></div>'
-        br
-        = '<div class="ts gloomy xiaoan"></div>'
-        br
-        = '<div class="ts NTR xiaoan"></div>'
-        br
-        = '<div class="ts love xiaoan"></div>'
-        br
-        = '<div class="ts EarlySpring xiaoan"></div>'
-      h2.ts.header(id='震動')
-        | 震動
-        span.sub.header 洨安也能震動！
-      .ts.shake.xiaoan
-      .ts.secondary.code.segment
-        .ts.top.right.attached.label 原始碼
-        = '<div class="ts shake xiaoan"></div>'
-      br
-      br
-      h2.ts.header(id='旋轉')
-        | 旋轉
-        .ts.circular.label 1.3 新功能
-        span.sub.header 有看過指尖洨安嗎
-      .ts.spinner.rotate.xiaoan
-      .ts.secondary.code.segment
-        .ts.top.right.attached.label 原始碼
-        = '<div class="ts spinner rotate xiaoan"></div>'
-      br
-      br
-      h2.ts.header(id='動畫速度')
-        | 動畫速度
-        .ts.circular.label 1.3 新功能
-        span.sub.header 您可以指定速度，快(fast)、慢(slow)、始春(early spring)或是預設的速度(不指定)
-      .ts.spinner.fast.rotate.xiaoan
-      .ts.spinner.rotate.xiaoan
-      .ts.spinner.slow.rotate.xiaoan
-      .ts.spinner.early.spring.rotate.xiaoan
-      .ts.secondary.code.segment
-        .ts.top.right.attached.label 原始碼
-        = '<div class="ts spinner fast rotate xiaoan"></div>'
-        br
-        = '<div class="ts spinner rotate xiaoan"></div>'
-        br
-        = '<div class="ts spinner slow rotate xiaoan"></div>'
-        br
-        = '<div class="ts spinner early spring rotate xiaoan"></div>'
+    .ts.relaxed.grid
+        .sixteen.wide.mobile.four.wide.computer.column
+            .ts.borderless.secondary.vertical.large.menu
+                .ts.primary.header 從這開始
+                a.item(href='#引用') 引用
+                a.item(href='#外部CDN') 外部 CDN
+                .ts.primary.header 種類
+                a.item(href='#基本') 基本
+                .ts.primary.header 外觀
+                a.item(href='#尺寸') 尺寸
+                a.item(href='#流動') 流動
+                a.item(href='#圓角') 圓角
+                a.item(href='#圓形') 圓形
+                a.item(href='#置中') 置中
+                a.item(href='#品種') 品種
+                a.item(href='#語意') 語意
+                .ts.primary.header 動畫
+                a.item(href='#震動') 震動
+                a.item(href='#旋轉') 旋轉
+                a.item(href='#動畫速度') 動畫速度
+        .sixteen.wide.mobile.column.twelve.wide.computer
+            h2.ts.header(id='引用') 引用
+            | 下載並解壓縮後，保持資料夾結構，丟到你的網頁目錄，即可開始使用！
+            .ts.secondary.code.segment
+                ='<!-- 洨洨安 CSS -->'
+                br
+                = '<link rel="stylesheet" href="ts.xiaoan.css">'
+                br
+                ='<!-- 洨洨安 JS -->'
+                br
+                = '<script src="ts.xiaoan.js"></script>'
+            br
+            br
+            h2.ts.header(id='外部CDN') 外部 CDN
+            | RawGit
+            .ts.secondary.code.segment
+                ='<!-- 洨洨安 CSS -->'
+                br
+                = '<link rel="stylesheet" href="https://cdn.rawgit.com/gnehs/Tocas-UI-Xiaoan/master/ts.xiaoan.css">'
+                br
+                ='<!-- 洨洨安 JS -->'
+                br
+                = '<script src="https://cdn.rawgit.com/gnehs/Tocas-UI-Xiaoan/master/ts.xiaoan.js"></script>'
+            | GitHub Page
+            .ts.secondary.code.segment
+                ='<!-- 洨洨安 CSS -->'
+                br
+                = '<link rel="stylesheet" href="https://xiaoan.tocas-ui.com/ts.xiaoan.css">'
+                br
+                ='<!-- 洨洨安 JS -->'
+                br
+                = '<script src="https://xiaoan.tocas-ui.com/ts.xiaoan.js"></script>'
+            br
+            br
+            h2.ts.header(id='基本')
+                | 基本
+                span.sub.header 最基本的洨安。
+            .ts.xiaoan
+            .ts.secondary.code.segment
+                .ts.top.right.attached.label 原始碼
+                = '<div class="ts xiaoan"></div>'
+            br
+            br
+            h2.ts.header(id='尺寸')
+                | 尺寸
+                span.sub.header 提供了八種尺寸。
+            .ts.mini.xiaoan
+            .ts.tiny.xiaoan
+            .ts.small.xiaoan
+            .ts.xiaoan
+            .ts.large.xiaoan
+            .ts.big.xiaoan
+            .ts.huge.xiaoan
+            .ts.massive.xiaoan
+            .ts.secondary.code.segment
+                .ts.top.right.attached.label 原始碼
+                = '<div class="ts mini xiaoan"></div>'
+                br
+                = '<div class="ts tiny xiaoan"></div>'
+                br
+                = '<div class="ts small xiaoan"></div>'
+                br
+                = '<div class="ts xiaoan"></div>'
+                br
+                = '<div class="ts large xiaoan"></div>'
+                br
+                = '<div class="ts big xiaoan"></div>'
+                br
+                = '<div class="ts huge xiaoan"></div>'
+                br
+                = '<div class="ts massive xiaoan"></div>'
+                br
+            br
+            br
+            h2.ts.header(id='流動')
+                | 流動
+                span.sub.header 尺寸也可以是流動的，寬度會直接變成容器的 100%。
+            .ts.fluid.xiaoan
+            .ts.secondary.code.segment
+                .ts.top.right.attached.label 原始碼
+                = '<div class="ts fluid xiaoan"></div>'
+            br
+            br
+            h2.ts.header(id='圓角')
+                | 圓角
+                span.sub.header 不如加上一點圓角？
+            .ts.rounded.xiaoan
+            .ts.secondary.code.segment
+                .ts.top.right.attached.label 原始碼
+                = '<div class="ts rounded xiaoan"></div>'
+            br
+            br
+            h2.ts.header(id='圓形')
+                | 圓形
+                span.sub.header 你要圓形的也行。
+            .ts.circular.xiaoan
+            .ts.secondary.code.segment
+                .ts.top.right.attached.label 原始碼
+                = '<div class="ts circular xiaoan"></div>'
+            br
+            br
+            h2.ts.header(id='置中')
+                | 置中
+                span.sub.header 可以左右置中，置右呢？自己寫吧。
+            .ts.centered.xiaoan
+            .ts.secondary.code.segment
+                .ts.top.right.attached.label 原始碼
+                = '<div class="ts centered xiaoan"></div>'
+            br
+            br
+            h2.ts.header(id='品種')
+                | 品種
+                .ts.circular.label 1.2 新增抽取式洨安
+                .ts.circular.label 1.3 新增指尖洨安
+                span.sub.header 洨安有多個品種！
+            .ts.xiaoan
+            .ts.instead.xiaoan
+            .ts.demon.xiaoan
+            .ts.demon.instead.xiaoan
+            .ts.face.xiaoan
+            .ts.face.instead.xiaoan
+            .ts.funny.face.xiaoan
+            .ts.funny.face.instead.xiaoan
+            .ts.horny.xiaoan
+            .ts.horny.instead.xiaoan
+            .ts.kemonomimi.xiaoan
+            .ts.kemonomimi.instead.xiaoan
+            .ts.tissue.xiaoan
+            .ts.spinner.xiaoan
+            .ts.secondary.code.segment
+                .ts.top.right.attached.label 原始碼
+                = '<div class="ts xiaoan"></div>'
+                br
+                = '<div class="ts instead xiaoan"></div>'
+                br
+                = '<div class="ts demon xiaoan"></div>'
+                br
+                = '<div class="ts demon instead xiaoan"></div>'
+                br
+                = '<div class="ts face xiaoan"></div>'
+                br
+                = '<div class="ts face instead xiaoan"></div>'
+                br
+                = '<div class="ts funny face xiaoan"></div>'
+                br
+                = '<div class="ts funny face instead xiaoan"></div>'
+                br
+                = '<div class="ts horny xiaoan"></div>'
+                br
+                = '<div class="ts horny instead xiaoan"></div>'
+                br
+                = '<div class="ts kemonomimi xiaoan"></div>'
+                br
+                = '<div class="ts kemonomimi instead xiaoan"></div>'
+                br
+                = '<div class="ts tissue xiaoan"></div>'
+                br
+                = '<div class="ts spinner xiaoan"></div>'
+                br
+            br
+            br
+            h2.ts.header(id='語意')
+                | 語意
+                .ts.circular.label 1.2 新增反色語意
+                .ts.circular.label 1.4 新增亮藍、陰沉、NTR、戀愛中、始春語意
+                span.sub.header 
+                    | 洨安也能夠具備語意，尼可以在 
+                    a(href='breeding.html') 配種中心 
+                    |    配出更多的語意並且提交給開發人員。
+            .ts.primary.xiaoan
+            .ts.info.instead.xiaoan
+            .ts.demon.warning.xiaoan
+            .ts.demon.instead.positive.xiaoan
+            .ts.face.negative.xiaoan
+            .ts.inverted.xiaoan
+            .ts.exceedingly.light.blue.xiaoan.xiaoan
+            .ts.gloomy.xiaoan
+            .ts.NTR.xiaoan
+            .ts.love.xiaoan
+            .ts.EarlySpring.xiaoan
+            .ts.secondary.code.segment
+                .ts.top.right.attached.label 原始碼
+                = '<div class="ts primary xiaoan"></div>'
+                br
+                = '<div class="ts instead info xiaoan"></div>'
+                br
+                = '<div class="ts demon warning xiaoan"></div>'
+                br
+                = '<div class="ts demon instead positive xiaoan"></div>'
+                br
+                = '<div class="ts face negative xiaoan"></div>'
+                br
+                = '<div class="ts inverted xiaoan"></div>'
+                br
+                = '<div class="ts exceedingly light blue xiaoan xiaoan"></div>'
+                br
+                = '<div class="ts gloomy xiaoan"></div>'
+                br
+                = '<div class="ts NTR xiaoan"></div>'
+                br
+                = '<div class="ts love xiaoan"></div>'
+                br
+                = '<div class="ts EarlySpring xiaoan"></div>'
+            h2.ts.header(id='震動')
+                | 震動
+                span.sub.header 洨安也能震動！
+            .ts.shake.xiaoan
+            .ts.secondary.code.segment
+                .ts.top.right.attached.label 原始碼
+                = '<div class="ts shake xiaoan"></div>'
+            br
+            br
+            h2.ts.header(id='旋轉')
+                | 旋轉
+                .ts.circular.label 1.3 新功能
+                span.sub.header 有看過指尖洨安嗎
+            .ts.spinner.rotate.xiaoan
+            .ts.secondary.code.segment
+                .ts.top.right.attached.label 原始碼
+                = '<div class="ts spinner rotate xiaoan"></div>'
+            br
+            br
+            h2.ts.header(id='動畫速度')
+                | 動畫速度
+                .ts.circular.label 1.3 新功能
+                span.sub.header 您可以指定速度，快(fast)、慢(slow)、始春(early spring)或是預設的速度(不指定)
+            .ts.spinner.fast.rotate.xiaoan
+            .ts.spinner.rotate.xiaoan
+            .ts.spinner.slow.rotate.xiaoan
+            .ts.spinner.early.spring.rotate.xiaoan
+            .ts.secondary.code.segment
+                .ts.top.right.attached.label 原始碼
+                = '<div class="ts spinner fast rotate xiaoan"></div>'
+                br
+                = '<div class="ts spinner rotate xiaoan"></div>'
+                br
+                = '<div class="ts spinner slow rotate xiaoan"></div>'
+                br
+                = '<div class="ts spinner early spring rotate xiaoan"></div>'
 include _footer.jade
