@@ -1,16 +1,4 @@
-console.log("@@   @@ @@@@@@     @@@     @@@@@@@@@@     @@@     @@@   @@");
-console.log(" @@ @@    @@      @@ @@    @@      @@    @@ @@    @@@@  @@");
-console.log("  @@@     @@     @@   @@   @@      @@   @@   @@   @@ @@ @@");
-console.log(" @@ @@    @@    @@@@@@@@@  @@      @@  @@@@@@@@@  @@  @@@@");
-console.log("@@   @@ @@@@@@ @@       @@ @@@@@@@@@@ @@       @@ @@   @@@");
-console.log("//////////////////////////////////////////////////////////");
-console.log("               @@@@@@@@ @@@@@@@@ @@@@@@@@");
-console.log("               @@       @@       @@");
-console.log("               @@       @@@@@@@@ @@@@@@@@");
-console.log("               @@             @@       @@");
-console.log("               @@@@@@@@ @@@@@@@@ @@@@@@@@");
-console.error("2016 early-spring 404 not found");
-var xiaoan = [
+var Dailyxiaoan = [
     '大家好我是小安！未來有可能會改名啦～',
     '我喜歡遊玩遊戲，然後分享在YouTube上',
     '試試台灣自製社群？ ► http://www.TeaMeow.com/',
@@ -51,6 +39,67 @@ var xiaoan = [
     '兄弟，你真的欠錢欠很兇。',
     '自從聚焦看板腦殘腦殘的，我就打算把它換掉了',
 ];
-// 輸出洨安
-console.log("每日洨安❤️");
-console.log(xiaoan[Math.floor(Math.random() * xiaoan.length)]);
+var size = [
+    ' ',
+    'mini',
+    'tiny',
+    'small',
+    'large',
+    'big',
+    'huge',
+    'massive',
+];
+var variety = [
+    ' ',
+    'instead',
+    'demon',
+    'demon instead',
+    'face',
+    'face instead',
+    'funny face',
+    'funny face instead',
+    'horny',
+    'horny instead',
+    'kemonomimi',
+    'kemonomimi instead',
+    'tissue',
+    'spinner',
+];
+var variety = [
+    'primary',
+    'info',
+    'warning',
+    'positive',
+    'negative',
+    'inverted',
+    'exceedingly light blue',
+    'gloomy',
+    'NTR',
+    'love ',
+    'EarlySpring',
+];
+var xiaoan = function () {
+    this.daily = function () {
+        document.write(Dailyxiaoan[Math.floor(Math.random() * Dailyxiaoan.length)]);
+    }
+    this.daily_con = function () {
+        console.log(Dailyxiaoan[Math.floor(Math.random() * Dailyxiaoan.length)]);
+    }
+    this.religion_con = function () {
+        console.log("@@   @@ @@@@@@     @@@     @@@@@@@@@@     @@@     @@@   @@");
+        console.log(" @@ @@    @@      @@ @@    @@      @@    @@ @@    @@@@  @@");
+        console.log("  @@@     @@     @@   @@   @@      @@   @@   @@   @@ @@ @@");
+        console.log(" @@ @@    @@    @@@@@@@@@  @@      @@  @@@@@@@@@  @@  @@@@");
+        console.log("@@   @@ @@@@@@ @@       @@ @@@@@@@@@@ @@       @@ @@   @@@");
+    }
+    this.earlySpring404 = function (style) {
+        document.write('<div class="ts ' + style + ' message"><div class="header">Error 404</div><p>2016 early-spring 404 not found.</p></div>');
+    }
+    this.earlySpring404_con = function () {
+        console.error("2016 early-spring 404 not found.");
+    }
+    this.basic = function (style) {
+        document.write('<div class="ts ' + style + ' xiaoan"></div>')
+    }
+}
+var xiaoan = new xiaoan();
