@@ -221,6 +221,21 @@ i.xiaoan.rainbow{
 .ts.xiaoan.inverted{
 	  filter: invert(0.92);
 }
+.ts.xiaoan.exceedingly.light.blue.xiaoan{
+	  filter: invert(0.9) contrast(65%) sepia(100%) hue-rotate(129.5deg) grayscale(0%) saturate(100%);
+}
+.ts.xiaoan.gloomy{
+	  filter: contrast(25%) sepia(53%) hue-rotate(165.5deg) brightness(80%) saturate(100%);
+}
+.ts.xiaoan.NTR{
+	  filter: invert(0.87) contrast(32%) sepia(1) hue-rotate(75.5deg) grayscale(0%) blur(1.1px) brightness(87%) saturate(100%);
+}
+.ts.xiaoan.love{
+	  filter: invert(0.95) contrast(32%) sepia(100%) hue-rotate(266.5deg) grayscale(0%) blur(0px) brightness(100%) saturate(100%);
+}
+.ts.xiaoan.EarlySpring {
+	  filter: invert(1) contrast(200%) sepia(0%) hue-rotate(0deg) grayscale(0%) blur(0px) brightness(100%) saturate(0%);
+}
 /*
 	動畫
 	------------------
