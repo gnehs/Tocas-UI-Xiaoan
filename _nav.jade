@@ -10,3 +10,8 @@
         a.item(href='main-tocas-example.html') 範例集
         a.item(href='breeding.html') 配種
         a.right.item(href='https://github.com/gnehs/Tocas-UI-Xiaoan/', target='_blank') GitHub
+// Fix Tocas UI #436
+style.
+    .ts.menu[class*="horizontally scrollable"]:not(.secondary):not(.pointing):not(.tabbed) {
+        overflow-x: visible !important;
+    }
