@@ -6,13 +6,15 @@ br
         .sixteen.wide.mobile.four.wide.computer.column
             .ts.borderless.secondary.vertical.large.menu
                 .ts.primary.header 卷軸
-                  a.item(href='#基本') 基本
-                  a.item(href='#外部CDN') 品種
+                a.item(href='#基本') 基本
+                a.item(href='#品種') 品種
         .sixteen.wide.mobile.column.twelve.wide.computer
+            .ts.inverted.primary.message
+                .header 溫馨提醒
+                p 若要使用或是預覽此功能，您必須使用桌面版 WebKit 核心的瀏覽器（像是 Chrome）
             h2.ts.header(id='基本')
               | 基本
               span.sub.header 洨洨安 CSS 支援卷軸功能，在您想替換卷軸的區塊放上 Class 即可。
-            p 這個頁面就是一個示範，您必須使用桌面版 WebKit 核心的瀏覽器，否則不支援此功能(像是 Firefox)。
             .ts.secondary.code.segment
                 .ts.top.right.attached.label 原始碼
                 = '<body class="ts scrollbar">'
@@ -22,13 +24,41 @@ br
                 = '</body>'
             br
             br
-            h2.ts.header(id='外部CDN') 外部 CDN
-            | RawGit
-            .ts.secondary.code.segment
-                = '<link rel="stylesheet" href="https://cdn.rawgit.com/gnehs/Tocas-UI-Xiaoan/master/ts.xiaoan.css">'
-            | GitHub Page
-            .ts.secondary.code.segment
-                = '<link rel="stylesheet" href="https://xiaoan.tocas-ui.com/ts.xiaoan.css">'
+            h2.ts.header(id='品種') 品種
+            p 底下是一堆洨安卷軸的品種，按下按鈕立即套用然後複製該樣式 ❤️
+            .ts.separated.buttons
+                .ts.active.button ts scrollbar
+                .ts.button ts instead scrollbar
+                .ts.button ts demon scrollbar
+                .ts.button ts demon instead scrollbar
+            br
+            br
+            .ts.separated.buttons
+                .ts.button ts face scrollbar
+                .ts.button ts face instead scrollbar
+                .ts.button ts funny face scrollbar
+                .ts.button ts funny face instead scrollbar
+            br
+            br
+            .ts.separated.buttons
+                .ts.button ts horny scrollbar
+                .ts.button ts horny instead scrollbar
+                .ts.button ts kemonomimi scrollbar
+                .ts.button ts kemonomimi instead scrollbar
             br
             br
 include _footer.jade
+script.
+    $(".wide>div>.button").click(function(){
+        $(".wide>div>.button").removeClass("active");
+        $(this).addClass("active");
+        var cssForBody = $(this).html();
+        $('body').attr('class',cssForBody);
+        //複製
+        $('body').append('<textarea id="clip_area"></textarea>');
+        var clip_area = $('#clip_area');
+        clip_area.text(cssForBody);
+        clip_area.select();
+        document.execCommand('copy');
+        clip_area.remove();
+    });
