@@ -115,10 +115,6 @@
 	border-radius: 500em;
 }
 
-.ts.xiaoan.circular {
-	border-radius: 500em;
-}
-
 .ts.xiaoan.centered {
 	margin-left: auto;
 	margin-right: auto;
@@ -233,7 +229,7 @@ i.xiaoan.rainbow{
 	  filter: invert(0.95) contrast(32%) sepia(100%) hue-rotate(266.5deg) grayscale(0%) blur(0px) brightness(100%) saturate(100%);
 }
 .ts.xiaoan.EarlySpring {
-	  filter: invert(1) contrast(200%) sepia(0%) hue-rotate(0deg) grayscale(0%) blur(0px) brightness(100%) saturate(0%);
+	  filter: invert(1) contrast(200%) hue-rotate(0deg) grayscale(0%) blur(0px) brightness(100%) saturate(0%);
 }
 /*
 	動畫
