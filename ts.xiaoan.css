@@ -60,6 +60,12 @@
 .ts.xiaoan.spinner {
 	background-image: url(svg/spinner.svg);
 }
+.ts.xiaoan.heart {
+	background-image: url(svg/heart.svg);
+}
+.ts.xiaoan.heart.instead {
+	background-image: url(svg/heart.instead.svg);
+}
 /* 
 	大小 
 */
@@ -183,6 +189,13 @@ i.xiaoan.tissue:before {
 i.xiaoan.spinner:before {
   content: "\e90d";
 }
+i.xiaoan.heart.instead:before {
+  content: "\e90e";
+}
+i.xiaoan.heart:before {
+  content: "\e90f";
+}
+
 /*
 	修正洨安在 ts image 下吐洨的情形
 */
@@ -393,5 +406,13 @@ i.xiaoan.drug {
 }
 .ts.kemonomimi.instead.scrollbar::-webkit-scrollbar-thumb ,
 .ts.kemonomimi.scrollbar::-webkit-scrollbar-thumb:window-inactive {
+	background-image: url(svg/kemonomimi.instead.svg);
+}
+.ts.heart.scrollbar::-webkit-scrollbar-thumb,
+.ts.heart.instead.scrollbar::-webkit-scrollbar-thumb:window-inactive {
+	background-image: url(svg/kemonomimi.svg);
+}
+.ts.heart.instead.scrollbar::-webkit-scrollbar-thumb ,
+.ts.heart.scrollbar::-webkit-scrollbar-thumb:window-inactive {
 	background-image: url(svg/kemonomimi.instead.svg);
 }
