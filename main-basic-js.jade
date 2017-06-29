@@ -18,7 +18,8 @@ br
             h2.ts.header(id='介紹')
                 | 介紹
                 span.sub.header 一個基本的導覽
-            p 在 Tocas Xiaoan 中，所有功能皆有輸出在網頁中及輸出在 console 裡的版本，若您要輸出在 console 中，在後方加上 _con 即可
+            p 在 Tocas Xiaoan 中，一些功能同時有輸出在網頁中及輸出在 console 裡的版本，若您要輸出在 console 中，在後方加上 _con 即可
+            p 我們已經在文件中加上標籤，方便尼知道該功能可以用在哪裡了❤️
             .ts.secondary.code.segment
                 .ts.top.right.attached.label 原始碼
                 = '//底下程式碼會輸出在網頁上'
@@ -33,6 +34,8 @@ br
             br
             h2.ts.header(id='404找不到始春')
                 | 404 找不到始春
+                .ts.circular.basic.info.label 網頁中
+                .ts.circular.basic.info.label Console
                 span.sub.header 輸出一個找不到始春的錯誤！網頁中會以一個 Tocas UI 的訊息框輸出，而且您可以指定樣式，樣式請參閱 
                     a(href='https://tocas-ui.com/collections/message/') Tocas UI
             script.
@@ -47,6 +50,7 @@ br
             br
             h2.ts.header(id='我是洨安教')
                 | 我是洨安教
+                .ts.circular.basic.info.label Console
                 span.sub.header 宣告你是洨安教，無法輸出在網頁
             .ts.secondary.code.segment
                 .ts.top.right.attached.label 原始碼
@@ -55,6 +59,8 @@ br
             br
             h2.ts.header(id='每日洨安')
                 | 每日洨安
+                .ts.circular.basic.info.label 網頁中
+                .ts.circular.basic.info.label Console
                 span.sub.header 輸出洨安在網路上公開講過的話，尼甚至可以指定數量及限制字數。
             script.
                 xiaoan.daily()
@@ -74,6 +80,7 @@ br
             br
             h2.ts.header(id='基本洨安')
                 | 基本洨安
+                .ts.circular.basic.info.label 網頁中
                 span.sub.header 輸出洨洨安，您可以指定樣式，超棒 Der。但是無法在 console 內使用。
             script.
                 xiaoan.basic()
