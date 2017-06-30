@@ -19,27 +19,28 @@ html
         link(href='https://fonts.googleapis.com/css?family=Raleway', rel='stylesheet')
         // JQ https://cdnjs.com/libraries/jquery/
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-        // SEO
-        meta(name='keywords', content='洨洨安')
-        meta(name='author', content='棒棒勝')
-        meta(name='description', content='洨洨安 CSS!')
-        meta(name='URL', content='https://xiaoan.tocas-ui.com/')
-        // open graph data
-        meta(property='og:title', content='Tocas Xiaoan')
-        meta(property='og:type', content='website')
-        meta(property='og:image', content='og.jpg')
-        meta(property='og:description', content='第一天，洨安創造了始春。第二天，始春延期了。第三天，始春持續延期好評熱映中。')
-        meta(property='article:author', content='https://www.facebook.com/gnehsouo/')
-        style.
-            code,
-            .code,
-            .code mark {
-            font-family: 'Ubuntu Mono', monospace,-apple-system, "Source Han Sans TC","Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN","Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
-            word-break: break-all;
-            }
-            *{
-            font-family: 'Raleway',-apple-system, "Source Han Sans TC","Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN","Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
-            }
+        // Search Engine
+        meta(name='description', content='第一天，洨安創造了始春。第二天，始春延期了。第三天，始春持續延期好評熱映中。')
+        meta(name='image', content='og.jpg')
+        // Schema.org for Google
+        meta(itemprop='name', content='Tocas Xiaoan')
+        meta(itemprop='description', content='第一天，洨安創造了始春。第二天，始春延期了。第三天，始春持續延期好評熱映中。')
+        meta(itemprop='image', content='og.jpg')
+        // Twitter
+        meta(name='twitter:card', content='summary')
+        meta(name='twitter:title', content='Tocas Xiaoan')
+        meta(name='twitter:description', content='第一天，洨安創造了始春。第二天，始春延期了。第三天，始春持續延期好評熱映中。')
+        meta(name='twitter:site', content='@gnehs_owo')
+        meta(name='twitter:creator', content='@gnehs_owo')
+        meta(name='twitter:image:src', content='og.jpg')
+        // Open Graph Tags
+        meta(name='og:title', content='Tocas Xiaoan')
+        meta(name='og:description', content='第一天，洨安創造了始春。第二天，始春延期了。第三天，始春持續延期好評熱映中。')
+        meta(name='og:image', content='og.jpg')
+        meta(name='og:site_name', content='https://xiaoan.tocas-ui.com/')
+        meta(name='og:locale', content='zh_TW')
+        meta(name='og:type', content='website')
+        style code,.code,.code mark {font-family: 'Ubuntu Mono', monospace,-apple-system, "Source Han Sans TC","Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN","Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;word-break: break-all;}*{font-family: 'Raleway',-apple-system, "Source Han Sans TC","Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN","Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;}
     body.ts.scrollbar
         include _nav.jade
         header.ts.heading.vertically.padded.fluid.slate
