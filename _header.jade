@@ -57,3 +57,23 @@ html
                     a.ts.labeled.icon.primary.large.button(href='https://github.com/gnehs/Tocas-UI-Xiaoan/releases/latest', target='_blank')
                         i.download.icon
                         | 下載
+//- 標籤用模板
+mixin inPage
+    .ts.circular.basic.info.label 網頁中
+mixin inConsole
+    .ts.circular.basic.info.label Console
+//- NAV 用模板
+mixin NAVlink(name) 
+    a.item(href='#'+name)=name
+//- 標題用模板
+mixin header(name,subheader) 
+    h2.ts.header(id=name)=name
+        block
+        span.sub.header=subheader
+//- 程式碼用模板
+mixin code
+    .ts.secondary.code.segment
+        .ts.top.right.attached.label 原始碼
+        block
+    br
+    br

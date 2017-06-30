@@ -6,32 +6,27 @@ br
         .sixteen.wide.mobile.four.wide.computer.column
             .ts.borderless.secondary.vertical.large.menu
                 .ts.primary.header 種類
-                a.item(href='#基本') 基本
+                +NAVlink('基本')
                 .ts.primary.header 外觀
-                a.item(href='#尺寸') 尺寸
-                a.item(href='#流動') 流動
-                a.item(href='#圓角') 圓角
-                a.item(href='#圓形') 圓形
-                a.item(href='#置中') 置中
-                a.item(href='#品種') 品種
-                a.item(href='#語意') 語意
+                +NAVlink('尺寸')
+                +NAVlink('流動')
+                +NAVlink('圓角')
+                +NAVlink('圓形')
+                +NAVlink('置中')
+                +NAVlink('品種')
+                +NAVlink('語意')
                 .ts.primary.header 動畫
-                a.item(href='#震動') 震動
-                a.item(href='#旋轉') 旋轉
-                a.item(href='#動畫速度') 動畫速度
+                +NAVlink('震動')
+                +NAVlink('旋轉')
+                +NAVlink('動畫速度')
         .sixteen.wide.mobile.column.twelve.wide.computer
-            h2.ts.header(id='基本')
-                | 基本
-                span.sub.header 最基本的洨安。
+            +header('基本','最基本的洨安。')
             .ts.xiaoan
-            .ts.secondary.code.segment
+            +code
                 .ts.top.right.attached.label 原始碼
                 = '<div class="ts xiaoan"></div>'
-            br
-            br
-            h2.ts.header(id='尺寸')
-                | 尺寸
-                span.sub.header 提供了八種尺寸。
+                
+            +header('尺寸','提供了八種尺寸。')
             .ts.mini.xiaoan
             .ts.tiny.xiaoan
             .ts.small.xiaoan
@@ -40,8 +35,7 @@ br
             .ts.big.xiaoan
             .ts.huge.xiaoan
             .ts.massive.xiaoan
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<div class="ts mini xiaoan"></div>'
                 br
                 = '<div class="ts tiny xiaoan"></div>'
@@ -58,47 +52,28 @@ br
                 br
                 = '<div class="ts massive xiaoan"></div>'
                 br
-            br
-            br
-            h2.ts.header(id='流動')
-                | 流動
-                span.sub.header 尺寸也可以是流動的，寬度會直接變成容器的 100%。
+                
+            +header('流動','尺寸也可以是流動的，寬度會直接變成容器的 100%。')
             .ts.fluid.xiaoan
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<div class="ts fluid xiaoan"></div>'
-            br
-            br
-            h2.ts.header(id='圓角')
-                | 圓角
-                span.sub.header 不如加上一點圓角？
+            
+            +header('圓角','不如加上一點圓角？')
             .ts.rounded.xiaoan
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<div class="ts rounded xiaoan"></div>'
-            br
-            br
-            h2.ts.header(id='圓形')
-                | 圓形
-                span.sub.header 你要圓形的也行。
+            
+            +header('圓形','你要圓形的也行。')
             .ts.circular.xiaoan
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<div class="ts circular xiaoan"></div>'
-            br
-            br
-            h2.ts.header(id='置中')
-                | 置中
-                span.sub.header 可以左右置中，置右呢？自己寫吧。
+                
+            +header('置中','可以左右置中，置右呢？自己寫吧。')
             .ts.centered.xiaoan
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<div class="ts centered xiaoan"></div>'
-            br
-            br
-            h2.ts.header(id='品種')
-                | 品種
-                span.sub.header 洨安有多個品種！
+                
+            +header('品種','洨安有多個品種！')
             .ts.xiaoan
             .ts.instead.xiaoan
             .ts.demon.xiaoan
@@ -115,8 +90,7 @@ br
             .ts.spinner.xiaoan
             .ts.heart.xiaoan
             .ts.heart.instead.xiaoan
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<div class="ts xiaoan"></div>'
                 br
                 = '<div class="ts instead xiaoan"></div>'
@@ -149,14 +123,8 @@ br
                 br
                 = '<div class="ts heart instead xiaoan"></div>'
                 br
-            br
-            br
-            h2.ts.header(id='語意')
-                | 語意
-                span.sub.header 
-                    | 洨安也能夠具備語意，尼可以在 
-                    a(href='breeding.html') 配種中心 
-                    |    配出更多的語意並且提交給開發人員。
+                
+            +header('語意','洨安也能夠具備語意，尼可以在配種中心配出更多的語意並且提交給開發人員。')
             .ts.primary.xiaoan
             .ts.info.instead.xiaoan
             .ts.demon.warning.xiaoan
@@ -168,8 +136,7 @@ br
             .ts.NTR.xiaoan
             .ts.love.xiaoan
             .ts.EarlySpring.xiaoan
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<div class="ts primary xiaoan"></div>'
                 br
                 = '<div class="ts instead info xiaoan"></div>'
@@ -191,33 +158,24 @@ br
                 = '<div class="ts love xiaoan"></div>'
                 br
                 = '<div class="ts EarlySpring xiaoan"></div>'
-            h2.ts.header(id='震動')
-                | 震動
-                span.sub.header 洨安也能震動！
+            
+            +header('震動','洨安也能震動！')
             .ts.shake.xiaoan
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<div class="ts shake xiaoan"></div>'
-            br
-            br
-            h2.ts.header(id='旋轉')
-                | 旋轉
-                span.sub.header 有看過指尖洨安嗎
+                
+            +header('旋轉','有看過指尖洨安嗎？')
             .ts.spinner.rotate.xiaoan
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<div class="ts spinner rotate xiaoan"></div>'
-            br
-            br
+
             h2.ts.header(id='動畫速度')
-                | 動畫速度
-                span.sub.header 您可以指定速度，快(fast)、慢(slow)、始春(early spring)或是預設的速度(不指定)
+            +header('動畫速度','您可以指定速度，快(fast)、慢(slow)、始春(early spring)或是預設的速度(不指定)')
             .ts.spinner.fast.rotate.xiaoan
             .ts.spinner.rotate.xiaoan
             .ts.spinner.slow.rotate.xiaoan
             .ts.spinner.early.spring.rotate.xiaoan
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<div class="ts spinner fast rotate xiaoan"></div>'
                 br
                 = '<div class="ts spinner rotate xiaoan"></div>'

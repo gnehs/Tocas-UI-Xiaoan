@@ -6,22 +6,19 @@ br
         .sixteen.wide.mobile.four.wide.computer.column
             .ts.borderless.secondary.vertical.large.menu
                 .ts.primary.header 開始使用
-                a.item(href='介紹') 介紹
-                a.item(href='#404找不到始春') 404 找不到始春
-                a.item(href='#我是洨安教') 我是洨安教
-                a.item(href='#每日洨安') 每日洨安
-                a.item(href='#基本洨安') 基本洨安
+                +NAVlink('介紹')
+                +NAVlink('404 找不到始春')
+                +NAVlink('我是洨安教')
+                +NAVlink('每日洨安')
+                +NAVlink('基本洨安')
         .sixteen.wide.mobile.column.twelve.wide.computer
             .ts.inverted.primary.message
                 .header 溫馨提醒
                 p 若要使用或是預覽此功能，您必須載入洨洨安 JS
-            h2.ts.header(id='介紹')
-                | 介紹
-                span.sub.header 一個基本的導覽
+            +header('介紹','一個基本的導覽')
             p 在 Tocas Xiaoan 中，一些功能同時有輸出在網頁中及輸出在 console 裡的版本，若您要輸出在 console 中，在後方加上 _con 即可
             p 我們已經在文件中加上標籤，方便尼知道該功能可以用在哪裡了❤️
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '//底下程式碼會輸出在網頁上'
                 br
                 = 'xiaoan.earlySpring404()'
@@ -29,44 +26,30 @@ br
                 = '//底下程式碼會輸出在 console 裡'
                 br
                 = 'xiaoan.earlySpring404_con()'
-                br
-            br
-            br
-            h2.ts.header(id='404找不到始春')
-                | 404 找不到始春
-                .ts.circular.basic.info.label 網頁中
-                .ts.circular.basic.info.label Console
-                span.sub.header 輸出一個找不到始春的錯誤！網頁中會以一個 Tocas UI 的訊息框輸出，而且您可以指定樣式，樣式請參閱 
-                    a(href='https://tocas-ui.com/collections/message/') Tocas UI
+            
+            +header('404 找不到始春','輸出一個找不到始春的錯誤！網頁中會以一個訊息輸出，樣式請參閱 Tocas UI 官方文件')
+                +inPage
+                +inConsole
             script.
                 xiaoan.earlySpring404()
                 xiaoan.earlySpring404("inverted warning")
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = 'xiaoan.earlySpring404()'
                 br
                 = 'xiaoan.earlySpring404("inverted warning")'
-            br
-            br
-            h2.ts.header(id='我是洨安教')
-                | 我是洨安教
-                .ts.circular.basic.info.label Console
-                span.sub.header 宣告你是洨安教，無法輸出在網頁
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            
+            +header('我是洨安教','宣告你是洨安教')
+                +inConsole
+            +code
                 = 'xiaoan.religion_con()'
-            br
-            br
-            h2.ts.header(id='每日洨安')
-                | 每日洨安
-                .ts.circular.basic.info.label 網頁中
-                .ts.circular.basic.info.label Console
-                span.sub.header 輸出洨安在網路上公開講過的話，尼甚至可以指定數量及限制字數。
+            
+            +header('每日洨安','輸出洨安在網路上公開講過的話，尼甚至可以指定數量及限制字數。')
+                +inPage
+                +inConsole
             script.
                 xiaoan.daily()
                 xiaoan.daily("3","15")
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '// 預設輸出一個，且無指定字數'
                 br
                 = 'xiaoan.daily()'
@@ -76,17 +59,13 @@ br
                 = '// xiaoan.daily("輸出數量","限制字數")'
                 br
                 = 'xiaoan.daily("3","15")'
-            br
-            br
-            h2.ts.header(id='基本洨安')
-                | 基本洨安
-                .ts.circular.basic.info.label 網頁中
-                span.sub.header 輸出洨洨安，您可以指定樣式，超棒 Der。但是無法在 console 內使用。
+            
+            +header('基本洨安','輸出洨洨安，您可以指定樣式，超棒 Der。')
+                +inPage
             script.
                 xiaoan.basic()
                 xiaoan.basic("horny love big")
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = 'xiaoan.basic()'
                 br
                 = '// 樣式請參考 CSS 裡的基本章節'
@@ -94,6 +73,5 @@ br
                 = '// xiaoan.basic("樣式")'
                 br
                 = 'xiaoan.basic("horny love big")'
-            br
-            br
+                
 include _footer.jade
