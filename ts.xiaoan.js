@@ -86,23 +86,23 @@ var varietyIcon = [
 ];
 var xiaoan = function () {
     this.daily = function (qty, less) {
-        var daily = Dailyxiaoan[Math.floor(Math.random() * Dailyxiaoan.length)];
-        var daily_qty = qty;
-        var daily_less = less;
+        var daily = Dailyxiaoan[Math.floor(Math.random() * Dailyxiaoan.length)]
+        var daily_qty = qty
+        var daily_less = less
         if (!daily_qty) {
             // 若使用者未指定，指定預設值
-            var daily_qty = '1';
+            var daily_qty = '1'
         }
         if (!daily_less) {
             // 若使用者未指定，指定預設值
-            var daily_less = '8700';
+            var daily_less = '8700'
         }
         // 重複輸出洨安直到指定的數量
         for (i = 0; i < Number(daily_qty); i = i + 1) {
             do {
                 var daily = Dailyxiaoan[Math.floor(Math.random() * Dailyxiaoan.length)];
             } while (daily.length >= daily_less)
-            document.write(daily + "<br>");
+            document.write(daily + "<br>")
         }
         //結束迴圈
     }
@@ -112,36 +112,47 @@ var xiaoan = function () {
         var daily_less = less;
         if (!daily_qty) {
             // 若使用者未指定，指定預設值
-            var daily_qty = '1';
+            var daily_qty = '1'
         }
         if (!daily_less) {
             // 若使用者未指定，指定預設值
-            var daily_less = '8700';
+            var daily_less = '8700'
         }
         // 重複輸出洨安直到指定的數量
         for (i = 0; i < Number(daily_qty); i = i + 1) {
             do {
                 var daily = Dailyxiaoan[Math.floor(Math.random() * Dailyxiaoan.length)];
             } while (daily.length >= daily_less)
-            console.log(daily);
+            console.log(daily)
         }
         //結束迴圈
     }
+    this.religion = function () {
+        document.write('<div class="ts secondary code segment"><pre>')
+        document.write('<p><code>@@   @@ @@@@@@     @@@     @@@@@@@@@@     @@@     @@@   @@</code></p>')
+        document.write('<p><code> @@ @@    @@      @@ @@    @@      @@    @@ @@    @@@@  @@</code></p>')
+        document.write('<p><code>  @@@     @@     @@   @@   @@      @@   @@   @@   @@ @@ @@</code></p>')
+        document.write('<p><code> @@ @@    @@    @@@@@@@@@  @@      @@  @@@@@@@@@  @@  @@@@</code></p>')
+        document.write('<p><code>@@   @@ @@@@@@ @@       @@ @@@@@@@@@@ @@       @@ @@   @@@</code></p>')
+        document.write('<p>更多關於 Tocas Xiaoan → <a href="https://xiaoan.tocas-ui.com">xiaoan.tocas-ui.com</a></p>')
+        document.write('</pre></div>')
+    }
     this.religion_con = function () {
-        console.log("@@   @@ @@@@@@     @@@     @@@@@@@@@@     @@@     @@@   @@");
-        console.log(" @@ @@    @@      @@ @@    @@      @@    @@ @@    @@@@  @@");
-        console.log("  @@@     @@     @@   @@   @@      @@   @@   @@   @@ @@ @@");
-        console.log(" @@ @@    @@    @@@@@@@@@  @@      @@  @@@@@@@@@  @@  @@@@");
-        console.log("@@   @@ @@@@@@ @@       @@ @@@@@@@@@@ @@       @@ @@   @@@");
+        console.log("@@   @@ @@@@@@     @@@     @@@@@@@@@@     @@@     @@@   @@")
+        console.log(" @@ @@    @@      @@ @@    @@      @@    @@ @@    @@@@  @@")
+        console.log("  @@@     @@     @@   @@   @@      @@   @@   @@   @@ @@ @@")
+        console.log(" @@ @@    @@    @@@@@@@@@  @@      @@  @@@@@@@@@  @@  @@@@")
+        console.log("@@   @@ @@@@@@ @@       @@ @@@@@@@@@@ @@       @@ @@   @@@")
+        console.log("更多關於 Tocas Xiaoan → https://xiaoan.tocas-ui.com")
     }
     this.earlySpring404 = function (style) {
-        document.write('<div class="ts ' + style + ' message"><div class="header">Error 404</div><p>2016 early-spring 404 not found.</p></div>');
+        document.write('<div class="ts ' + style + ' message"><div class="header">Error 404</div><p>2016 early-spring 404 not found.</p></div>')
     }
     this.earlySpring404_con = function () {
-        console.error("2016 early-spring 404 not found.");
+        console.error("2016 early-spring 404 not found.")
     }
     this.basic = function (style) {
         document.write('<div class="ts ' + style + ' xiaoan"></div>')
     }
 }
-var xiaoan = new xiaoan();
+var xiaoan = new xiaoan()
