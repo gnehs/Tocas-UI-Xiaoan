@@ -6,10 +6,6 @@ html
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
         // ICON
         link(rel='icon',href='icon.png')
-        // Tocas UI
-        link(rel='stylesheet', href='https://cdn.rawgit.com/TeaMeow/TocasUI/2.3.2/dist/tocas.css')
-        // Tocas JS
-        script(src='https://cdn.rawgit.com/TeaMeow/TocasUI/2.3.2/dist/tocas.js')
         // tocas Xiaoan
         link(href='ts.xiaoan.css', rel='stylesheet')
         // Tocas Xiaoan JS
@@ -18,27 +14,10 @@ html
         link(href='https://fonts.googleapis.com/css?family=Raleway', rel='stylesheet')
         // JQ https://cdnjs.com/libraries/jquery/
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-        // Search Engine
-        meta(name='description', content='第一天，洨安創造了始春。第二天，始春延期了。第三天，始春持續延期好評熱映中。')
-        meta(name='image', content='og.jpg')
-        // Schema.org for Google
-        meta(itemprop='name', content='Tocas Xiaoan')
-        meta(itemprop='description', content='第一天，洨安創造了始春。第二天，始春延期了。第三天，始春持續延期好評熱映中。')
-        meta(itemprop='image', content='og.jpg')
-        // Twitter
-        meta(name='twitter:card', content='summary')
-        meta(name='twitter:title', content='Tocas Xiaoan')
-        meta(name='twitter:description', content='第一天，洨安創造了始春。第二天，始春延期了。第三天，始春持續延期好評熱映中。')
-        meta(name='twitter:site', content='@gnehs_owo')
-        meta(name='twitter:creator', content='@gnehs_owo')
-        meta(name='twitter:image:src', content='og.jpg')
-        // Open Graph Tags
-        meta(name='og:title', content='Tocas Xiaoan')
-        meta(name='og:description', content='第一天，洨安創造了始春。第二天，始春延期了。第三天，始春持續延期好評熱映中。')
-        meta(name='og:image', content='og.jpg')
-        meta(name='og:site_name', content='https://xiaoan.tocas-ui.com/')
-        meta(name='og:locale', content='zh_TW')
-        meta(name='og:type', content='website')
+        //-底下是 https://github.com/gnehs/Jade 里的東東，你的放置位置可能不一樣，發 PR 時拜託不要動到這裡
+        include ./../Jade/_tocasui.jade
+        include ./../Jade/_tags.jade
+        +social_tags('Tocas Xiaoan','第一天，洨安創造了始春。第二天，始春延期了。第三天，始春持續延期好評熱映中。','og.jpg','https://xiaoan.tocas-ui.com/')
     body.ts.scrollbar
         include _nav.jade
         header.ts.heading.vertically.padded.fluid.slate
