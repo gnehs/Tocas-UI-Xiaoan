@@ -15,6 +15,8 @@ https://xiaoan.tocas-ui.com/
 
 `/fonts/` Tocas Xiaoan 的 Icon font
 
+`/scrollbar/` 給卷軸用的圖片檔案
+
 `/svg/` 給 `<div class="ts xiaoan"></div>` 用的圖片檔案
 
 `/*.jade` 文件的原始檔案
