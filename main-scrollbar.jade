@@ -7,7 +7,6 @@ br
             .ts.borderless.secondary.vertical.large.menu
                 .ts.primary.header 卷軸
                 a.item(href='#基本') 基本
-                a.item(href='#品種') 品種
         .sixteen.wide.mobile.column.twelve.wide.computer
             .ts.inverted.primary.message
                 .header 溫馨提醒
@@ -23,41 +22,4 @@ br
                 = '</body>'
             br
             br
-            h2.ts.header(id='品種') 品種
-                span.sub.header 底下是一堆洨安卷軸的品種，按下按鈕立即套用然後複製該樣式 ❤️
-            .ts.separated.buttons
-                .ts.active.button ts scrollbar
-                .ts.button ts instead scrollbar
-                .ts.button ts demon scrollbar
-                .ts.button ts demon instead scrollbar
-            br
-            br
-            .ts.separated.buttons
-                .ts.button ts face scrollbar
-                .ts.button ts face instead scrollbar
-                .ts.button ts funny face scrollbar
-                .ts.button ts funny face instead scrollbar
-            br
-            br
-            .ts.separated.buttons
-                .ts.button ts horny scrollbar
-                .ts.button ts horny instead scrollbar
-                .ts.button ts kemonomimi scrollbar
-                .ts.button ts kemonomimi instead scrollbar
-            br
-            br
 include _footer.jade
-script.
-    $(".wide>div>.button").click(function(){
-        $(".wide>div>.button").removeClass("active");
-        $(this).addClass("active");
-        var cssForBody = $(this).html();
-        $('body').attr('class',cssForBody);
-        //複製
-        $('body').append('<textarea id="clip_area"></textarea>');
-        var clip_area = $('#clip_area');
-        clip_area.text(cssForBody);
-        clip_area.select();
-        document.execCommand('copy');
-        clip_area.remove();
-    });

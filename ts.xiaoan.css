@@ -330,92 +330,33 @@ i.xiaoan.drug {
 }
 
 /* 
-	卷軸樣式 
+	卷軸
 */
-.ts.scrollbar::-webkit-scrollbar-track {
-	background-color: #F5F5F5;
-}
-.ts.scrollbar::-webkit-scrollbar {
+.ts.scrollbar::-webkit-scrollbar{
+	height: 20px;
 	width: 20px;
-	height: 10px;
-	background-color: #F5F5F5;
+	background: #f5f5f5;
+	box-shadow: inset 0 0 7px 0px rgba(0, 0, 0, 0.1);
 }
-.ts.scrollbar::-webkit-scrollbar-thumb {
-	background-image: url(svg/xiaoan.svg);
-	background-position: center;
-	background-size: 25px;
-	border-radius: 5px;
-	filter: invert(.7) sepia(1) saturate(5) brightness(.5) hue-rotate(300deg);
+.ts.scrollbar::-webkit-scrollbar-thumb{
+	background: url(scrollbar/xiaoan.png) #b3b2b2 center;
+	background-size: 20px;
 }
-.ts.scrollbar::-webkit-scrollbar-thumb:window-inactive {
-	background-image: url(svg/xiaoan.svg);
-	background-position: center;
-	background-size: 25px;
+.ts.scrollbar::-webkit-scrollbar-button:start {
+	background: url(scrollbar/start.png) #b3b2b2 center no-repeat;
+	background-size: 15px;
 }
-.ts.scrollbar::-webkit-scrollbar-thumb:horizontal {
-	background-image: url(svg/xiaoan.svg);
-	background-position: center;
-	background-size: 12px;
+.ts.scrollbar::-webkit-scrollbar-button:end {
+	background: url(scrollbar/end.png) #b3b2b2 center no-repeat;
+	background-size: 15px;
 }
-/* 
-	卷軸品種 
-	*在視窗失焦時，將洨安替換為替身，或將替身替換為正身
-*/
-.ts.scrollbar::-webkit-scrollbar-thumb,
-.ts.instead.scrollbar::-webkit-scrollbar-thumb:window-inactive {
-	background-image: url(svg/xiaoan.svg);
+.ts.scrollbar::-webkit-scrollbar-thumb:hover,
+.ts.scrollbar::-webkit-scrollbar-button:hover{
+	background-color: #8e8e8e;
 }
-.ts.instead.scrollbar::-webkit-scrollbar-thumb,
-.ts.scrollbar::-webkit-scrollbar-thumb:window-inactive {
-	background-image: url(svg/xiaoan.instead.svg);
-}
-.ts.demon.instead.scrollbar::-webkit-scrollbar-thumb,
-.ts.demon.scrollbar::-webkit-scrollbar-thumb:window-inactive {
-	background-image: url(svg/demon.instead.svg);
-}
-.ts.demon.scrollbar::-webkit-scrollbar-thumb,
-.ts.demon.instead.scrollbar::-webkit-scrollbar-thumb:window-inactive {
-	background-image: url(svg/demon.svg);
-}
-.ts.face.scrollbar::-webkit-scrollbar-thumb,
-.ts.face.instead.scrollbar::-webkit-scrollbar-thumb:window-inactive{
-	background-image: url(svg/face.svg);
-}
-.ts.face.instead.scrollbar::-webkit-scrollbar-thumb,
-.ts.face.scrollbar::-webkit-scrollbar-thumb:window-inactive {
-	background-image: url(svg/face.instead.svg);
-}
-.ts.funny.face.scrollbar::-webkit-scrollbar-thumb ,
-.ts.funny.face.instead.scrollbar::-webkit-scrollbar-thumb:window-inactive{
-	background-image: url(svg/funny.face.svg);
-}
-.ts.funny.face.instead.scrollbar::-webkit-scrollbar-thumb,
-.ts.funny.face.scrollbar::-webkit-scrollbar-thumb:window-inactive  {
-	background-image: url(svg/funny.face.instead.svg);
-}
-.ts.horny.scrollbar::-webkit-scrollbar-thumb,
-.ts.horny.instead.scrollbar::-webkit-scrollbar-thumb:window-inactive {
-	background-image: url(svg/horny.svg);
-}
-.ts.horny.instead.scrollbar::-webkit-scrollbar-thumb,
-.ts.horny.scrollbar::-webkit-scrollbar-thumb:window-inactive {
-	background-image: url(svg/horny.instead.svg);
-}
-.ts.kemonomimi.scrollbar::-webkit-scrollbar-thumb,
-.ts.kemonomimi.instead.scrollbar::-webkit-scrollbar-thumb:window-inactive {
-	background-image: url(svg/kemonomimi.svg);
-}
-.ts.kemonomimi.instead.scrollbar::-webkit-scrollbar-thumb ,
-.ts.kemonomimi.scrollbar::-webkit-scrollbar-thumb:window-inactive {
-	background-image: url(svg/kemonomimi.instead.svg);
-}
-.ts.heart.scrollbar::-webkit-scrollbar-thumb,
-.ts.heart.instead.scrollbar::-webkit-scrollbar-thumb:window-inactive {
-	background-image: url(svg/kemonomimi.svg);
-}
-.ts.heart.instead.scrollbar::-webkit-scrollbar-thumb ,
-.ts.heart.scrollbar::-webkit-scrollbar-thumb:window-inactive {
-	background-image: url(svg/kemonomimi.instead.svg);
+.ts.scrollbar::-webkit-scrollbar-thumb:active,
+.ts.scrollbar::-webkit-scrollbar-button:active{
+	background-color: #6f6f6f;
 }
 /*
 	code
