@@ -341,7 +341,6 @@ i.xiaoan.drug {
 .ts.scrollbar::-webkit-scrollbar-thumb{
 	background: url(scrollbar/xiaoan.png) #b3b2b2 center;
 	background-size: 20px;
-	border-radius: 5px;
 }
 .ts.scrollbar::-webkit-scrollbar-button:start {
 	background: url(scrollbar/start.png) #b3b2b2 center no-repeat;
