@@ -9,242 +9,301 @@
 
 =============================================
 */
+
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
+
 /* 
 	品種
 */
+
 .ts.xiaoan {
-	background-image: url(svg/xiaoan.svg);
-	width: 100px;
-	height: 100px;
-	background-position: center;
-	background-size: 100px 100px;
-	display: inline-block;
+    background-image: url(svg/xiaoan.svg);
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: 100px 100px;
+    display: inline-block;
 }
 
 .ts.xiaoan.instead {
-	background-image: url(svg/xiaoan.instead.svg);
+    background-image: url(svg/xiaoan.instead.svg);
 }
+
 .ts.xiaoan.demon.instead {
-	background-image: url(svg/demon.instead.svg);
+    background-image: url(svg/demon.instead.svg);
 }
+
 .ts.xiaoan.demon {
-	background-image: url(svg/demon.svg);
+    background-image: url(svg/demon.svg);
 }
+
 .ts.xiaoan.face.instead {
-	background-image: url(svg/face.instead.svg);
+    background-image: url(svg/face.instead.svg);
 }
-.ts.xiaoan.face{
-	background-image: url(svg/face.svg);
+
+.ts.xiaoan.face {
+    background-image: url(svg/face.svg);
 }
+
 .ts.xiaoan.funny.face.instead {
-	background-image: url(svg/funny.face.instead.svg);
+    background-image: url(svg/funny.face.instead.svg);
 }
+
 .ts.xiaoan.funny.face {
-	background-image: url(svg/funny.face.svg);
+    background-image: url(svg/funny.face.svg);
 }
+
 .ts.xiaoan.horny {
-	background-image: url(svg/horny.svg);
+    background-image: url(svg/horny.svg);
 }
+
 .ts.xiaoan.horny.instead {
-	background-image: url(svg/horny.instead.svg);
+    background-image: url(svg/horny.instead.svg);
 }
+
 .ts.xiaoan.kemonomimi {
-	background-image: url(svg/kemonomimi.svg);
+    background-image: url(svg/kemonomimi.svg);
 }
+
 .ts.xiaoan.kemonomimi.instead {
-	background-image: url(svg/kemonomimi.instead.svg);
+    background-image: url(svg/kemonomimi.instead.svg);
 }
+
 .ts.xiaoan.tissue {
-	background-image: url(svg/tissue.svg);
+    background-image: url(svg/tissue.svg);
 }
+
 .ts.xiaoan.spinner {
-	background-image: url(svg/spinner.svg);
+    background-image: url(svg/spinner.svg);
 }
+
 .ts.xiaoan.heart {
-	background-image: url(svg/heart.svg);
+    background-image: url(svg/heart.svg);
 }
+
 .ts.xiaoan.heart.instead {
-	background-image: url(svg/heart.instead.svg);
+    background-image: url(svg/heart.instead.svg);
 }
+
+
 /* 
 	大小 
 */
+
 .ts.xiaoan.mini {
-	width: 25px;
-	height: 25px;
-	background-size: 25px 25px;
+    width: 25px;
+    height: 25px;
+    background-size: 25px 25px;
 }
 
 .ts.xiaoan.tiny {
-	width: 50px;
-	height: 50px;
-	background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
 }
 
 .ts.xiaoan.small {
-	width: 75px;
-	height: 75px;
-	background-size: 75px 75px;
+    width: 75px;
+    height: 75px;
+    background-size: 75px 75px;
 }
 
 .ts.xiaoan.large {
-	width: 125px;
-	height: 125px;
-	background-size: 125px 125px;
+    width: 125px;
+    height: 125px;
+    background-size: 125px 125px;
 }
 
 .ts.xiaoan.big {
-	width: 150px;
-	height: 150px;
-	background-size: 150px 150px;
+    width: 150px;
+    height: 150px;
+    background-size: 150px 150px;
 }
 
 .ts.xiaoan.huge {
-	width: 200px;
-	height: 200px;
-	background-size: 200px 200px;
+    width: 200px;
+    height: 200px;
+    background-size: 200px 200px;
 }
 
 .ts.xiaoan.massive {
-	width: 250px;
-	height: 250px;
-	background-size: 250px 250px;
+    width: 250px;
+    height: 250px;
+    background-size: 250px 250px;
 }
+
+
 /* 
 	從 .ts.image 搬運過來的一些功能 
 */
+
 .ts.xiaoan.rounded {
-	border-radius: .3125em;
+    border-radius: .3125em;
 }
 
 .ts.xiaoan.circular {
-	border-radius: 500em;
+    border-radius: 500em;
 }
 
 .ts.xiaoan.centered {
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
+
 .ts.xiaoan.fluid {
-	background-size: 100% 100%;
-  	padding-bottom: 100%;
-  	width: 100%;
-  	height: 0;
+    background-size: 100% 100%;
+    padding-bottom: 100%;
+    width: 100%;
+    height: 0;
 }
+
+
 /* 
 	Icon Font 
 */
+
 @font-face {
-  font-family: 'xiaoan';
-  src:
-    url('fonts/xiaoan.ttf?izxrsk') format('truetype'),
-    url('fonts/xiaoan.woff?izxrsk') format('woff'),
-    url('fonts/xiaoan.svg?izxrsk#xiaoan') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'xiaoan';
+    src: url('fonts/xiaoan.ttf?izxrsk') format('truetype'), url('fonts/xiaoan.woff?izxrsk') format('woff'), url('fonts/xiaoan.svg?izxrsk#xiaoan') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
 i.xiaoan:before {
-  font-family: 'xiaoan' !important;
+    font-family: 'xiaoan' !important;
 }
+
 i.xiaoan.demon.instead:before {
-  content: "\e900";
+    content: "\e900";
 }
+
 i.xiaoan.demon:before {
-  content: "\e901";
+    content: "\e901";
 }
+
 i.xiaoan.face.instead:before {
-  content: "\e902";
+    content: "\e902";
 }
+
 i.xiaoan.face:before {
-  content: "\e903";
+    content: "\e903";
 }
+
 i.xiaoan.funny.face.instead:before {
-  content: "\e904";
+    content: "\e904";
 }
+
 i.xiaoan.funny.face:before {
-  content: "\e905";
+    content: "\e905";
 }
+
 i.xiaoan.horny.instead:before {
-  content: "\e906";
+    content: "\e906";
 }
+
 i.xiaoan.horny:before {
-  content: "\e907";
+    content: "\e907";
 }
+
 i.xiaoan.kemonomimi.instead:before {
-  content: "\e908";
+    content: "\e908";
 }
+
 i.xiaoan.kemonomimi:before {
-  content: "\e909";
+    content: "\e909";
 }
+
 i.xiaoan.instead:before {
-  content: "\e90b";
+    content: "\e90b";
 }
+
 i.xiaoan:before {
-  content: "\e90a";
+    content: "\e90a";
 }
+
 i.xiaoan.tissue:before {
-  content: "\e90c";
+    content: "\e90c";
 }
+
 i.xiaoan.spinner:before {
-  content: "\e90d";
+    content: "\e90d";
 }
+
 i.xiaoan.heart.instead:before {
-  content: "\e90e";
+    content: "\e90e";
 }
+
 i.xiaoan.heart:before {
-  content: "\e90f";
+    content: "\e90f";
 }
+
 
 /*
 	修正洨安在 ts image 下吐洨的情形
 */
+
 .ts.image:not(.label)>.icon.xiaoan:not(.button) {
     -webkit-text-stroke: 1px #fff;
-    text-stroke:1px #fff;
+    text-stroke: 1px #fff;
 }
+
+
 /* 
 	語意化 
 */
-i.xiaoan.rainbow{
-	  background: linear-gradient(to bottom, #f00, #f0f 15%, #00f 33%, #0ff 49%, #0f0 67%, #ff0 84%, #f00);
+
+i.xiaoan.rainbow {
+    background: linear-gradient(to bottom, #f00, #f0f 15%, #00f 33%, #0ff 49%, #0f0 67%, #ff0 84%, #f00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.ts.xiaoan.primary{
-	  filter: invert(.5) sepia(1) hue-rotate(170deg);
+
+.ts.xiaoan.primary {
+    filter: invert(.5) sepia(1) hue-rotate(170deg);
 }
-.ts.xiaoan.info{
-	  filter: invert(.5) sepia(1) hue-rotate(220deg);
+
+.ts.xiaoan.info {
+    filter: invert(.5) sepia(1) hue-rotate(220deg);
 }
-.ts.xiaoan.warning{
-	  filter: invert(.7) sepia(1) saturate(2.8) brightness(1) hue-rotate(10deg);
+
+.ts.xiaoan.warning {
+    filter: invert(.7) sepia(1) saturate(2.8) brightness(1) hue-rotate(10deg);
 }
-.ts.xiaoan.positive{
-	  filter: invert(.7) sepia(1) brightness(.7) hue-rotate(10deg);
+
+.ts.xiaoan.positive {
+    filter: invert(.7) sepia(1) brightness(.7) hue-rotate(10deg);
 }
-.ts.xiaoan.negative{
-	  filter: invert(.7) sepia(1) saturate(5) brightness(.5) hue-rotate(300deg);
+
+.ts.xiaoan.negative {
+    filter: invert(.7) sepia(1) saturate(5) brightness(.5) hue-rotate(300deg);
 }
-.ts.xiaoan.inverted{
-	  filter: invert(0.92);
+
+.ts.xiaoan.inverted {
+    filter: invert(0.92);
 }
-.ts.xiaoan.exceedingly.light.blue.xiaoan{
-	  filter: invert(0.9) contrast(65%) sepia(100%) hue-rotate(129.5deg) grayscale(0%) saturate(100%);
+
+.ts.xiaoan.exceedingly.light.blue.xiaoan {
+    filter: invert(0.9) contrast(65%) sepia(100%) hue-rotate(129.5deg) grayscale(0%) saturate(100%);
 }
-.ts.xiaoan.gloomy{
-	  filter: contrast(25%) sepia(53%) hue-rotate(165.5deg) brightness(80%) saturate(100%);
+
+.ts.xiaoan.gloomy {
+    filter: contrast(25%) sepia(53%) hue-rotate(165.5deg) brightness(80%) saturate(100%);
 }
-.ts.xiaoan.NTR{
-	  filter: invert(0.87) contrast(32%) sepia(1) hue-rotate(75.5deg) grayscale(0%) blur(1.1px) brightness(87%) saturate(100%);
+
+.ts.xiaoan.NTR {
+    filter: invert(0.87) contrast(32%) sepia(1) hue-rotate(75.5deg) grayscale(0%) blur(1.1px) brightness(87%) saturate(100%);
 }
-.ts.xiaoan.love{
-	  filter: invert(0.95) contrast(32%) sepia(100%) hue-rotate(266.5deg) grayscale(0%) blur(0px) brightness(100%) saturate(100%);
+
+.ts.xiaoan.love {
+    filter: invert(0.95) contrast(32%) sepia(100%) hue-rotate(266.5deg) grayscale(0%) blur(0px) brightness(100%) saturate(100%);
 }
+
 .ts.xiaoan.EarlySpring {
-	  filter: invert(1) contrast(200%) hue-rotate(0deg) grayscale(0%) blur(0px) brightness(100%) saturate(0%);
+    filter: invert(1) contrast(200%) hue-rotate(0deg) grayscale(0%) blur(0px) brightness(100%) saturate(0%);
 }
+
+
 /*
 	動畫
 	------------------
@@ -258,111 +317,170 @@ i.xiaoan.rainbow{
 	-----------------
 */
 
+
 /* 震動 */
-.shake{
-	animation: shake .01s linear infinite;
-}
-.shake.fast{
-  animation-duration: .005s;
-}
-.shake.slow{
-  animation-duration: .02s;
-}
-.shake.early.spring{
-  animation-duration: 40s;
-}
-@keyframes shake {
-	0%, 100% {
-		transform: translate(0, 0) rotate(0); 
-		filter:opacity(1);
-	}
-	25% {
-		transform: translate(-2.5px, -2.5px) rotate(-1.52deg); 
-		filter:opacity(.95);
-	}
-	40% {
-		transform: translate(-2.5px, 2.5px) rotate(2.5deg); 
-		filter:opacity(1);
-	}
-	50% {
-		transform: translate(2.5px, 2.5px) rotate(-1.75deg); 
-		filter:opacity(.95);
-	}
-	60% {
-		transform: translate(0px, 0px) rotate(5deg); 
-		filter:opacity(1);
-	}
-	75% {
-		transform: translate(2.5px, -2.5px) rotate(2.5deg); 
-		filter:opacity(0);
-	}
-}
-/* 旋轉 */
-.rotate{
-	animation: rotate .75s linear infinite;
-}
-.rotate.fast{
-  animation-duration: .25s;
-}
-.rotate.slow{
-  animation-duration: 1.5s;
-}
-.rotate.early.spring{
-  animation-duration: 100s;
-}
-@keyframes rotate {
-	0%{transform:rotate(0deg);}
-	100%{transform:rotate(360deg);}
+
+.shake {
+    animation: shake .01s linear infinite;
 }
 
+.shake.fast {
+    animation-duration: .005s;
+}
+
+.shake.slow {
+    animation-duration: .02s;
+}
+
+.shake.early.spring {
+    animation-duration: 40s;
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0);
+        filter: opacity(1);
+    }
+    25% {
+        transform: translate(-2.5px, -2.5px) rotate(-1.52deg);
+        filter: opacity(.95);
+    }
+    40% {
+        transform: translate(-2.5px, 2.5px) rotate(2.5deg);
+        filter: opacity(1);
+    }
+    50% {
+        transform: translate(2.5px, 2.5px) rotate(-1.75deg);
+        filter: opacity(.95);
+    }
+    60% {
+        transform: translate(0px, 0px) rotate(5deg);
+        filter: opacity(1);
+    }
+    75% {
+        transform: translate(2.5px, -2.5px) rotate(2.5deg);
+        filter: opacity(0);
+    }
+}
+
+
+/* 旋轉 */
+
+.rotate {
+    animation: rotate .75s linear infinite;
+}
+
+.rotate.fast {
+    animation-duration: .25s;
+}
+
+.rotate.slow {
+    animation-duration: 1.5s;
+}
+
+.rotate.early.spring {
+    animation-duration: 100s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 /* 嗑藥 */
+
 i.xiaoan.drug {
-	background: linear-gradient(to bottom, #f00, #f0f 15%, #00f 33%, #0ff 49%, #0f0 67%, #ff0 84%, #f00);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: drug 1s linear infinite, shake 10ms linear infinite, pulse-animation 10ms linear infinite, 2s linear infinite icon-loading;
-	background-size: 700% 700% !important
+    background: linear-gradient(to bottom, #f00, #f0f 15%, #00f 33%, #0ff 49%, #0f0 67%, #ff0 84%, #f00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: drug 1s linear infinite, shake 10ms linear infinite, pulse-animation 10ms linear infinite, 2s linear infinite icon-loading;
+    background-size: 700% 700% !important
 }
-@keyframes drug{ 
-	0%{background-position:50% 0%}
-	100%{background-position:50% 100%}
+
+@keyframes drug {
+    0% {
+        background-position: 50% 0%
+    }
+    100% {
+        background-position: 50% 100%
+    }
 }
+
 
 /* 
 	卷軸
 */
-.ts.scrollbar::-webkit-scrollbar{
-	height: 20px;
-	width: 20px;
-	background: #f5f5f5;
-	box-shadow: inset 0 0 7px 0px rgba(0, 0, 0, 0.1);
+
+.ts.scrollbar::-webkit-scrollbar {
+    height: 20px;
+    width: 20px;
+    background: #f5f5f5;
+    box-shadow: inset 0 0 7px 0px rgba(0, 0, 0, 0.1);
 }
-.ts.scrollbar::-webkit-scrollbar-thumb{
-	background: url(scrollbar/xiaoan.png) #b3b2b2 center;
-	background-size: 20px;
+
+.ts.scrollbar::-webkit-scrollbar-thumb {
+    background: url(scrollbar/xiaoan.png) #b3b2b2 center;
+    background-size: 20px;
 }
+
 .ts.scrollbar::-webkit-scrollbar-button:start {
-	background: url(scrollbar/start.png) #b3b2b2 center no-repeat;
-	background-size: 15px;
+    background: url(scrollbar/start.png) #b3b2b2 center no-repeat;
+    background-size: 15px;
 }
+
 .ts.scrollbar::-webkit-scrollbar-button:end {
-	background: url(scrollbar/end.png) #b3b2b2 center no-repeat;
-	background-size: 15px;
+    background: url(scrollbar/end.png) #b3b2b2 center no-repeat;
+    background-size: 15px;
 }
+
+
+/* 水平卷軸修正 */
+
+.ts.scrollbar::-webkit-scrollbar-thumb:horizontal {
+    background: url(scrollbar/xiaoan-horizontal.png) #b3b2b2 center;
+    background-size: 25px;
+}
+
+.ts.scrollbar::-webkit-scrollbar-button:horizontal:start {
+    background: url(scrollbar/horizontal-start.png) #b3b2b2 center no-repeat;
+    background-size: 15px;
+}
+
+.ts.scrollbar::-webkit-scrollbar-button:horizontal:end {
+    background: url(scrollbar/horizontal-end.png) #b3b2b2 center no-repeat;
+    background-size: 15px;
+}
+
 .ts.scrollbar::-webkit-scrollbar-thumb:hover,
-.ts.scrollbar::-webkit-scrollbar-button:hover{
-	background-color: #8e8e8e;
+.ts.scrollbar::-webkit-scrollbar-button:horizontal:hover,
+.ts.scrollbar::-webkit-scrollbar-button:hover {
+    background-color: #8e8e8e;
 }
+
 .ts.scrollbar::-webkit-scrollbar-thumb:active,
-.ts.scrollbar::-webkit-scrollbar-button:active{
-	background-color: #6f6f6f;
+.ts.scrollbar::-webkit-scrollbar-button:active {
+    background-color: #6f6f6f;
 }
+
+
 /*
 	code
 */
+
 code,
 .code,
 .code mark {
-	font-family: 'Ubuntu Mono', monospace,-apple-system, "Source Han Sans TC","Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN","Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;word-break: break-all;}*{font-family: 'Raleway',-apple-system, "Source Han Sans TC","Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN","Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+    font-family: 'Ubuntu Mono', monospace, -apple-system, "Source Han Sans TC", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+    word-break: break-all;
+}
+
+* {
+    font-family: 'Raleway', -apple-system, "Source Han Sans TC", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 }
