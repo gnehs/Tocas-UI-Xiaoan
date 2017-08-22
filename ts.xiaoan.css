@@ -421,6 +421,10 @@ i.xiaoan.drug {
     animation: poyon 0.5s infinite;
 }
 
+.poyon.crazy {
+    animation: crazypoyon 0.5s infinite;
+}
+
 .poyon.fast {
     animation-duration: .25s;
 }
@@ -436,19 +440,31 @@ i.xiaoan.drug {
 @keyframes poyon {
     0%,
     100% {
-        -webkit-transform: scale(1, 1);
         transform: scale(1, 1);
     }
     25% {
-        -webkit-transform: scale(0.9, 1.1);
         transform: scale(0.9, 1.1);
     }
     50% {
-        -webkit-transform: scale(1.1, 0.9);
         transform: scale(1.1, 0.9);
     }
     75% {
-        -webkit-transform: scale(0.95, 1.05);
+        transform: scale(0.95, 1.05);
+    }
+}
+
+@keyframes crazypoyon {
+    0%,
+    100% {
+        transform: scale(1, 1) translateX(50%);
+    }
+    25% {
+        transform: scale(0.9, 1.1);
+    }
+    50% {
+        transform: scale(1.1, 0.9);
+    }
+    75% {
         transform: scale(0.95, 1.05);
     }
 }
