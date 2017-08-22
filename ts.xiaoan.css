@@ -23,7 +23,7 @@
     background-position: center;
     background-size: 100px 100px;
     display: inline-block;
-    filter: invert(0.8) contrast(200%) brightness(59%) saturate(50%);
+    filter: invert(0.6);
 }
 
 .ts.xiaoan.instead {
