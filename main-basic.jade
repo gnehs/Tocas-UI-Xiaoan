@@ -18,7 +18,8 @@ br
                 .ts.primary.header 動畫
                 +NAVlink('震動')
                 +NAVlink('旋轉')
-                +NAVlink('ㄉㄨㄞㄉㄨㄞ安')
+                +NAVlink('ㄉㄨㄞㄉㄨㄞ')
+                +NAVlink('邊緣')
                 +NAVlink('動畫速度')
         .sixteen.wide.mobile.column.twelve.wide.computer
             +header('基本','最基本的洨安。')
@@ -170,10 +171,15 @@ br
             +code
                 = '<div class="ts spinner rotate xiaoan"></div>'
 
-            +header('ㄉㄨㄞㄉㄨㄞ安','像布丁一樣晃動')
+            +header('ㄉㄨㄞㄉㄨㄞ','像布丁一樣晃動')
             .ts.poyon.xiaoan
             +code
                 = '<div class="ts poyon xiaoan"></div>'
+
+            +header('邊緣','我正試著從世上消失')
+            .ts.edge.xiaoan
+            +code
+                = '<div class="ts edge xiaoan"></div>'
 
             h2.ts.header(id='動畫速度')
             +header('動畫速度','您可以指定速度，快(fast)、慢(slow)、始春(early spring)或是預設的速度(不指定)')

@@ -453,6 +453,35 @@ i.xiaoan.drug {
 }
 
 
+/* 邊緣安 */
+
+.edge {
+    animation: edge 5s infinite;
+}
+
+.edge.fast {
+    animation-duration: 2.5s;
+}
+
+.edge.slow {
+    animation-duration: 7.5s;
+}
+
+.edge.early.spring {
+    animation-duration: 500s;
+}
+
+@keyframes edge {
+    0%,
+    100% {
+        opacity: 0.01;
+    }
+    50% {
+        opacity: 0.05;
+    }
+}
+
+
 /* 
 	卷軸
 */
