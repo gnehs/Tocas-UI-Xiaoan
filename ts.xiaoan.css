@@ -340,27 +340,27 @@ i.xiaoan.rainbow {
     0%,
     100% {
         transform: translate(0, 0) rotate(0);
-        filter: opacity(1);
+        opacity: 1;
     }
     25% {
         transform: translate(-2.5px, -2.5px) rotate(-1.52deg);
-        filter: opacity(.95);
+        opacity: 0.95;
     }
     40% {
         transform: translate(-2.5px, 2.5px) rotate(2.5deg);
-        filter: opacity(1);
+        opacity: 1;
     }
     50% {
         transform: translate(2.5px, 2.5px) rotate(-1.75deg);
-        filter: opacity(.95);
+        opacity: 0.95;
     }
     60% {
         transform: translate(0px, 0px) rotate(5deg);
-        filter: opacity(1);
+        opacity: 1;
     }
     75% {
         transform: translate(2.5px, -2.5px) rotate(2.5deg);
-        filter: opacity(0);
+        opacity: 0.7;
     }
 }
 
