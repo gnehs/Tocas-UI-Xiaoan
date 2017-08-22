@@ -227,15 +227,15 @@ i.xiaoan.tissue:before {
 }
 
 i.xiaoan.spinner:before {
-    content: "\e90d";
+    content: "\e90d" !important;
 }
 
 i.xiaoan.heart.instead:before {
-    content: "\e90e";
+    content: "\e90e" !important;
 }
 
 i.xiaoan.heart:before {
-    content: "\e90f";
+    content: "\e90f" !important;
 }
 
 
