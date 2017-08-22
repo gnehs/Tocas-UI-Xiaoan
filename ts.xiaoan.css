@@ -414,6 +414,45 @@ i.xiaoan.drug {
 }
 
 
+/* ㄉㄨㄞㄉㄨㄞ安 */
+
+.poyon {
+    animation: poyon 0.5s infinite;
+}
+
+.poyon.fast {
+    animation-duration: .25s;
+}
+
+.poyon.slow {
+    animation-duration: 1.5s;
+}
+
+.poyon.early.spring {
+    animation-duration: 100s;
+}
+
+@keyframes poyon {
+    0%,
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    25% {
+        -webkit-transform: scale(0.9, 1.1);
+        transform: scale(0.9, 1.1);
+    }
+    50% {
+        -webkit-transform: scale(1.1, 0.9);
+        transform: scale(1.1, 0.9);
+    }
+    75% {
+        -webkit-transform: scale(0.95, 1.05);
+        transform: scale(0.95, 1.05);
+    }
+}
+
+
 /* 
 	卷軸
 */
