@@ -456,16 +456,16 @@ i.xiaoan.drug {
 @keyframes crazypoyon {
     0%,
     100% {
-        transform: scale(1, 1) translateX(50%);
+        transform: scale(1, 1) translateX(10px) rotate(5deg);
     }
     25% {
-        transform: scale(0.9, 1.1);
+        transform: scale(0.9, 1.7) translateY(-10px) translateZ(-10px);
     }
     50% {
-        transform: scale(1.1, 0.9);
+        transform: scale(1.7, 0.8) translateX(-10px) rotate(-5deg);
     }
     75% {
-        transform: scale(0.95, 1.05);
+        transform: scale(0.95, 1.05) translateY(10px);
     }
 }
 
