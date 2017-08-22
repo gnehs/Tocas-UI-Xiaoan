@@ -182,17 +182,17 @@ br
                 = '<div class="ts edge xiaoan"></div>'
 
             h2.ts.header(id='動畫速度')
-            +header('動畫速度','您可以指定速度，快(fast)、慢(slow)、始春(early spring)或是預設的速度(不指定)')
+            +header('動畫速度','您可以指定速度，快、慢、始春或是預設的速度(不指定)')
             .ts.spinner.fast.rotate.xiaoan
             .ts.spinner.rotate.xiaoan
             .ts.spinner.slow.rotate.xiaoan
             .ts.spinner.early.spring.rotate.xiaoan
             +code
-                = '<div class="ts spinner fast rotate xiaoan"></div>'
+                = '<!--快速--><div class="ts spinner fast rotate xiaoan"></div>'
                 br
-                = '<div class="ts spinner rotate xiaoan"></div>'
+                = '<!--正常--><div class="ts spinner rotate xiaoan"></div>'
                 br
-                = '<div class="ts spinner slow rotate xiaoan"></div>'
+                = '<!--慢速--><div class="ts spinner slow rotate xiaoan"></div>'
                 br
-                = '<div class="ts spinner early spring rotate xiaoan"></div>'
+                = '<!--始春--><div class="ts spinner early spring rotate xiaoan"></div>'
 include _footer.jade
