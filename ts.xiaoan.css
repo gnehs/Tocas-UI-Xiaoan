@@ -470,6 +470,45 @@ i.xiaoan.drug {
 }
 
 
+/* 蹲跳安 */
+
+.squatting {
+    animation: squatting 2s infinite;
+}
+
+.squatting.fast {
+    animation-duration: 1s;
+}
+
+.squatting.slow {
+    animation-duration: 3s;
+}
+
+.squatting.early.spring {
+    animation-duration: 200s;
+}
+
+@keyframes squatting {
+    0%,
+    100% {
+        transform: scale(1, 1);
+        background-color: transparent;
+    }
+    5% {
+        transform: scale(1, .1) translateY(300px);
+    }
+    25% {
+        transform: scale(1.6, 2) translateY(-300px);
+    }
+    40% {
+        transform: scale(1, .5) translateY(100px);
+    }
+    50% {
+        transform: scale(1, 1);
+    }
+}
+
+
 /* 邊緣安 */
 
 .edge {
