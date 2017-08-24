@@ -160,13 +160,19 @@ var xiaoan = function() {
 }
 var xiaoan = new xiaoan();
 
-function snackbar(owo) {
-    var s = document.getElementById('Tocas_snackbar');
-    var sc = document.getElementById('Tocas_snackbar_content');
+function snackbar(text, time) {
+    // 確認使用者有填寫合法數字
+    if (!time || isNaN(time) || time < 1) {
+        var t = 1000
+    } else {
+        var t = time * 1000
+    }
+    var s = document.getElementById('ts_snackbar');
+    var sc = document.getElementById('ts_snackbar_content');
     s.setAttribute("class", "ts snackbar active animating");
-    sc.innerHTML = owo
+    sc.innerHTML = text
     setTimeout(function() { s.setAttribute("class", "ts snackbar active"); }, 200);
-    setTimeout(function() { s.setAttribute("class", "ts snackbar animating"); }, 800);
-    setTimeout(function() { s.setAttribute("class", "ts snackbar"); }, 1000);
+    setTimeout(function() { s.setAttribute("class", "ts snackbar animating"); }, t - 200);
+    setTimeout(function() { s.setAttribute("class", "ts snackbar"); }, t);
 }
-document.write('<div class="ts snackbar" id="Tocas_snackbar"><div class="content" id="Tocas_snackbar_content">未填入內容</div></div>');
+document.write('<div class="ts snackbar" id="ts_snackbar"><div class="content" id="ts_snackbar_content">未填入內容</div></div>');

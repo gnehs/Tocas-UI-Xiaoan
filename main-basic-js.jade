@@ -82,8 +82,15 @@ br
 
             +header('點心條','無需使用 Tocas JS 的替代方案，而且不用新增點心條的元素')
                 +inPage
-            button.ts.button(onclick='snackbar("正在延期始春......")') 點我
+            button.ts.button(onclick='snackbar("你點了按鈕，真是太棒了，有機會抽獎獲得 iPhone8 喔")') 點我
+            button.ts.button(onclick='snackbar("我會持續五秒喔",5)') 點我開啟持續五秒的點心條
             +code
-                = 'snackbar("正在延期始春......")'
+                = '// 底下的點心條將持續一秒(預設)'
+                br
+                = 'snackbar("你點了按鈕，真是太棒了，有機會抽獎獲得 iPhone8 喔")'
+                br
+                = '// 底下的點心條將持續五秒，修改數字 5 來更改持續時間'
+                br
+                = 'snackbar("我會持續五秒喔",5)'
                 
 include _footer.jade
