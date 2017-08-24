@@ -11,6 +11,7 @@ br
                 +NAVlink('我是洨安教')
                 +NAVlink('每日洨安')
                 +NAVlink('基本洨安')
+                +NAVlink('點心條')
         .sixteen.wide.mobile.column.twelve.wide.computer
             .ts.inverted.primary.message
                 .header 溫馨提醒
@@ -78,5 +79,11 @@ br
                 = '// xiaoan.basic("樣式")'
                 br
                 = 'xiaoan.basic("horny love big")'
+
+            +header('點心條','無需使用 Tocas JS 的替代方案，而且不用新增點心條的元素')
+                +inPage
+            button.ts.button(onclick='snackbar("正在延期始春......")') 點我
+            +code
+                = 'snackbar("正在延期始春......")'
                 
 include _footer.jade

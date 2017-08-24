@@ -538,6 +538,49 @@ i.xiaoan.drug {
 }
 
 
+/* okii ㄉㄨㄞ */
+
+.okii {
+    animation: okii 4s infinite;
+}
+
+.okii.fast {
+    animation-duration: 2.5s;
+}
+
+.okii.slow {
+    animation-duration: 7.5s;
+}
+
+.okii.early.spring {
+    animation-duration: 500s;
+}
+
+@keyframes okii {
+    0%,
+    100% {
+        transform: scale(1);
+        z-index: 999;
+    }
+    3% {
+        transform: scale(5);
+        z-index: 999;
+    }
+    5% {
+        transform: scale(10);
+        z-index: 999;
+    }
+    7% {
+        transform: scale(20);
+        z-index: 999;
+    }
+    20% {
+        transform: scale(1000);
+        z-index: 999;
+    }
+}
+
+
 /* 
 	卷軸
 */

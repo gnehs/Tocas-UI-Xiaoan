@@ -87,8 +87,8 @@ var varietyIcon = [
     'inverted',
     'rainbow ',
 ];
-var xiaoan = function () {
-    this.daily = function (qty, less) {
+var xiaoan = function() {
+    this.daily = function(qty, less) {
         var daily = Dailyxiaoan[Math.floor(Math.random() * Dailyxiaoan.length)]
         var daily_qty = qty
         var daily_less = less
@@ -109,7 +109,7 @@ var xiaoan = function () {
         }
         //結束迴圈
     }
-    this.daily_con = function (qty, less) {
+    this.daily_con = function(qty, less) {
         var daily = Dailyxiaoan[Math.floor(Math.random() * Dailyxiaoan.length)];
         var daily_qty = qty;
         var daily_less = less;
@@ -130,7 +130,7 @@ var xiaoan = function () {
         }
         //結束迴圈
     }
-    this.religion = function () {
+    this.religion = function() {
         document.write('<div class="ts secondary code segment"><pre>')
         document.write('<p><code>@@   @@ @@@@@@     @@@     @@@@@@@@@@     @@@     @@@   @@</code></p>')
         document.write('<p><code> @@ @@    @@      @@ @@    @@      @@    @@ @@    @@@@  @@</code></p>')
@@ -140,7 +140,7 @@ var xiaoan = function () {
         document.write('<p>更多關於 Tocas Xiaoan → <a href="https://xiaoan.tocas-ui.com">xiaoan.tocas-ui.com</a></p>')
         document.write('</pre></div>')
     }
-    this.religion_con = function () {
+    this.religion_con = function() {
         console.log("@@   @@ @@@@@@     @@@     @@@@@@@@@@     @@@     @@@   @@")
         console.log(" @@ @@    @@      @@ @@    @@      @@    @@ @@    @@@@  @@")
         console.log("  @@@     @@     @@   @@   @@      @@   @@   @@   @@ @@ @@")
@@ -148,14 +148,25 @@ var xiaoan = function () {
         console.log("@@   @@ @@@@@@ @@       @@ @@@@@@@@@@ @@       @@ @@   @@@")
         console.log("更多關於 Tocas Xiaoan → https://xiaoan.tocas-ui.com")
     }
-    this.earlySpring404 = function (style) {
+    this.earlySpring404 = function(style) {
         document.write('<div class="ts ' + style + ' message"><div class="header">Error 404</div><p>2016 early-spring 404 not found.</p></div>')
     }
-    this.earlySpring404_con = function () {
+    this.earlySpring404_con = function() {
         console.error("2016 early-spring 404 not found.")
     }
-    this.basic = function (style) {
+    this.basic = function(style) {
         document.write('<div class="ts ' + style + ' xiaoan"></div>')
     }
 }
-var xiaoan = new xiaoan()
+var xiaoan = new xiaoan();
+
+function snackbar(owo) {
+    var s = document.getElementById('Tocas_snackbar');
+    var sc = document.getElementById('Tocas_snackbar_content');
+    s.setAttribute("class", "ts snackbar active animating");
+    sc.innerHTML = owo
+    setTimeout(function() { s.setAttribute("class", "ts snackbar active"); }, 200);
+    setTimeout(function() { s.setAttribute("class", "ts snackbar animating"); }, 800);
+    setTimeout(function() { s.setAttribute("class", "ts snackbar"); }, 1000);
+}
+document.write('<div class="ts snackbar" id="Tocas_snackbar"><div class="content" id="Tocas_snackbar_content">未填入內容</div></div>');

@@ -44,17 +44,12 @@ br
             h2.ts.header(id='標籤圖示按鈕')
                 | 標籤圖示按鈕
                 span.sub.header 帶有標籤和洨安的按鈕。
-            button.ts.labeled.icon.button(onclick="ts('.snackbar').snackbar({content: '404 Not Found',actionEmphasis: 'warning'});")
+            button.ts.labeled.icon.button(onclick='snackbar("正在延期......")')
                 | 點我開啟始春
                 i.xiaoan.icon
-            button.ts.right.labeled.icon.button(onclick="ts('.snackbar').snackbar({content: '404 Not Found',actionEmphasis: 'warning'});")
+            button.ts.right.labeled.icon.button(onclick='snackbar("正在延期......")')
                 | 點我開啟始春
                 i.xiaoan.icon
-            //- 給"點我開啟始春"用的
-            .ts.snackbar
-                .content
-                    | 超宇宙無敵飛天洨洨安。
-            //- 結束
             .ts.secondary.code.segment
                 .ts.top.right.attached.label 原始碼
                 = '<button class="ts labeled icon button">'
