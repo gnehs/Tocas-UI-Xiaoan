@@ -163,14 +163,14 @@ var xiaoan = new xiaoan();
 function snackbar(text, time) {
     // 確認使用者有填寫合法數字
     if (!time || isNaN(time) || time < 1) {
-        var t = 1000
+        var t = 1000;
     } else {
-        var t = time * 1000
+        var t = time * 1000;
     }
     var s = document.getElementById('ts_snackbar');
     var sc = document.getElementById('ts_snackbar_content');
     s.setAttribute("class", "ts snackbar active animating");
-    sc.innerHTML = text
+    sc.innerHTML = text;
     setTimeout(function() { s.setAttribute("class", "ts snackbar active"); }, 200);
     setTimeout(function() { s.setAttribute("class", "ts snackbar animating"); }, t - 200);
     setTimeout(function() { s.setAttribute("class", "ts snackbar"); }, t);
