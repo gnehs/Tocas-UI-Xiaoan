@@ -1,3 +1,7 @@
+[![GitHub issues](https://img.shields.io/github/issues/gnehs/Tocas-UI-Xiaoan.svg?style=flat-square)](https://github.com/gnehs/Tocas-UI-Xiaoan/issues) 
+[![GitHub stars](https://img.shields.io/github/stars/gnehs/Tocas-UI-Xiaoan.svg?style=flat-square)](https://github.com/gnehs/Tocas-UI-Xiaoan/stargazers) 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/gnehs/Tocas-UI-Xiaoan/master/LICENSE)
+
 # Tocas-UI-Xiaoan
 洨洨安的歡樂天堂！
 
@@ -32,4 +36,4 @@ https://xiaoan.tocas-ui.com/
 `prepros-6.config` 編譯器的設定檔
 
 ## Telegram 群組
-加入 [Telegram 群組](https://t.me/joinchat/AAAAAEPpYVlKm_AHv6f3bw)一起討論
+加入 [Telegram 群組](https://t.me/joinchat/AAAAAEPpYVlKm_AHv6f3bw) 一起討論
