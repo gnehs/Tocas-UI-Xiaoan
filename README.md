@@ -8,9 +8,9 @@
 ## 閱讀入教指南
 https://xiaoan.tocas-ui.com/
 
-感謝 [@ombwp](https://t.me/ombwp) 做的棒棒首頁:heart:
+感謝 [@ombwp](https://t.me/ItsHenryWu) 做的棒棒首頁:heart:
 
-感謝 [@YamiOdymel](https:t.me/YamiOdymel) 提供子域名
+感謝 [@YamiOdymel](https://t.me/YamiOdymel) 提供子域名
 
 ## 檔案
 `/` 放置 Tocas Xiaoan 的基本檔案
