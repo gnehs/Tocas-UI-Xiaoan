@@ -1,0 +1,48 @@
+include _header.jade
+br
+br
+.ts.container
+    .ts.relaxed.grid
+        .sixteen.wide.mobile.four.wide.computer.column
+            .ts.borderless.secondary.vertical.large.menu
+                .ts.primary.header 介紹
+                +NAVlink('板岩')
+                .ts.primary.header 元件
+                +NAVlink('板岩')
+                +NAVlink('訊息')
+        .sixteen.wide.mobile.column.twelve.wide.computer
+            +header('介紹','這是一些被修改過的元件') 
+            .ts.inverted.primary.message.no.earlyspring
+                .header 溫馨提醒
+                p 這個功能的美觀性見仁見智，不過如果你想移除的話，直接對元件加上 no earlyspring 這個 class 即可，就像這個元件
+            +code
+                = '<div class="ts inverted primary message no earlyspring">'
+                br
+                = '...'
+                br
+                = '</div>'
+            +header('板岩','被修改過的板岩，移除了邊框並增加了陰影') 
+            .ts.basic.padded.slate
+                i.xiaoan.face.symbol.icon
+                span.header 2016 始春
+                span.description 或者更晚，而且晚很多。
+            +code
+                = '<div class="ts basic padded slate">'
+                br
+                = '　　<i class="xiaoan face symbol icon"></i>'
+                br
+                = '　　<span class="header">2016 始春</span>'
+                br
+                = '　　<span class="description">或者更晚，而且晚很多。</span>'
+
+            +header('訊息','被修改過的訊息元件，移除了邊框並增加了陰影') 
+            .ts.inverted.secondary.primary.message
+                .header 始春倒數計時器
+                p 始春已過，讓我們迎接時下最夯的社群網站 TeaMeow！
+            +code
+                = '<div class="ts inverted secondary primary message">'
+                br
+                = '...'
+                br
+                = '</div>'
+include _footer.jade

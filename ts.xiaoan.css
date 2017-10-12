@@ -630,9 +630,17 @@ pre {
 
 .ts.card:not(.no):not(.earlyspring),
 .ts.segment:not(.no):not(.earlyspring),
-.ts.message:not(.no):not(.earlyspring),
+.ts.message:not(.no):not(.earlyspring):not(.secondary),
 .ts.slate:not(.no):not(.earlyspring) {
-    border: 0px solid #e9e !important;
+    border: 0px solid #000 !important;
+    box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.2) !important;
+    transition: all .2s ease !important;
+}
+
+.ts.message.secondary:not(.no):not(.earlyspring) {
+    border-bottom: 0px solid #000;
+    border-top: 0px solid #000;
+    border-right: 0px solid #000;
     box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.2) !important;
     transition: all .2s ease !important;
 }
@@ -642,7 +650,7 @@ a.ts.card:not(.no):not(.earlyspring) {
 }
 
 a.ts.card:hover:not(.no):not(.earlyspring) {
-    border: 0px solid #e99 !important;
+    border: 0px solid #000 !important;
     box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.6) !important;
     transform: translateY(-1.25px) !important;
 }

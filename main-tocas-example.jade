@@ -91,15 +91,12 @@ br
                 = '</div>'
             br
             br
-            h2.ts.header(id='標題圖示')
-                | 標題圖示
-                span.sub.header 標題可以帶有洨安圖示。
+            +header('標題圖示','標題可以帶有洨安圖示。')
             h3.ts.center.aligned.icon.header
                 i.xiaoan.icon
                 |  2016 始春
                 .sub.header 404 Not Found.
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<h3 class="ts center aligned icon header">'
                 br
                 = '　　<i class="xiaoan icon">'
@@ -113,9 +110,6 @@ br
                 = '　　</div>'
                 br
                 = '</h3>'
-                br
-            br
-            br
             h2.ts.header(id='圖內圖示')
                 | 圖內圖示
                 span.sub.header 圖片裡面可以擺放洨安，這會令他浮動在圖片的右下角落。
