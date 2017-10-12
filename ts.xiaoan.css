@@ -564,6 +564,25 @@ i.xiaoan.drug {
     background-size: 15px;
 }
 
+.ts.scrollbar::-webkit-scrollbar:hover {
+    box-shadow: inset 0 0 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.ts.scrollbar::-webkit-scrollbar:active {
+    box-shadow: inset 0 0 7px 0px rgba(0, 0, 0, 0.3);
+}
+
+.ts.scrollbar::-webkit-scrollbar-thumb:hover,
+.ts.scrollbar::-webkit-scrollbar-button:horizontal:hover,
+.ts.scrollbar::-webkit-scrollbar-button:hover {
+    background-color: #8e8e8e;
+}
+
+.ts.scrollbar::-webkit-scrollbar-thumb:active,
+.ts.scrollbar::-webkit-scrollbar-button:active {
+    background-color: #6f6f6f;
+}
+
 
 /* 水平卷軸修正 */
 
@@ -580,17 +599,6 @@ i.xiaoan.drug {
 .ts.scrollbar::-webkit-scrollbar-button:horizontal:end {
     background: url(scrollbar/horizontal-end.png) #b3b2b2 center no-repeat;
     background-size: 15px;
-}
-
-.ts.scrollbar::-webkit-scrollbar-thumb:hover,
-.ts.scrollbar::-webkit-scrollbar-button:horizontal:hover,
-.ts.scrollbar::-webkit-scrollbar-button:hover {
-    background-color: #8e8e8e;
-}
-
-.ts.scrollbar::-webkit-scrollbar-thumb:active,
-.ts.scrollbar::-webkit-scrollbar-button:active {
-    background-color: #6f6f6f;
 }
 
 
