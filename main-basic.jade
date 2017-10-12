@@ -193,23 +193,6 @@ br
             +code
                 = '<div class="ts edge xiaoan"></div>'
 
-            +header('ㄉㄨㄞ','我的洨洨安突然就_了')
-            script.
-                $(document).ready(function(){
-                    $("#okii").click(function(){
-                        $("#okii").addClass("okii");
-                        snackbar("開始播放動畫")
-                        setTimeout(function(){
-                            $("#okii").removeClass("okii")
-                            snackbar("動畫已停止")
-                        },10000);
-                    });
-                });
-            .ts.segment 由於此動畫太過瘋狂，點擊底下的洨洨安來執行動畫，並於十秒後停止
-            #okii.ts.xiaoan
-            +code
-                = '<div class="ts okii xiaoan"></div>'
-
             h2.ts.header(id='動畫速度')
             +header('動畫速度','您可以指定速度，快、慢、始春或是預設的速度(不指定)')
             .ts.spinner.fast.rotate.xiaoan

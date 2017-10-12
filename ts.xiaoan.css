@@ -538,49 +538,6 @@ i.xiaoan.drug {
 }
 
 
-/* okii ㄉㄨㄞ */
-
-.okii {
-    animation: okii 4s infinite;
-}
-
-.okii.fast {
-    animation-duration: 2.5s;
-}
-
-.okii.slow {
-    animation-duration: 7.5s;
-}
-
-.okii.early.spring {
-    animation-duration: 500s;
-}
-
-@keyframes okii {
-    0%,
-    100% {
-        transform: scale(1);
-        z-index: 999;
-    }
-    3% {
-        transform: scale(5);
-        z-index: 999;
-    }
-    5% {
-        transform: scale(10);
-        z-index: 999;
-    }
-    7% {
-        transform: scale(20);
-        z-index: 999;
-    }
-    20% {
-        transform: scale(1000);
-        z-index: 999;
-    }
-}
-
-
 /* 
 	卷軸
 */
@@ -663,25 +620,25 @@ pre {
     Ui Kit
 */
 
-.ts.card:not(.no):not(.xiaoan),
-.ts.segment:not(.no):not(.xiaoan),
-.ts.message:not(.no):not(.xiaoan),
-.ts.slate:not(.no):not(.xiaoan) {
+.ts.card:not(.no):not(.earlyspring),
+.ts.segment:not(.no):not(.earlyspring),
+.ts.message:not(.no):not(.earlyspring),
+.ts.slate:not(.no):not(.earlyspring) {
     border: 0px solid #e9e !important;
     box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.2) !important;
     transition: all .2s ease !important;
 }
 
-a.ts.card:not(.no):not(.xiaoan) {
+a.ts.card:not(.no):not(.earlyspring) {
     user-select: none !important;
 }
 
-a.ts.card:hover:not(.no):not(.xiaoan) {
+a.ts.card:hover:not(.no):not(.earlyspring) {
     border: 0px solid #e99 !important;
     box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.6) !important;
     transform: translateY(-1.25px) !important;
 }
 
-.ts.card>.content>.header+.description:not(.no):not(.xiaoan) {
+.ts.card>.content>.header+.description:not(.no):not(.earlyspring) {
     margin-top: .4em;
 }
