@@ -6,11 +6,14 @@ br
         .sixteen.wide.mobile.four.wide.computer.column
             .ts.borderless.secondary.vertical.large.menu
                 .ts.primary.header 介紹
-                +NAVlink('板岩')
+                +NAVlink('介紹')
                 .ts.primary.header 元件
                 +NAVlink('板岩')
                 +NAVlink('訊息')
         .sixteen.wide.mobile.column.twelve.wide.computer
+            .ts.message.small
+                .header 請注意
+                p 這裡並沒有列出所有修改過的元件，請自行查閱 CSS
             +header('介紹','這是一些被修改過的元件') 
             .ts.inverted.primary.message.no.earlyspring
                 .header 溫馨提醒
@@ -21,6 +24,7 @@ br
                 = '...'
                 br
                 = '</div>'
+            
             +header('板岩','被修改過的板岩，移除了邊框並增加了陰影') 
             .ts.basic.padded.slate
                 i.xiaoan.face.symbol.icon
