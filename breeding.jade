@@ -18,7 +18,6 @@ html
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
         // Font
         link(href='https://fonts.googleapis.com/css?family=Ubuntu+Mono', rel='stylesheet')
-        link(href='https://fonts.googleapis.com/css?family=Raleway', rel='stylesheet')
         // SEO
         meta(name='keywords', content='洨洨安')
         meta(name='author', content='棒棒勝')
@@ -30,9 +29,6 @@ html
         meta(property='og:image', content='https://xiaoan.tocas-ui.com/breeding-og.jpg')
         meta(property='og:description', content='嫌洨洨安 CSS 顏色太少嗎？現在，透過我們實驗室的即時配種，配出美麗顏色的洨安。Powered by 洨洨安實驗室')
         meta(property='article:author', content='https://www.facebook.com/gnehsouo/')
-        style.
-            #CodeForCSS,#CodeForHtml,#CodeForJade{font-family: 'Ubuntu Mono', monospace;word-break: break-all;}
-            *{font-family: 'Raleway',-apple-system, "Source Han Sans TC","Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN","Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;}
     body
         include _nav.jade
         .ts.fluid.huge.slate
@@ -142,15 +138,15 @@ html
                 .sub.header 您的配種數據，可以搭配 Tocas Xiaoan 使用，也可以將 CSS 交給開發人員，也許洨洨安 CSS 下一個版本就會加入了呢！
             .ts.segments
                 .ts.primary.segment CSS
-                #CodeForCSS.ts.segment // 調整以上滑桿，配種出您的洨洨安
+                #CodeForCSS.ts.segment.code // 調整以上滑桿，配種出您的洨洨安
             br
             .ts.segments
                 .ts.primary.segment HTML
-                #CodeForHtml.ts.segment // 建議先調整負片滑桿
+                #CodeForHtml.ts.segment.code // 建議先調整負片滑桿
             br
             .ts.segments
                 .ts.primary.segment Pug/Jade
-                #CodeForJade.ts.segment // Powered by 洨洨安實驗室
+                #CodeForJade.ts.segment.code // Powered by 洨洨安實驗室
         
         // 配種中心專用
         script(src='breeding.js')

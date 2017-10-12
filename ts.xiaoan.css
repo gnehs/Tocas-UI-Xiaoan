@@ -642,12 +642,38 @@ i.xiaoan.drug {
 */
 
 code,
+code>span,
+code>span>span,
 .code,
 .code mark {
-    font-family: 'Ubuntu Mono', monospace, -apple-system, "Source Han Sans TC", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
     word-break: break-all;
 }
 
-* {
-    font-family: 'Raleway', -apple-system, "Source Han Sans TC", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+
+/*
+    Ui Kit
+*/
+
+.ts.card,
+.ts.segment,
+.ts.message,
+.ts.slate {
+    border: 0px solid #e9e !important;
+    box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.2) !important;
+    transition: all .2s ease !important;
+}
+
+a.ts.card {
+    user-select: none !important;
+}
+
+a.ts.card:hover {
+    border: 0px solid #e99 !important;
+    box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.6) !important;
+    transform: translateY(-1.25px) !important;
+}
+
+.ts.card>.content>.header+.description {
+    margin-top: .4em;
 }

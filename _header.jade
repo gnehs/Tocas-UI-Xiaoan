@@ -4,16 +4,16 @@ html
         title Tocas Xiaoan
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
-        // ICON
+        
         link(rel='icon',href='icon.png')
-        // tocas Xiaoan
-        link(href='ts.xiaoan.min.css', rel='stylesheet')
-        // Tocas Xiaoan JS
-        script(src='ts.xiaoan.min.js')
-        // Tocas UI
         link(href='https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/2.3.3/tocas.css',rel='stylesheet')
-        // JQ https://cdnjs.com/libraries/jquery/
+        link(href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/github-gist.min.css',rel='stylesheet')
+        link(href='ts.xiaoan.min.css?123', rel='stylesheet')
+
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js')
+        script.
+            hljs.initHighlightingOnLoad();
         //-底下是 https://github.com/gnehs/Jade 里的東東，你的放置位置可能不一樣，發 PR 時不要動到這裡
         include ./../Jade/_tags.jade
         +social_tags('Tocas Xiaoan','第一天，洨安創造了始春。第二天，始春延期了。第三天，始春持續延期好評熱映中。','og.jpg','https://xiaoan.tocas-ui.com/')
@@ -50,6 +50,8 @@ mixin header(name,subheader)
 mixin code
     .ts.secondary.code.segment
         .ts.top.right.attached.label 原始碼
-        block
+        pre
+            code.HTML
+                block
     br
     br
