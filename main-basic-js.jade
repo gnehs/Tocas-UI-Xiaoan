@@ -1,4 +1,13 @@
 include _header.jade
+//- 程式碼用模板
+mixin code
+    .ts.secondary.code.segment
+        .ts.top.right.attached.label 原始碼
+        pre
+            code.javascript
+                block
+    br
+    br
 br
 br
 .ts.container
@@ -20,11 +29,11 @@ br
             p 在 Tocas Xiaoan 中，一些功能同時有輸出在網頁中及輸出在 console 裡的版本，若您要輸出在 console 中，在後方加上 _con 即可
             p 我們已經在文件中加上標籤，方便尼知道該功能可以用在哪裡了❤️
             +code
-                = '//底下程式碼會輸出在網頁上'
+                = '/*底下程式碼會輸出在網頁上*/'
                 br
                 = 'xiaoan.earlySpring404()'
                 br
-                = '//底下程式碼會輸出在 console 裡'
+                = '/*底下程式碼會輸出在 console 裡*/'
                 br
                 = 'xiaoan.earlySpring404_con()'
             
@@ -56,13 +65,13 @@ br
                 xiaoan.daily()
                 xiaoan.daily("3","15")
             +code
-                = '// 預設輸出一個，且無指定字數'
+                = '/* 預設輸出一個，且無指定字數 */'
                 br
                 = 'xiaoan.daily()'
                 br
-                = '// 指定輸出數量為 3 個，且限制字數小於 15'
+                = '/* 指定輸出數量為 3 個，且限制字數小於 15 */'
                 br
-                = '// xiaoan.daily("輸出數量","限制字數")'
+                = '/* xiaoan.daily("輸出數量","限制字數") */'
                 br
                 = 'xiaoan.daily("3","15")'
             
@@ -74,9 +83,9 @@ br
             +code
                 = 'xiaoan.basic()'
                 br
-                = '// 樣式請參考 CSS 裡的基本章節'
+                = '/* 樣式請參考 CSS 裡的基本章節 */'
                 br
-                = '// xiaoan.basic("樣式")'
+                = '/* xiaoan.basic("樣式") */'
                 br
                 = 'xiaoan.basic("horny love big")'
 
@@ -85,11 +94,11 @@ br
             button.ts.button(onclick='snackbar("你點了按鈕，真是太棒了，有機會抽獎獲得 iPhone8 喔")') 點我
             button.ts.button(onclick='snackbar("我會持續五秒喔",5)') 點我開啟持續五秒的點心條
             +code
-                = '// 底下的點心條將持續一秒(預設)'
+                = '/* 底下的點心條將持續一秒(預設) */'
                 br
                 = 'snackbar("你點了按鈕，真是太棒了，有機會抽獎獲得 iPhone8 喔")'
                 br
-                = '// 底下的點心條將持續五秒，修改數字 5 來更改持續時間'
+                = '/* 底下的點心條將持續五秒，修改數字來更改持續時間 */'
                 br
                 = 'snackbar("我會持續五秒喔",5)'
                 
