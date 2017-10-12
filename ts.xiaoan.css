@@ -663,25 +663,25 @@ pre {
     Ui Kit
 */
 
-.ts.card,
-.ts.segment,
-.ts.message,
-.ts.slate {
+.ts.card:not(.no):not(.xiaoan),
+.ts.segment:not(.no):not(.xiaoan),
+.ts.message:not(.no):not(.xiaoan),
+.ts.slate:not(.no):not(.xiaoan) {
     border: 0px solid #e9e !important;
     box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.2) !important;
     transition: all .2s ease !important;
 }
 
-a.ts.card {
+a.ts.card:not(.no):not(.xiaoan) {
     user-select: none !important;
 }
 
-a.ts.card:hover {
+a.ts.card:hover:not(.no):not(.xiaoan) {
     border: 0px solid #e99 !important;
     box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.6) !important;
     transform: translateY(-1.25px) !important;
 }
 
-.ts.card>.content>.header+.description {
+.ts.card>.content>.header+.description:not(.no):not(.xiaoan) {
     margin-top: .4em;
 }
