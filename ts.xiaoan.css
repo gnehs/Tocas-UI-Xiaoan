@@ -650,6 +650,14 @@ code>span>span,
     word-break: break-all;
 }
 
+.ts.top.attached.label:first-child+:not(.attached) {
+    margin-top: 0rem !important;
+}
+
+pre {
+    margin: 0px;
+}
+
 
 /*
     Ui Kit
