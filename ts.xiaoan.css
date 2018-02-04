@@ -16,74 +16,73 @@
 	品種
 */
 
-.ts.xiaoan {
-    background-image: url(svg/xiaoan.svg);
+.xiaoan {
+    mask: url(svg/xiaoan.svg);
+    mask-size: 100% 100% !important;
     width: 100px;
     height: 100px;
-    background-position: center;
-    background-size: 100px 100px;
+    background: #999999;
     display: inline-block;
-    filter: invert(0.6);
 }
 
-.ts.xiaoan.instead {
-    background-image: url(svg/xiaoan.instead.svg);
+.xiaoan.instead {
+    mask: url(svg/xiaoan.instead.svg);
 }
 
-.ts.xiaoan.demon.instead {
-    background-image: url(svg/demon.instead.svg);
+.xiaoan.demon.instead {
+    mask: url(svg/demon.instead.svg);
 }
 
-.ts.xiaoan.demon {
-    background-image: url(svg/demon.svg);
+.xiaoan.demon {
+    mask: url(svg/demon.svg);
 }
 
-.ts.xiaoan.face.instead {
-    background-image: url(svg/face.instead.svg);
+.xiaoan.face.instead {
+    mask: url(svg/face.instead.svg);
 }
 
-.ts.xiaoan.face {
-    background-image: url(svg/face.svg);
+.xiaoan.face {
+    mask: url(svg/face.svg);
 }
 
-.ts.xiaoan.funny.face.instead {
-    background-image: url(svg/funny.face.instead.svg);
+.xiaoan.funny.face.instead {
+    mask: url(svg/funny.face.instead.svg);
 }
 
-.ts.xiaoan.funny.face {
-    background-image: url(svg/funny.face.svg);
+.xiaoan.funny.face {
+    mask: url(svg/funny.face.svg);
 }
 
-.ts.xiaoan.horny {
-    background-image: url(svg/horny.svg);
+.xiaoan.horny {
+    mask: url(svg/horny.svg);
 }
 
-.ts.xiaoan.horny.instead {
-    background-image: url(svg/horny.instead.svg);
+.xiaoan.horny.instead {
+    mask: url(svg/horny.instead.svg);
 }
 
-.ts.xiaoan.kemonomimi {
-    background-image: url(svg/kemonomimi.svg);
+.xiaoan.kemonomimi {
+    mask: url(svg/kemonomimi.svg);
 }
 
-.ts.xiaoan.kemonomimi.instead {
-    background-image: url(svg/kemonomimi.instead.svg);
+.xiaoan.kemonomimi.instead {
+    mask: url(svg/kemonomimi.instead.svg);
 }
 
-.ts.xiaoan.tissue {
-    background-image: url(svg/tissue.svg);
+.xiaoan.tissue {
+    mask: url(svg/tissue.svg);
 }
 
-.ts.xiaoan.spinner {
-    background-image: url(svg/spinner.svg);
+.xiaoan.spinner {
+    mask: url(svg/spinner.svg);
 }
 
-.ts.xiaoan.heart {
-    background-image: url(svg/heart.svg);
+.xiaoan.heart {
+    mask: url(svg/heart.svg);
 }
 
-.ts.xiaoan.heart.instead {
-    background-image: url(svg/heart.instead.svg);
+.xiaoan.heart.instead {
+    mask: url(svg/heart.instead.svg);
 }
 
 
@@ -91,46 +90,46 @@
 	大小 
 */
 
-.ts.xiaoan.mini {
+.xiaoan.mini {
     width: 25px;
     height: 25px;
-    background-size: 25px 25px;
+    mask-size: 25px 25px;
 }
 
-.ts.xiaoan.tiny {
+.xiaoan.tiny {
     width: 50px;
     height: 50px;
-    background-size: 50px 50px;
+    mask-size: 50px 50px;
 }
 
-.ts.xiaoan.small {
+.xiaoan.small {
     width: 75px;
     height: 75px;
-    background-size: 75px 75px;
+    mask-size: 75px 75px;
 }
 
-.ts.xiaoan.large {
+.xiaoan.large {
     width: 125px;
     height: 125px;
-    background-size: 125px 125px;
+    mask-size: 125px 125px;
 }
 
-.ts.xiaoan.big {
+.xiaoan.big {
     width: 150px;
     height: 150px;
-    background-size: 150px 150px;
+    mask-size: 150px 150px;
 }
 
-.ts.xiaoan.huge {
+.xiaoan.huge {
     width: 200px;
     height: 200px;
-    background-size: 200px 200px;
+    mask-size: 200px 200px;
 }
 
-.ts.xiaoan.massive {
+.xiaoan.massive {
     width: 250px;
     height: 250px;
-    background-size: 250px 250px;
+    mask-size: 250px 250px;
 }
 
 
@@ -153,7 +152,7 @@
 }
 
 .ts.xiaoan.fluid {
-    background-size: 100% 100%;
+    mask-size: 100% 100%;
     padding-bottom: 100%;
     width: 100%;
     height: 0;
@@ -164,89 +163,24 @@
 	Icon Font 
 */
 
-@font-face {
-    font-family: 'xiaoan';
-    src: url('fonts/xiaoan.ttf?izxrsk') format('truetype'), url('fonts/xiaoan.woff?izxrsk') format('woff'), url('fonts/xiaoan.svg?izxrsk#xiaoan') format('svg');
-    font-weight: normal;
-    font-style: normal;
+i.xiaoan {
+    content: "";
+    height: 1em !important;
+    width: 1em !important;
+    display: inline-block;
+    background: #3a3232 !important;
+    background-size: 100% 100%;
+    mask: url(svg/xiaoan.instead.svg);
+    mask-size: 100% 100%;
 }
 
 i.xiaoan:before {
-    font-family: 'xiaoan' !important;
+    content: "" !important;
 }
 
-i.xiaoan.demon.instead:before {
-    content: "\e900";
-}
-
-i.xiaoan.demon:before {
-    content: "\e901";
-}
-
-i.xiaoan.face.instead:before {
-    content: "\e902";
-}
-
-i.xiaoan.face:before {
-    content: "\e903";
-}
-
-i.xiaoan.funny.face.instead:before {
-    content: "\e904";
-}
-
-i.xiaoan.funny.face:before {
-    content: "\e905";
-}
-
-i.xiaoan.horny.instead:before {
-    content: "\e906";
-}
-
-i.xiaoan.horny:before {
-    content: "\e907";
-}
-
-i.xiaoan.kemonomimi.instead:before {
-    content: "\e908";
-}
-
-i.xiaoan.kemonomimi:before {
-    content: "\e909";
-}
-
-i.xiaoan.instead:before {
-    content: "\e90b";
-}
-
-i.xiaoan:before {
-    content: "\e90a";
-}
-
-i.xiaoan.tissue:before {
-    content: "\e90c";
-}
-
-i.xiaoan.spinner:before {
-    content: "\e90d" !important;
-}
-
-i.xiaoan.heart.instead:before {
-    content: "\e90e" !important;
-}
-
-i.xiaoan.heart:before {
-    content: "\e90f" !important;
-}
-
-
-/*
-	修正洨安在 ts image 下吐洨的情形
-*/
-
-.ts.image:not(.label)>.icon.xiaoan:not(.button) {
-    -webkit-text-stroke: 1px #fff;
-    text-stroke: 1px #fff;
+.ts.button i.xiaoan {
+    height: 100% !important;
+    width: calc(1em + .78571em * 2) !important;
 }
 
 
@@ -254,54 +188,55 @@ i.xiaoan.heart:before {
 	語意化 
 */
 
-i.xiaoan.rainbow {
-    background: linear-gradient(to bottom, #f00, #f0f 15%, #00f 33%, #0ff 49%, #0f0 67%, #ff0 84%, #f00);
+.xiaoan.rainbow {
+    background: linear-gradient(to bottom, #f00, #f0f 15%, #00f 33%, #0ff 49%, #0f0 67%, #ff0 84%, #f00) !important;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.ts.xiaoan.primary {
-    filter: invert(.5) sepia(1) hue-rotate(170deg);
+.xiaoan.primary {
+    background-color: #7c9fbb !important;
 }
 
-.ts.xiaoan.info {
-    filter: invert(.5) sepia(1) hue-rotate(220deg);
+.xiaoan.info {
+    background-color: #eed94d !important;
 }
 
-.ts.xiaoan.warning {
-    filter: invert(.7) sepia(1) saturate(2.8) brightness(1) hue-rotate(10deg);
+.xiaoan.warning {
+    background-color: #b28f2f !important;
 }
 
-.ts.xiaoan.positive {
-    filter: invert(.7) sepia(1) brightness(.7) hue-rotate(10deg);
+.xiaoan.positive {
+    background-color: #15ae17 !important;
 }
 
-.ts.xiaoan.negative {
-    filter: invert(.7) sepia(1) saturate(5) brightness(.5) hue-rotate(300deg);
+.xiaoan.negative {
+    background-color: #db0007 !important;
 }
 
-.ts.xiaoan.inverted {
-    filter: invert(0.92);
+.xiaoan.inverted {
+    background-color: #dedede !important;
 }
 
-.ts.xiaoan.exceedingly.light.blue.xiaoan {
-    filter: invert(0.9) contrast(65%) sepia(100%) hue-rotate(129.5deg) grayscale(0%) saturate(100%);
+.xiaoan.exceedingly.light.blue.xiaoan {
+    background-color: #5d9394 !important;
 }
 
-.ts.xiaoan.gloomy {
-    filter: contrast(25%) sepia(53%) hue-rotate(165.5deg) brightness(80%) saturate(100%);
+.xiaoan.gloomy {
+    background-color: #687985 !important;
 }
 
 .ts.xiaoan.NTR {
-    filter: invert(0.87) contrast(32%) sepia(1) hue-rotate(75.5deg) grayscale(0%) blur(1.1px) brightness(87%) saturate(100%);
+    filter: blur(1.1px);
+    background-color: #62896c !important;
 }
 
 .ts.xiaoan.love {
-    filter: invert(0.95) contrast(32%) sepia(100%) hue-rotate(266.5deg) grayscale(0%) blur(0px) brightness(100%) saturate(100%);
+    background-color: #b788a3 !important;
 }
 
 .ts.xiaoan.EarlySpring {
-    filter: invert(1) contrast(200%) hue-rotate(0deg) grayscale(0%) blur(0px) brightness(100%) saturate(0%);
+    background-color: #4c4c4c !important;
 }
 
 
@@ -396,8 +331,8 @@ i.xiaoan.rainbow {
 
 /* 嗑藥 */
 
-i.xiaoan.drug {
-    background: linear-gradient(to bottom, #f00, #f0f 15%, #00f 33%, #0ff 49%, #0f0 67%, #ff0 84%, #f00);
+.xiaoan.drug {
+    background: linear-gradient(to bottom, #f00, #f0f 15%, #00f 33%, #0ff 49%, #0f0 67%, #ff0 84%, #f00) !important;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -492,7 +427,6 @@ i.xiaoan.drug {
     0%,
     100% {
         transform: scale(1, 1);
-        background-color: transparent;
     }
     5% {
         transform: scale(1, .1) translateY(300px);
