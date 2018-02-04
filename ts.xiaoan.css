@@ -474,6 +474,35 @@ i.xiaoan:before {
 }
 
 
+/* 多彩安 */
+
+.colorful {
+    animation: colorful 5s infinite;
+    background-color: red;
+}
+
+.colorful.fast {
+    animation-duration: 2.5s;
+}
+
+.colorful.slow {
+    animation-duration: 7.5s;
+}
+
+.colorful.early.spring {
+    animation-duration: 500s;
+}
+
+@keyframes colorful {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
 /* 
 	卷軸
 */
