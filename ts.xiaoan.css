@@ -164,22 +164,24 @@
 */
 
 i.xiaoan {
-    content: "";
     height: 1em !important;
     width: 1em !important;
     display: inline-block;
-    background: #3a3232 !important;
-    background-size: 100% 100%;
-    mask: url(svg/xiaoan.instead.svg);
+    mask: url(svg/xiaoan.svg);
     mask-size: 100% 100%;
+}
+
+i.xiaoan.xiaoan.xiaoan.xiaoan.xiaoan.xiaoan.xiaoan.xiaoan {
+    background: #999;
 }
 
 i.xiaoan:before {
     content: "" !important;
 }
 
-.ts.button i.xiaoan {
+.ts.labeled.button i.xiaoan {
     height: 100% !important;
+    background: #00000061 !important;
     width: calc(1em + .78571em * 2) !important;
 }
 
