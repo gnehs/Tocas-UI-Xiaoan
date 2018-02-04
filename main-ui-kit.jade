@@ -10,6 +10,7 @@ br
                 .ts.primary.header 元件
                 +NAVlink('板岩')
                 +NAVlink('訊息')
+                +NAVlink('卡片')
         .sixteen.wide.mobile.column.twelve.wide.computer
             .ts.message.small
                 .header 請注意
@@ -47,6 +48,18 @@ br
                 p 始春已過，讓我們迎接時下最夯的社群網站 TeaMeow！
             +code
                 = '<div class="ts inverted secondary primary message">'
+                br
+                = '...'
+                br
+                = '</div>'
+
+            +header('卡片','被修改過的卡片元件，移除了邊框並增加了陰影') 
+            .ts.card
+                .content
+                    .header 延期大師
+                    .description 您是否曾經聽過可以將釋出日期一拖再拖的社群網站呢？
+            +code
+                = '<div class="ts card">'
                 br
                 = '...'
                 br
