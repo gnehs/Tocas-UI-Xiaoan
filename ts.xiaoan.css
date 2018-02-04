@@ -565,7 +565,7 @@ pre {
 */
 
 .ts.card:not(.no):not(.earlyspring),
-.ts.segment:not(.no):not(.earlyspring),
+.ts.segment:not(.no):not(.earlyspring):not(.basic),
 .ts.message:not(.no):not(.earlyspring):not(.secondary),
 .ts.slate:not(.no):not(.earlyspring) {
     border: 0px solid #000 !important;
