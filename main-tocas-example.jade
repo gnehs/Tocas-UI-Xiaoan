@@ -27,13 +27,10 @@ br
                 .ts.primary.header 麵包屑
                 a.item(href='#分隔圖示') 分隔圖示
         .sixteen.wide.mobile.column.twelve.wide.computer
-            h2.ts.header(id='圖案按鈕')
-                | 圖案按鈕
-                span.sub.header 只顯示洨安的按鈕。
+            +header('圖案按鈕','只顯示洨安的按鈕。') 
             button.ts.icon.button
                 i.xiaoan.icon
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<button class="ts icon button">'
                 br
                 = '　　<i class="xiaoan icon"></i>'
@@ -41,17 +38,12 @@ br
                 = '</button>'
             br
             br
-            h2.ts.header(id='標籤圖示按鈕')
-                | 標籤圖示按鈕
-                span.sub.header 帶有標籤和洨安的按鈕。
-            button.ts.labeled.icon.button(onclick='snackbar("正在延期......")')
-                | 點我開啟始春
+            +header('標籤圖示按鈕','帶有標籤和洨安的按鈕。') 
+            button.ts.labeled.icon.button(onclick='snackbar("正在延期......")') 點我開啟始春
                 i.xiaoan.icon
-            button.ts.right.labeled.icon.button(onclick='snackbar("正在延期......")')
-                | 點我開啟始春
+            button.ts.right.labeled.icon.button(onclick='snackbar("正在延期......")') 點我開啟始春
                 i.xiaoan.icon
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<button class="ts labeled icon button">'
                 br
                 = '　　點我開啟始春'
@@ -69,17 +61,14 @@ br
                 = '</button>'
             br
             br
-            h2.ts.header(id='分隔線')
-                | 分隔線
-                span.sub.header 可以讓你在分隔線插入很多洨安，要幾個都行。
+            +header('分隔線','可以讓你在分隔線插入很多洨安，要幾個都行。') 
             p 哇伊！是三螢幕！
             .ts.horizontal.divider
                 i.xiaoan.icon
                 i.xiaoan.instead.icon
                 i.xiaoan.icon
             p 對不起，始春延期惹QQQQQ
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<div class="ts horizontal divider">'
                 br
                 = '　　<i class="xiaoan icon"></i>'
@@ -110,9 +99,7 @@ br
                 = '　　</div>'
                 br
                 = '</h3>'
-            h2.ts.header(id='圖內圖示')
-                | 圖內圖示
-                span.sub.header 圖片裡面可以擺放洨安，這會令他浮動在圖片的右下角落。
+            +header('圖內圖示','圖片裡面可以擺放洨安，這會令他浮動在圖片的右下角落。') 
             .ts.secondary.info.message
                 p
                     | 如果覺得太怪可以自己對洨安加上 
@@ -124,8 +111,7 @@ br
             .ts.image
                 img(src='https://i.imgur.com/w30FPsZ.jpg?XiaoXiaoanCSS')
                 i.xiaoan.icon
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<div class="ts small image">'
                 br
                 = '　　<img src="https://i.imgur.com/w30FPsZ.jpg?XiaoXiaoanCSS">'
@@ -135,9 +121,7 @@ br
                 = '</div>'
             br
             br
-            h2.ts.header(id='欄位圖示')
-                | 欄位圖示
-                span.sub.header 你可以將洨安放入輸入欄位中。
+            +header('欄位圖示','你可以將洨安放入輸入欄位中。') 
             .ts.icon.input
                 input(type='text', placeholder='尋找始春...')
                 i.xiaoan.icon
@@ -146,8 +130,7 @@ br
             .ts.left.icon.input
                 input(type='text', placeholder='尋找始春...')
                 i.xiaoan.icon
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<div class="ts icon input">'
                 br
                 = '　　<input type="text" placeholder="尋找始春...">'
@@ -165,15 +148,12 @@ br
                 = '</div>'
             br
             br
-            h2.ts.header(id='板岩代表性符號')
-                | 板岩代表性符號
-                span.sub.header 洨安會擺在板岩的右下角。
+            +header('板岩代表性符號','洨安會擺在板岩的右下角。') 
             .ts.basic.padded.slate
                 i.xiaoan.face.symbol.icon
                 span.header 2016 始春
                 span.description 或者更晚，而且晚很多。
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<div class="ts basic padded slate">'
                 br
                 = '　　<i class="xiaoan face symbol icon"></i>'
@@ -185,9 +165,7 @@ br
                 = '</div>'
             br
             br
-            h2.ts.header(id='標籤圖示')
-                | 標籤圖示
-                span.sub.header 在標籤內放置一個洨安。
+            +header('標籤圖示','在標籤內放置一個洨安。') 
             .ts.left.icon.label
                 i.xiaoan.icon
                 |  未讀郵件
@@ -195,8 +173,7 @@ br
             .ts.right.icon.label
                 | 始春
                 i.xiaoan.icon
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<div class="ts left icon label">'
                 br
                 = '　　<i class="xiaoan icon"></i>'
@@ -216,15 +193,12 @@ br
                 = '</div> '
             br
             br
-            h2.ts.header(id='清單圖示')
-                | 清單圖示
-                span.sub.header 清單內也可以擺放洨安。
+            +header('清單圖示','清單內也可以擺放洨安。') 
             .ts.list
                 .item
                     i.xiaoan.icon
                     .content 2016 始春
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<div class="ts list">'
                 br
                 = '　　<div class="item">'
@@ -238,9 +212,7 @@ br
                 = '</div> '
             br
             br
-            h2.ts.header(id='步驟圖示')
-                | 步驟圖示
-                span.sub.header 步驟內可以擺放洨安。
+            +header('步驟圖示','步驟內可以擺放洨安。') 
             div(style='width:100%;overflow-x:auto')
                 .ts.fluid.steps
                     .step
@@ -258,8 +230,7 @@ br
                         .content
                             .title Alpha 開放
                             .description 20??
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<div class="ts fluid steps">'
                 br
                 = '　　<div class="step">'
@@ -303,17 +274,14 @@ br
                 = '</div> '
             br
             br
-            h2.ts.header(id='分隔圖示')
-                | 分隔圖示
-                span.sub.header 麵包屑的洨安分隔圖示。
+            +header('分隔圖示','麵包屑的洨安分隔圖示。') 
             .ts.breadcrumb
                 a.section Tocas UI
                 i.xiaoan.icon.divider
                 a.section .ts.xiaoan
                 i.xiaoan.icon.divider
                 .active.section Icon Font 範例
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<div class="ts breadcrumb">'
                 br
                 = '　　<a class="section">Tocas UI</a>'
