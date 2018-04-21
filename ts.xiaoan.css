@@ -1,11 +1,16 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'xiaoan';
+  src: url("fonts/icomoon.eot?iwsv73#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?iwsv73") format("truetype"), url("fonts/icomoon.woff?iwsv73") format("woff"), url("fonts/icomoon.svg?iwsv73#icomoon") format("svg"); }
+
 i.xiaoan.icon {
   text-stroke: 0.2em transparent;
   -webkit-text-stroke: 0.2em transparent;
   color: #999999;
-  overflow: hidden; }
+  overflow: hidden;
+  font-family: 'xiaoan' !important; }
   i.xiaoan.icon:before {
-    content: "\f0c8";
+    content: "\6625";
     -webkit-mask-size: 100% 100% !important;
     mask-size: 100% 100% !important;
     -webkit-mask: url(svg/xiaoan.instead.svg);
