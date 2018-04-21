@@ -12,8 +12,6 @@ br
                 a.item(href='#分隔線') 分隔線
                 .ts.primary.header 標題
                 a.item(href='#標題圖示') 標題圖示
-                .ts.primary.header 圖片
-                a.item(href='#圖內圖示') 圖內圖示
                 .ts.primary.header 輸入欄位
                 a.item(href='#欄位圖示') 欄位圖示
                 .ts.primary.header 板岩
@@ -36,8 +34,7 @@ br
                 = '　　<i class="xiaoan icon"></i>'
                 br
                 = '</button>'
-            br
-            br
+                
             +header('標籤圖示按鈕','帶有標籤和洨安的按鈕。') 
             button.ts.labeled.icon.button(onclick='snackbar("正在延期......")') 點我開啟始春
                 i.xiaoan.icon
@@ -59,8 +56,7 @@ br
                 = '　　<i class="xiaoan icon"></i>'
                 br
                 = '</button>'
-            br
-            br
+
             +header('分隔線','可以讓你在分隔線插入很多洨安，要幾個都行。') 
             p 哇伊！是三螢幕！
             .ts.horizontal.divider
@@ -78,8 +74,7 @@ br
                 = '　　<i class="xiaoan icon">'
                 br
                 = '</div>'
-            br
-            br
+                
             +header('標題圖示','標題可以帶有洨安圖示。')
             h3.ts.center.aligned.icon.header
                 i.xiaoan.icon
@@ -99,28 +94,7 @@ br
                 = '　　</div>'
                 br
                 = '</h3>'
-            +header('圖內圖示','圖片裡面可以擺放洨安，這會令他浮動在圖片的右下角落。') 
-            .ts.secondary.info.message
-                p
-                    | 如果覺得太怪可以自己對洨安加上 
-                    code text-stroke: 0
-                    |  和 
-                    code -webkit-text-stroke: 0
-                    | 。
-                p 註：我們已經在 1.3 修正了吐洨的情形，如果不要白邊再加就好了
-            .ts.image
-                img(src='https://i.imgur.com/w30FPsZ.jpg?XiaoXiaoanCSS')
-                i.xiaoan.instead.icon
-            +code
-                = '<div class="ts small image">'
-                br
-                = '　　<img src="https://i.imgur.com/w30FPsZ.jpg?XiaoXiaoanCSS">'
-                br
-                = '　　<i class="xiaoan instead icon"></i>'
-                br
-                = '</div>'
-            br
-            br
+
             +header('欄位圖示','你可以將洨安放入輸入欄位中。') 
             .ts.icon.input
                 input(type='text', placeholder='尋找始春...')
@@ -146,8 +120,7 @@ br
                 = '　　<i class="xiaoan icon"></i>'
                 br
                 = '</div>'
-            br
-            br
+                
             +header('板岩代表性符號','洨安會擺在板岩的右下角。') 
             .ts.basic.padded.slate
                 i.xiaoan.face.symbol.icon
@@ -163,8 +136,7 @@ br
                 = '　　<span class="description">或者更晚，而且晚很多。</span>'
                 br
                 = '</div>'
-            br
-            br
+                
             +header('標籤圖示','在標籤內放置一個洨安。') 
             .ts.left.icon.label
                 i.xiaoan.icon
@@ -191,8 +163,7 @@ br
                 = '　　始春'
                 br
                 = '</div> '
-            br
-            br
+                
             +header('清單圖示','清單內也可以擺放洨安。') 
             .ts.list
                 .item
@@ -210,8 +181,7 @@ br
                 = '　　</div>'
                 br
                 = '</div> '
-            br
-            br
+            
             +header('步驟圖示','步驟內可以擺放洨安。') 
             div(style='width:100%;overflow-x:auto')
                 .ts.fluid.steps
@@ -272,8 +242,7 @@ br
                 = '　　</div>'
                 br
                 = '</div> '
-            br
-            br
+                
             +header('分隔圖示','麵包屑的洨安分隔圖示。') 
             .ts.breadcrumb
                 a.section Tocas UI

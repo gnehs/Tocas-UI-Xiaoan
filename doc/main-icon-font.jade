@@ -15,20 +15,13 @@ br
                 .ts.primary.header 動畫
                 a.item(href='main-basic.html#震動') 參閱基本章節
         .sixteen.wide.mobile.column.twelve.wide.computer
-            h2.ts.header(id='基本')
-                | 基本
-                span.sub.header 最基本的洨安，大小預設與同層字級相同。
+            +header('基本','最基本的洨安，大小預設與同層字級相同。') 
             i.icon.xiaoan
             | 2016 始春
-            .ts.secondary.code.segment
-                .ts.top.right.attached.label 原始碼
+            +code
                 = '<i class="xiaoan icon"></i> 2016始春'
-            br
-            br
-            h2.ts.header(id='品種')
-                | 品種
-                span.sub.header 
-                    | 洨安可以和 ts xiaoan 一樣擁有相同的優良品種。
+                
+            +header('品種','洨安可以和 ts xiaoan 一樣擁有相同的優良品種。') 
             p 註：為了讓大家清楚的看到洨安，底下的 Icon 都套用了 huge 標籤
             i.icon.huge.xiaoan
             i.icon.huge.instead.xiaoan
@@ -78,10 +71,8 @@ br
                 = '<i class="huge heart xiaoan icon"></i>'
                 br
                 = '<i class="huge heart instead xiaoan icon"></i>'
-                br
-            h2.ts.header(id='尺寸')
-                | 尺寸
-                span.sub.header 你可以讓洨洨安變大或變小，但建議不要超過 1nm。
+            
+            +header('尺寸','你可以讓洨洨安變大或變小，但建議不要超過 1nm。') 
             i.mini.icon.xiaoan
             i.tiny.icon.xiaoan
             i.small.icon.xiaoan
@@ -106,11 +97,8 @@ br
                 = '<i class="huge icon xiaoan"></i>'
                 br
                 = '<i class="massive icon xiaoan"></i>'
-            br
-            br
-            h2.ts.header(id='語意')
-                | 語意
-                span.sub.header 洨安可以有著不同的語意。
+
+            +header('語意','洨安可以有著不同的語意。') 
             i.icon.big.primary.xiaoan
             i.icon.big.info.xiaoan
             i.icon.big.warning.xiaoan
@@ -147,11 +135,8 @@ br
                 = '<i class="icon big instead negative xiaoan"></i>'
                 br
                 = '<i class="icon big instead rainbow xiaoan"></i>'
-            br
-            br
-            h2.ts.header(id='翻轉/旋轉')
-                | 翻轉/旋轉
-                span.sub.header 你可以獲得...嗯...一個轉了 90 度的洨安，然後再讓它旋轉！？
+                
+            +header('翻轉/旋轉','你可以獲得...嗯...一個轉了 90 度的洨安，然後再讓它旋轉！？') 
             i.horizontally.flipped.big.icon.xiaoan
             i.vertically.flipped.big.icon.xiaoan
             i.clockwise.rotated.big.icon.xiaoan

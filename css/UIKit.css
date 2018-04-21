@@ -1,7 +1,7 @@
 .ts.card:not(.no):not(.earlyspring), .ts.segment:not(.no):not(.earlyspring):not(.basic), .ts.message:not(.no):not(.earlyspring):not(.secondary), .ts.slate:not(.no):not(.earlyspring) {
   border: 0px solid #000 !important;
-  -webkit-box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.2) !important;
-  box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.2) !important;
+  -webkit-box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.2);
+  box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.2);
   -webkit-transition: all .2s ease !important;
   -o-transition: all .2s ease !important;
   transition: all .2s ease !important; }
@@ -10,8 +10,6 @@
   border-bottom: 0px solid #000;
   border-top: 0px solid #000;
   border-right: 0px solid #000;
-  -webkit-box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.2) !important;
-  box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.2) !important;
   -webkit-transition: all .2s ease !important;
   -o-transition: all .2s ease !important;
   transition: all .2s ease !important; }
@@ -24,8 +22,8 @@ a.ts.card:not(.no):not(.earlyspring) {
 
 a.ts.card:hover:not(.no):not(.earlyspring) {
   border: 0px solid #000 !important;
-  -webkit-box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.6) !important;
-  box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.6) !important;
+  -webkit-box-shadow: 5px 10px 1px rgba(167, 167, 167, 0.6) !important;
+  box-shadow: 5px 10px 1px rgba(167, 167, 167, 0.6) !important;
   -webkit-transform: translateY(-1.25px) !important;
   -ms-transform: translateY(-1.25px) !important;
   transform: translateY(-1.25px) !important; }
