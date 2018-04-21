@@ -18,17 +18,9 @@ html
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
         // Font
         link(href='https://fonts.googleapis.com/css?family=Ubuntu+Mono', rel='stylesheet')
-        // SEO
-        meta(name='keywords', content='洨洨安')
-        meta(name='author', content='棒棒勝')
-        meta(name='description', content='嫌洨洨安 CSS 顏色太少嗎？現在，透過我們實驗室的即時配種，配出美麗顏色的洨安。Powered by 洨洨安實驗室')
-        meta(name='URL', content='https://xiaoan.tocas-ui.com/breeding.html')
-        // open graph data
-        meta(property='og:title', content='洨洨安配種實驗室')
-        meta(property='og:type', content='website')
-        meta(property='og:image', content='https://xiaoan.tocas-ui.com/breeding-og.jpg')
-        meta(property='og:description', content='嫌洨洨安 CSS 顏色太少嗎？現在，透過我們實驗室的即時配種，配出美麗顏色的洨安。Powered by 洨洨安實驗室')
-        meta(property='article:author', content='https://www.facebook.com/gnehsouo/')
+        // OgTags
+        include /jade/_tags.jade
+        +social_tags('洨洨安配種實驗室','嫌洨洨安 CSS 顏色太少嗎？現在，透過我們實驗室的即時配種，配出美麗顏色的洨安。Powered by 洨洨安實驗室','https://xiaoan.tocas-ui.com/breeding-og.jpg','https://xiaoan.tocas-ui.com/breeding.html')
     body
         include _nav.jade
         .ts.fluid.huge.slate
