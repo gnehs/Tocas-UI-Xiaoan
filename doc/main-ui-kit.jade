@@ -6,15 +6,26 @@ br
         .sixteen.wide.mobile.four.wide.computer.column
             .ts.borderless.secondary.vertical.large.menu
                 .ts.primary.header 介紹
+                +NAVlink('引用')
                 +NAVlink('介紹')
                 .ts.primary.header 元件
                 +NAVlink('板岩')
                 +NAVlink('訊息')
                 +NAVlink('卡片')
         .sixteen.wide.mobile.column.twelve.wide.computer
-            .ts.message.small
-                .header 請注意
-                p 這裡並沒有列出所有修改過的元件，請自行查閱 CSS
+            +header('引用','本檔案為額外分離出的 CSS，若需使用需要額外引用進 HTML') 
+            +code
+                ='<!-- RawGit  -->'
+                br
+                = '<link rel="stylesheet" href="//cdn.rawgit.com/gnehs/Tocas-UI-Xiaoan/master/css/UIKit.css">'
+                br
+                ='<!-- GitHub Page -->'
+                br
+                = '<link rel="stylesheet" href="//xiaoan.tocas-ui.com/css/UIKit.css">'
+                br
+                ='<!-- 直接引用 -->'
+                br
+                = '<link rel="stylesheet" href="css/UIKit.css">'
             +header('介紹','這是一些被修改過的元件') 
             .ts.inverted.primary.message.no.earlyspring
                 .header 溫馨提醒
