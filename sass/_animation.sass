@@ -1,0 +1,194 @@
+/*
+ *	動畫
+ *	------------------
+ *				 速度
+ *	fast 				 快
+ *	slow 				 慢
+ *	early spring 夭壽慢
+ *	-----------------
+ *	簡寫
+ *	animation: name duration timing-function delay iteration-count direction;
+ *	-----------------
+
+/* 震動
+
+.shake
+    animation: shake .01s linear infinite
+    &.fast
+        animation-duration: .005s
+    &.slow
+        animation-duration: .02s
+    &.early.spring
+        animation-duration: 40s
+
+@keyframes shake
+    0%,100%
+        transform: translate(0, 0) rotate(0)
+        opacity: 1
+
+    25%
+        transform: translate(-2.5px, -2.5px) rotate(-1.52deg)
+        opacity: 0.95
+
+    40%
+        transform: translate(-2.5px, 2.5px) rotate(2.5deg)
+        opacity: 1
+
+    50%
+        transform: translate(2.5px, 2.5px) rotate(-1.75deg)
+        opacity: 0.95
+
+    60%
+        transform: translate(0px, 0px) rotate(5deg)
+        opacity: 1
+
+    75%
+        transform: translate(2.5px, -2.5px) rotate(2.5deg)
+        opacity: 0.7
+
+
+/* 旋轉
+
+.rotate
+    animation: rotate .75s linear infinite
+    &.fast
+        animation-duration: .25s
+    &.slow
+        animation-duration: 1.5s
+    &.early.spring
+        animation-duration: 100s
+
+@keyframes rotate
+    0%
+        transform: rotate(0deg)
+
+    100%
+        transform: rotate(360deg)
+
+
+/* 嗑藥
+
+.xiaoan.drug
+    background: linear-gradient(to bottom, #f00, #f0f 15%, #00f 33%, #0ff 49%, #0f0 67%, #ff0 84%, #f00) !important
+    background-clip: text
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    animation: drug 1s linear infinite, shake 10ms linear infinite, pulse-animation 10ms linear infinite, 2s linear infinite icon-loading
+    background-size: 700% 700% !important
+
+@keyframes drug
+    0%
+        background-position: 50% 0%
+
+    100%
+        background-position: 50% 100%
+
+
+/* ㄉㄨㄞㄉㄨㄞ安
+
+.poyon
+    animation: poyon 0.5s infinite
+    &.crazy
+        animation: crazypoyon 0.5s infinite
+    &.fast
+        animation-duration: .25s
+    &.slow
+        animation-duration: 1.5s
+    &.early.spring
+        animation-duration: 100s
+
+@keyframes poyon
+    0%,100%
+        transform: scale(1, 1)
+
+    25%
+        transform: scale(0.9, 1.1)
+
+    50%
+        transform: scale(1.1, 0.9)
+
+    75%
+        transform: scale(0.95, 1.05)
+
+
+@keyframes crazypoyon
+    0%,100%
+        transform: scale(1, 1) translateX(10px) rotate(5deg)
+
+    25%
+        transform: scale(0.9, 1.7) translateY(-10px) translateZ(-10px)
+
+    50%
+        transform: scale(1.7, 0.8) translateX(-10px) rotate(-5deg)
+
+    75%
+        transform: scale(0.95, 1.05) translateY(10px)
+
+
+/* 蹲跳安
+
+.squatting
+    animation: squatting 2s infinite
+    &.fast
+        animation-duration: 1s
+    &.slow
+        animation-duration: 3s
+    &.early.spring
+        animation-duration: 200s
+
+@keyframes squatting
+    0%,
+    100%
+        transform: scale(1, 1)
+
+    5%
+        transform: scale(1, 0.1) translateY(300px)
+
+    25%
+        transform: scale(1.6, 2) translateY(-300px)
+
+    40%
+        transform: scale(1, 0.5) translateY(100px)
+
+    50%
+        transform: scale(1, 1)
+
+
+/* 邊緣安
+
+.edge
+    animation: edge 5s infinite
+    &.fast
+        animation-duration: 2.5s
+    &.slow
+        animation-duration: 7.5s
+    &.early.spring
+        animation-duration: 500s
+
+@keyframes edge
+    0%,
+        100%
+        opacity: 0.01
+
+    50%
+        opacity: 0.05
+
+
+/* 多彩安
+
+.colorful
+    animation: colorful 5s infinite
+    background-color: red !important
+    &.fast
+        animation-duration: 2.5s
+    &.slow
+        animation-duration: 7.5s
+    &.early.spring
+        animation-duration: 500s
+
+@keyframes colorful
+    0%
+        filter: hue-rotate(0deg)
+
+    100%
+        filter: hue-rotate(360deg)

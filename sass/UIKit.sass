@@ -1,0 +1,22 @@
+.ts
+	&.card:not(.no):not(.earlyspring), &.segment:not(.no):not(.earlyspring):not(.basic), &.message:not(.no):not(.earlyspring):not(.secondary), &.slate:not(.no):not(.earlyspring)
+		border: 0px solid #000 !important
+		box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.2) !important
+		transition: all .2s ease !important
+	&.message.secondary:not(.no):not(.earlyspring)
+		border-bottom: 0px solid #000
+		border-top: 0px solid #000
+		border-right: 0px solid #000
+		box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.2) !important
+		transition: all .2s ease !important
+
+a.ts.card
+	&:not(.no):not(.earlyspring)
+		user-select: none !important
+	&:hover:not(.no):not(.earlyspring)
+		border: 0px solid #000 !important
+		box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.6) !important
+		transform: translateY(-1.25px) !important
+
+.ts.card > .content > .header + .description:not(.no):not(.earlyspring)
+  	margin-top: .4em

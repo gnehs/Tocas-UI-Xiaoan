@@ -1,0 +1,49 @@
+i.xiaoan.icon
+	text-stroke: .2em rgba(0,0,0,0)
+	-webkit-text-stroke: .2em rgba(0,0,0,0)
+	color: #999999
+	overflow: hidden
+	&:before
+		content: "\f0c8"
+		mask-size: 100% 100% !important
+		mask: $instead
+	&.instead
+		&:before
+			mask: $xiaoan
+	&.demon
+		&:before
+			mask: $demon
+		&.instead:before
+			mask: $demon-instead
+	&.face
+		&:before
+			mask: $face
+		&.instead:before
+			mask: $face-instead
+	&.funny.face
+		&:before
+			mask: $funny-face
+		&.instead:before
+			mask: $funny-face-instead
+	&.horny
+		&:before
+			mask: $horny
+		&.instead:before
+			mask: $horny-instead
+	&.kemonomimi
+		&:before
+			mask: $kemonomimi
+		&.instead:before
+			mask: $kemonomimi-instead
+	&.tissue
+		&:before
+			mask: $tissue
+	&.spinner
+		&:before
+			mask: $spinner
+	&.heart
+		&:before
+			mask: $heart
+		&.instead:before
+			mask: $heart-instead
+	

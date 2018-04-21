@@ -1,0 +1,38 @@
+.ts.scrollbar
+  &::-webkit-scrollbar
+    height: 20px
+    width: 20px
+    background: #f5f5f5
+    box-shadow: inset 0 0 7px 0px rgba(0, 0, 0, 0.1)
+  &::-webkit-scrollbar-thumb
+    background: url(scrollbar/xiaoan.png) #b3b2b2 center
+    background-size: 20px
+  &::-webkit-scrollbar-button
+    &:start
+      background: url(scrollbar/start.png) #b3b2b2 center no-repeat
+      background-size: 15px
+    &:end
+      background: url(scrollbar/end.png) #b3b2b2 center no-repeat
+      background-size: 15px
+  &::-webkit-scrollbar
+    &:hover
+      box-shadow: inset 0 0 7px 0px rgba(0, 0, 0, 0.2)
+    &:active
+      box-shadow: inset 0 0 7px 0px rgba(0, 0, 0, 0.3)
+  &::-webkit-scrollbar-thumb:hover
+    background-color: #8e8e8e
+  &::-webkit-scrollbar-button
+    &:horizontal:hover, &:hover
+      background-color: #8e8e8e
+  &::-webkit-scrollbar-thumb:active, &::-webkit-scrollbar-button:active
+    background-color: #6f6f6f
+  &::-webkit-scrollbar-thumb:horizontal
+    background: url(scrollbar/xiaoan-horizontal.png) #b3b2b2 center
+    background-size: 25px
+  &::-webkit-scrollbar-button:horizontal
+    &:start
+      background: url(scrollbar/horizontal-start.png) #b3b2b2 center no-repeat
+      background-size: 15px
+    &:end
+      background: url(scrollbar/horizontal-end.png) #b3b2b2 center no-repeat
+      background-size: 15px

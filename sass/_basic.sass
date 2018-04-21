@@ -1,0 +1,115 @@
+.ts.xiaoan
+	mask: url(svg/xiaoan.svg)
+	mask-size: 100% 100% !important
+	width: 100px
+	height: 100px
+	background: #999999
+	display: inline-block
+	&.instead
+		mask: $instead
+	&.demon
+		mask: $demon
+		&.instead
+			mask: $demon-instead
+	&.face
+		mask: $face
+		&.instead
+			mask: $face-instead
+	&.funny.face
+		mask: $funny-face
+		&.instead
+			mask: $funny-face-instead
+	&.horny
+		mask: $horny
+		&.instead
+			mask: $horny-instead
+	&.kemonomimi
+		mask: $kemonomimi
+		&.instead
+			mask: $kemonomimi-instead
+	&.tissue
+		mask: $tissue
+	&.spinner
+		mask: $spinner
+	&.heart
+		mask: $heart
+		&.instead
+			mask: $heart-instead
+	&.mini
+		width: 25px
+		height: 25px
+		mask-size: 25px 25px
+	&.tiny
+		width: 50px
+		height: 50px
+		mask-size: 50px 50px
+	&.small
+		width: 75px
+		height: 75px
+		mask-size: 75px 75px
+	&.large
+		width: 125px
+		height: 125px
+		mask-size: 125px 125px
+	&.big
+		width: 150px
+		height: 150px
+		mask-size: 150px 150px
+	&.huge
+		width: 200px
+		height: 200px
+		mask-size: 200px 200px
+	&.massive
+		width: 250px
+		height: 250px
+		mask-size: 250px 250px
+
+/*
+ *	大小
+
+/*
+ *	從 .ts.image 搬運過來的一些功能
+
+.ts.xiaoan
+	&.rounded
+		border-radius: .3125em
+	&.circular
+		border-radius: 500em
+	&.centered
+		margin-left: auto
+		margin-right: auto
+		display: block
+	&.fluid
+		mask-size: 100% 100%
+		padding-bottom: 100%
+		width: 100%
+		height: 0
+/* 語意化 */
+.ts.xiaoan
+	&.rainbow
+		background: linear-gradient(to bottom, #f00, #f0f 15%, #00f 33%, #0ff 49%, #0f0 67%, #ff0 84%, #f00) !important
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+	&.primary
+		background-color: #7c9fbb !important
+	&.info
+		background-color: #eed94d !important
+	&.warning
+		background-color: #b28f2f !important
+	&.positive
+		background-color: #15ae17 !important
+	&.negative
+		background-color: #db0007 !important
+	&.inverted
+		background-color: #dedede !important
+	&.exceedingly.light.blue.xiaoan
+		background-color: #5d9394 !important
+	&.gloomy
+		background-color: #687985 !important
+	&.NTR
+		filter: blur(1.1px)
+		background-color: #62896c !important
+	&.love
+		background-color: #b788a3 !important
+	&.EarlySpring
+		background-color: #4c4c4c !important

@@ -1,0 +1,22 @@
+code {
+  font-family: 'Ubuntu Mono', monospace;
+  word-break: break-all; }
+  code > span {
+    font-family: 'Ubuntu Mono', monospace;
+    word-break: break-all; }
+    code > span > span {
+      font-family: 'Ubuntu Mono', monospace;
+      word-break: break-all; }
+
+.code {
+  font-family: 'Ubuntu Mono', monospace;
+  word-break: break-all; }
+  .code mark {
+    font-family: 'Ubuntu Mono', monospace;
+    word-break: break-all; }
+
+.ts.top.attached.label:first-child + :not(.attached) {
+  margin-top: 0rem !important; }
+
+pre {
+  margin: 0px; }
