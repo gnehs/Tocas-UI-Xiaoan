@@ -21,11 +21,11 @@ https://xiaoan.tocas-ui.com/
 
 `/scrollbar/` 給卷軸用的圖片檔案
 
-`/svg/` 給 `<div class="ts xiaoan"></div>` 用的圖片檔案
+`/svg/` 給洨洨安用的圖片檔案
 
-`/doc/` 文件
+`/doc_source/` 文件
 
-`/sass/` CSS
+`/sass/` SASS
 
 ## Telegram 群組
 加入 [Telegram 群組](https://t.me/joinchat/AAAAAEPpYVlKm_AHv6f3bw) 一起討論
