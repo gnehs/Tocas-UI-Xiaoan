@@ -5,15 +5,24 @@ br
     .ts.relaxed.grid
         .sixteen.wide.mobile.four.wide.computer.column
             .ts.borderless.secondary.vertical.large.menu
-                .ts.primary.header 開始使用
-                a.item(href='#基本') 基本
-                a.item(href='#品種') 品種
-                a.item(href='#尺寸') 尺寸
-                a.item(href='#語意') 語意
-                a.item(href='#翻轉/旋轉') 翻轉/旋轉
-                a.item(href='https://tocas-ui.com/elements/icon/') Tocas UI 文件有更多內容！
+                .ts.primary.header 種類
+                +NAVlink('基本')
+                +NAVlink('品種')
+                +NAVlink('語意')
+                .ts.primary.header 狀態
+                +NAVlink('已停用')
+                +NAVlink('讀取中')
+                .ts.primary.header 外觀
+                +NAVlink('尺寸')
+                +NAVlink('縮減的')
+                +NAVlink('翻轉/旋轉')
+                +NAVlink('圓形')
+                +NAVlink('邊框')
+                .ts.primary.header 群組
+                +NAVlink('多個洨安')
+                +NAVlink('角落洨安')
                 .ts.primary.header 動畫
-                a.item(href='main-basic.html#震動') 參閱基本章節
+                a.item(href='main-basic.html#震動') 請參閱基本章節
         .sixteen.wide.mobile.column.twelve.wide.computer
             +header('基本','最基本的洨安，大小預設與同層字級相同。') 
             i.icon.xiaoan
@@ -71,32 +80,6 @@ br
                 = '<i class="huge heart xiaoan icon"></i>'
                 br
                 = '<i class="huge heart instead xiaoan icon"></i>'
-            
-            +header('尺寸','你可以讓洨洨安變大或變小，但建議不要超過 1nm。') 
-            i.mini.icon.xiaoan
-            i.tiny.icon.xiaoan
-            i.small.icon.xiaoan
-            i.icon.xiaoan
-            i.large.icon.xiaoan
-            i.big.icon.xiaoan
-            i.huge.icon.xiaoan
-            i.massive.icon.xiaoan
-            +code
-                = '<i class="mini icon xiaoan"></i>'
-                br
-                = '<i class="tiny icon xiaoan"></i>'
-                br
-                = '<i class="small icon xiaoan"></i>'
-                br
-                = '<i class="icon xiaoan"></i>'
-                br
-                = '<i class="large icon xiaoan"></i>'
-                br
-                = '<i class="big icon xiaoan"></i>'
-                br
-                = '<i class="huge icon xiaoan"></i>'
-                br
-                = '<i class="massive icon xiaoan"></i>'
 
             +header('語意','洨安可以有著不同的語意。') 
             i.icon.big.primary.xiaoan
@@ -135,6 +118,49 @@ br
                 = '<i class="icon big instead negative xiaoan"></i>'
                 br
                 = '<i class="icon big instead rainbow xiaoan"></i>'
+
+            +header('已停用','洨安可以被停用。') 
+            i.icon.disabled.big.xiaoan
+            +code
+                = '<i class="disabled icon big xiaoan"></i>'
+
+            +header('讀取中','洨安能夠一直轉圈圈。') 
+            i.icon.loading.big.xiaoan
+            +code
+                = '<i class="loading icon big xiaoan"></i>'
+
+            +header('尺寸','你可以讓洨洨安變大或變小，但建議不要超過 1nm。') 
+            i.mini.icon.xiaoan
+            i.tiny.icon.xiaoan
+            i.small.icon.xiaoan
+            i.icon.xiaoan
+            i.large.icon.xiaoan
+            i.big.icon.xiaoan
+            i.huge.icon.xiaoan
+            i.massive.icon.xiaoan
+            +code
+                = '<i class="mini icon xiaoan"></i>'
+                br
+                = '<i class="tiny icon xiaoan"></i>'
+                br
+                = '<i class="small icon xiaoan"></i>'
+                br
+                = '<i class="icon xiaoan"></i>'
+                br
+                = '<i class="large icon xiaoan"></i>'
+                br
+                = '<i class="big icon xiaoan"></i>'
+                br
+                = '<i class="huge icon xiaoan"></i>'
+                br
+                = '<i class="massive icon xiaoan"></i>'
+
+            +header('縮減的','洨安可以沒有外距。') 
+            p 窩是大家延期的好朋友
+                i.icon.fitted.xiaoan
+                | 洨洨安
+            +code
+                = '窩是大家延期的好朋友<i class="fitted icon xiaoan"></i>洨洨安'
                 
             +header('翻轉/旋轉','你可以獲得...嗯...一個轉了 90 度的洨安，然後再讓它旋轉！？') 
             i.horizontally.flipped.big.icon.xiaoan
@@ -149,4 +175,58 @@ br
                 = '<i class="clockwise rotated big icon xiaoan"></i>'
                 br
                 = '<i class="counterclockwise rotated big icon xiaoan"></i>'
+
+            +header('圓形','洨洨安可以是圓形且帶有背景顏色的。') 
+            i.circular.icon.xiaoan.face
+            i.info.circular.icon.xiaoan.face
+            i.circular.inverted.icon.xiaoan.face
+            i.circular.inverted.warning.icon.xiaoan.face
+            +code
+                = '<i class="circular icon xiaoan face"></i>'
+                br
+                = '<i class="circular info icon xiaoan face"></i>'
+                br
+                = '<i class="circular inverted icon xiaoan face"></i>'
+                br
+                = '<i class="circular inverted warning icon xiaoan face"></i>'
+
+            +header('邊框','洨洨安可以有邊框喔。') 
+            i.bordered.icon.xiaoan.face
+            i.info.bordered.icon.xiaoan.face
+            i.bordered.inverted.icon.xiaoan.face
+            i.bordered.inverted.warning.icon.xiaoan.face
+            +code
+                = '<i class="bordered icon xiaoan face"></i>'
+                br
+                = '<i class="bordered info icon xiaoan face"></i>'
+                br
+                = '<i class="bordered inverted icon xiaoan face"></i>'
+                br
+                = '<i class="bordered inverted warning icon xiaoan face"></i>'
+
+            +header('多個洨安','不同的洨安可以成為一個群組並且組合在一起運用。') 
+            i.huge.icons
+                i.big.loading.repeat.icon
+                i.icon.xiaoan.face
+            +code
+                = '<i class="huge icons">'
+                br
+                = '     <i class="big loading repeat icon"></i>'
+                br
+                = '     <i class="xiaoan face icon"></i>'
+                br
+                = '</i>'
+
+            +header('角落洨安','可不是角落生物。') 
+            i.huge.icons
+                i.big.icon.xiaoan.face
+                i.corner.loading.spinner.xiaoan.icon
+            +code
+                = '<i class="huge icons">'
+                br
+                = '     <i class="big xiaoan face icon"></i>'
+                br
+                = '     <i class="corner loading spinner xiaoan icon"></i>'
+                br
+                = '</i>'
 include _footer.jade
