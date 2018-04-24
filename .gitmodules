@@ -1,3 +1,3 @@
 [submodule "doc_source/jade"]
 	path = doc_source/jade
-	url = git://github.com/gnehs/Jade.git
+	url = https://github.com/gnehs/Jade
