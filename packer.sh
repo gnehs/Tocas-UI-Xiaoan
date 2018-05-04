@@ -4,9 +4,9 @@ echo "   Tocas Xiaoan Packer"
 echo "   自動打包"
 echo "－－－－－－－－－－－－－－－－－－－－－－－－"
 
-read -p "⭐️ 輸入資料夾位置=> " videodir
-if [ "$createsubfolder" ];then
-	cd "$videodir"
+read -p "⭐️ 輸入資料夾位置=> " xiaoandir
+if [ "$xiaoandir" ];then
+	cd "$xiaoandir"
 else
     cd "/Volumes/Data/文件/GitHub/Tocas-UI-Xiaoan/"
 fi
