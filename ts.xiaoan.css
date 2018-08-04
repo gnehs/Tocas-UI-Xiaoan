@@ -4,6 +4,20 @@
   src: url("fonts/icomoon.eot?iwsv73#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?iwsv73") format("truetype"), url("fonts/icomoon.woff?iwsv73") format("woff"), url("fonts/icomoon.svg?iwsv73#icomoon") format("svg");
 }
 
+.ts.labeled.icon.button > i.xiaoan.icon:before {
+  -webkit-transform: translateX(70%) translateY(-50%) !important;
+  -ms-transform: translateX(70%) translateY(-50%) !important;
+  transform: translateX(70%) translateY(-50%) !important;
+  width: auto !important;
+}
+
+.ts.icon.input > i.xiaoan.icon:before {
+  -webkit-transform: translateX(90%) !important;
+  -ms-transform: translateX(90%) !important;
+  transform: translateX(90%) !important;
+  width: auto !important;
+}
+
 i.xiaoan.icon {
   text-stroke: 0.2em transparent;
   -webkit-text-stroke: 0.2em transparent;
@@ -102,7 +116,8 @@ i.xiaoan.icon.heart.instead:before {
   mask-size: 100% 100% !important;
   width: 100px;
   height: 100px;
-  background: #999999;
+  color: #999999;
+  background-color: currentColor;
   display: inline-block;
 }
 
@@ -267,49 +282,49 @@ i.xiaoan.icon.heart.instead:before {
 }
 
 .ts.xiaoan.primary {
-  background-color: #7c9fbb !important;
+  color: #7c9fbb;
 }
 
 .ts.xiaoan.info {
-  background-color: #eed94d !important;
+  color: #eed94d;
 }
 
 .ts.xiaoan.warning {
-  background-color: #b28f2f !important;
+  color: #b28f2f;
 }
 
 .ts.xiaoan.positive {
-  background-color: #15ae17 !important;
+  color: #15ae17;
 }
 
 .ts.xiaoan.negative {
-  background-color: #db0007 !important;
+  color: #db0007;
 }
 
 .ts.xiaoan.inverted {
-  background-color: #dedede !important;
+  color: #dedede;
 }
 
 .ts.xiaoan.exceedingly.light.blue.xiaoan {
-  background-color: #5d9394 !important;
+  color: #5d9394;
 }
 
 .ts.xiaoan.gloomy {
-  background-color: #687985 !important;
+  color: #687985;
 }
 
 .ts.xiaoan.NTR {
   -webkit-filter: blur(1.1px);
   filter: blur(1.1px);
-  background-color: #62896c !important;
+  color: #62896c;
 }
 
 .ts.xiaoan.love {
-  background-color: #b788a3 !important;
+  color: #b788a3;
 }
 
 .ts.xiaoan.EarlySpring {
-  background-color: #4c4c4c !important;
+  color: #4c4c4c;
 }
 
 /*
