@@ -1,7 +1,7 @@
 .ts.card:not(.no):not(.earlyspring), .ts.segment:not(.no):not(.earlyspring):not(.basic), .ts.message:not(.no):not(.earlyspring):not(.secondary), .ts.slate:not(.no):not(.earlyspring) {
   border: 0px solid #000 !important;
-  -webkit-box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.2);
-  box-shadow: 0 5px 10px 1px rgba(167, 167, 167, 0.2);
+  -webkit-box-shadow: 0 6px 10px 0px rgba(167, 167, 167, 0.2);
+  box-shadow: 0 6px 10px 0px rgba(167, 167, 167, 0.2);
   -webkit-transition: all .2s ease !important;
   -o-transition: all .2s ease !important;
   transition: all .2s ease !important; }
