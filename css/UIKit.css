@@ -2,9 +2,11 @@
   border: 0px solid #000 !important;
   -webkit-box-shadow: 0 6px 10px 0px rgba(167, 167, 167, 0.2);
   box-shadow: 0 6px 10px 0px rgba(167, 167, 167, 0.2);
-  -webkit-transition: all .2s ease !important;
-  -o-transition: all .2s ease !important;
-  transition: all .2s ease !important; }
+  -webkit-transition: -webkit-transform .2s ease,-webkit-box-shadow .2s ease !important;
+  transition: -webkit-transform .2s ease,-webkit-box-shadow .2s ease !important;
+  -o-transition: transform .2s ease,box-shadow .2s ease !important;
+  transition: transform .2s ease,box-shadow .2s ease !important;
+  transition: transform .2s ease,box-shadow .2s ease,-webkit-transform .2s ease,-webkit-box-shadow .2s ease !important; }
 
 .ts.message.secondary:not(.no):not(.earlyspring) {
   border-bottom: 0px solid #000;
